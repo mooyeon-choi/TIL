@@ -126,4 +126,3 @@
    print(kospi)
    ```
 
- 

@@ -124,3 +124,20 @@
    ```
 
    * `origin`으로 설정된 원격 저장소에 `push` 한다.
+
+3.  원격 저장소에서 `pull`
+
+   ```bash
+   $ git pull origin master
+   ```
+
+   * 원격 저장소에 새로운 변경 사항이 있는 경우 `pull` 을 통해 받아온다.
+   * `origin`으로 설정된 원격 저장소에서 `pull` 한다.
+
+4. `clone`
+
+   ```bash
+   $ git clone __url__
+   ```
+
+   * `clone`은 원격 저장소에서 최초에 받아올 때 활용한다.
