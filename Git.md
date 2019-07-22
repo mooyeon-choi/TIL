@@ -157,3 +157,4 @@ profile.jpg  # profile.jpg 파일
 처음에는 직접 만들기보다 [gitignore](https://gitignore.io) 에서 내 개발환경에 맞춰 만들어주는 파일을 적용하자.
 
 예를 들면, pycharm을 쓰고 있을 때 `.idea/` 를 올리지 않는다거나, python에서는 `__pycache__/` 를 올릴 필요는 없다.
+
