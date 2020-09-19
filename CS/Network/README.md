@@ -8,7 +8,7 @@
 - [DNS Round Robin 방식](#DNS Round Robin 방식)
 - [웹 통신의 큰 흐름](#웹 통신의 큰 흐름)
 
-[뒤로](https://github.com/JaeYeopHan/for_beginner)
+[뒤로](https://github.com/mooyeon-choi/TIL/tree/master/CS)
 
 
 
@@ -40,7 +40,7 @@ POST 방식의 request 는 `HTTP Message의 Body` 부분에 데이터가 담겨�
 
 - http://asfirstalways.tistory.com/356
 
-[뒤로](https://github.com/JaeYeopHan/for_beginner)/[위로](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Network#part-1-3-network)
+[뒤로](https://github.com/mooyeon-choi/TIL/tree/master/CS)/[위로](#Part 1-3 Network)
 
 
 
@@ -67,7 +67,7 @@ POST 방식의 request 는 `HTTP Message의 Body` 부분에 데이터가 담겨�
 - http://d2.naver.com/helloworld/47667
 - http://asfirstalways.tistory.com/327
 
-[뒤로](https://github.com/JaeYeopHan/for_beginner)/[위로](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Network#part-1-3-network)
+[뒤로](https://github.com/mooyeon-choi/TIL/tree/master/CS)/[위로](#Part 1-3 Network)
 
 
 
@@ -132,7 +132,7 @@ HTTPS 의 SSL 에서는 공통키 암호화 방식과 공개키 암호화 방식
 
 *cf) HTTP 2.0 이 발전되면서 HTTPS 가 HTTP 보다 빠르다는 사실이 나왔는데요, 다음 링크를 통해 보다 자세한 내용을 확인하실 수 있습니다.* 관련 링크 : [HTTPS 가 HTTP 보다 빠르다.](https://tech.ssut.me/https-is-faster-than-http/)
 
-[뒤로](https://github.com/JaeYeopHan/for_beginner)/[위로](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Network#part-1-3-network)
+[뒤로](https://github.com/mooyeon-choi/TIL/tree/master/CS)/[위로](#Part 1-3 Network)
 
 
 
@@ -154,7 +154,7 @@ HTTPS 의 SSL 에서는 공통키 암호화 방식과 공개키 암호화 방식
 
 접속 클라이언트 수가 가장 적은 서버를 선택한다. 로드밸런서에서 실시간으로 connection 수를 관리하거나 각 서버에서 주기적으로 알려주는 것이 필요하다.
 
-[뒤로](https://github.com/JaeYeopHan/for_beginner)/[위로](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Network#part-1-3-network)
+[뒤로](https://github.com/mooyeon-choi/TIL/tree/master/CS)/[위로](#Part 1-3 Network)
 
 
 
@@ -226,7 +226,7 @@ HTTPS 의 SSL 에서는 공통키 암호화 방식과 공개키 암호화 방식
 - (도서) [HTTP 완벽 가이드](http://www.yes24.com/24/Goods/15381085?Acode=101)
 - Socket programming (Multi-chatting program)
 
-[뒤로](https://github.com/JaeYeopHan/for_beginner)/[위로](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Network#part-1-3-network)
+[뒤로](https://github.com/mooyeon-choi/TIL/tree/master/CS)/[위로](#Part 1-3 Network)
 
 
 
