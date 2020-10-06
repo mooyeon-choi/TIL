@@ -1,4 +1,10 @@
 # 2019 카카오 블라인드 공채 2차 오프라인 - Elevator
+> 
+>
+> 출처 : [kakao-recruit](https://github.com/kakao-recruit)/**[2019-blind-2nd-elevator](https://github.com/kakao-recruit/2019-blind-2nd-elevator)**
+>
+> 
+
 2019 카카오 블라인드 공채 2차 오프라인 문제에서 사용한 Elevator 서버 코드를 공개합니다.
 
 
@@ -95,9 +101,3 @@ http://localhost:8000/viewer 로 접속하면 지금까지 서버에서 수행�
 - 유승원(cree.yoo@kakaocorp.com)
 - 이진환(root.lee@kakaocorp.com)
 - 하광성(jesse.ha@kakaocorp.com)
-
-
-
-## 문의
-
-- 하광성 (jesse.ha@kakaocorp.com)
