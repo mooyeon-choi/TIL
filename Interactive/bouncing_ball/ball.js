@@ -5,8 +5,8 @@ export class Ball {
         this.vy = speed;
 
         const diameter = this. radius * 2;
-        this.x = diameter + (Math.random() * stageWidth - diameter);
-        this.y = diameter + (Math.random() * stageHeight - diameter);
+        this.x = this.radius + (Math.random() * (stageWidth - diameter));
+        this.y = this.radius + (Math.random() * (stageHeight - diameter));
     }
 
     draw(ctx, stageWidth, stageHeight, block) {
