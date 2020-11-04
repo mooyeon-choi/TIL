@@ -4,6 +4,7 @@
 
 - [Bouncing Ball](#Bouncing Ball)
 - [Air Cap Wave](#Air Cap Wave)
+- [Moving Waves](#Moving Waves)
 
 ## Bouncing Ball
 
@@ -22,3 +23,13 @@
 * 실행화면
 
   ![Air_cap_wave](./images/air_cap_wave.gif)
+
+
+
+## Moving Waves
+
+* [코드](./moving_waves)
+
+* 실행화면
+
+  ![moving_waves](./images/moving_waves.gif)
