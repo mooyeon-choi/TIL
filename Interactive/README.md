@@ -5,6 +5,7 @@
 - [Bouncing Ball](#Bouncing Ball)
 - [Air Cap Wave](#Air Cap Wave)
 - [Moving Waves](#Moving Waves)
+- [Moving Gradient](#Moving Gradient)
 
 ## Bouncing Ball
 
@@ -33,3 +34,13 @@
 * 실행화면
 
   ![moving_waves](./images/moving_waves.gif)
+
+
+
+## Moving Gradient
+
+* [코드](./moving_gradient)
+
+* 실행화면
+
+  ![Moving Gradient](./images/moving_gradient.gif)
