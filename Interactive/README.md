@@ -6,6 +6,7 @@
 - [Air Cap Wave](#Air Cap Wave)
 - [Moving Waves](#Moving Waves)
 - [Moving Gradient](#Moving Gradient)
+- [Rotating Polygon](#Rotating Polygon)
 
 ## Bouncing Ball
 
@@ -44,3 +45,13 @@
 * 실행화면
 
   ![Moving Gradient](./images/moving_gradient.gif)
+
+
+
+## Rotating Polygon
+
+* [코드](./rotating_polygon)
+
+* 실행화면
+
+  ![Rotating Polygon](./images/rotating_polygon.gif)
