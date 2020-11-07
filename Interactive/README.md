@@ -1,5 +1,7 @@
 # INTERACTIVE UI
 
+> `Interactive Developer`님의 `Youtube` 채널을 보며 학습한 내용입니다. [`Interactive Developer`님의 채널 링크](https://www.youtube.com/c/cmiscm) 
+
 ## MENU
 
 - [Bouncing Ball](#Bouncing Ball)
