@@ -9,6 +9,7 @@
 - [Moving Waves](#Moving Waves)
 - [Moving Gradient](#Moving Gradient)
 - [Rotating Polygon](#Rotating Polygon)
+- [Bounce Strings](#Bounce Strings)
 
 ## Bouncing Ball
 
@@ -26,7 +27,7 @@
 
 * 실행화면
 
-  ![Air_cap_wave](./images/air_cap_wave.gif)
+  ![air_cap_wave.gif](./images/air_cap_wave.gif)
 
 
 
@@ -36,7 +37,7 @@
 
 * 실행화면
 
-  ![moving_waves](./images/moving_waves.gif)
+  ![moving_waves.gif](./images/moving_waves.gif)
 
 
 
@@ -46,7 +47,7 @@
 
 * 실행화면
 
-  ![Moving Gradient](./images/moving_gradient.gif)
+  ![moving_gradient.gif](./images/moving_gradient.gif)
 
 
 
@@ -56,4 +57,14 @@
 
 * 실행화면
 
-  ![Rotating Polygon](./images/rotating_polygon.gif)
+  ![rotating_polygon.gif](./images/rotating_polygon.gif)
+
+
+
+## Bounce Strings
+
+* [코드](./bounce_strings)
+
+* 실행화면
+
+  ![bounce_strings.gif](./images/bounce_strings.gif)
