@@ -18,7 +18,7 @@ class App {
 
     document.addEventListener("pointerdown", this.onDown.bind(this), false);
     document.addEventListener("pointermove", this.onMove.bind(this), false);
-    document.addEventListener("pointerUp", this.onUp.bind(this), false);
+    document.addEventListener("pointerup", this.onUp.bind(this), false);
 
     window.requestAnimationFrame(this.animate.bind(this));
   }
@@ -31,17 +31,25 @@ class App {
     this.canvas.height = this.stageHeight * this.pixelRatio;
     this.ctx.scale(this.pixelRatio, this.pixelRatio);
 
-    this.strings = [
-      new BounceString(
+    const xGap = 20;
+    const yGap = 20;
+    const x1 = xGap;
+    const x2 = this.stageWidth - xGap;
+    const total = Math.floor((this.stageHeight - yGap) / yGap);
+
+    this.strings = [];
+
+    for (let i = 0; i < total; i++) {
+      this.strings[i] = new BounceString(
         {
-          x1: 50,
-          y1: this.stageHeight / 2,
-          x2: this.stageWidth - 50,
-          y2: this.stageHeight / 2,
+          x1: x1,
+          y1: i * yGap + yGap,
+          x2: x2,
+          y2: i * yGap + yGap,
         },
         "#ff5038"
-      ),
-    ];
+      );
+    }
   }
 
   animate() {
