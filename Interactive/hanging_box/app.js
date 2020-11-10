@@ -9,19 +9,19 @@ class App {
 
     this.pixelRatio = window.devicePixelRatio > 1 ? 2 : 1;
 
-    window.addEventListener("resize", this.resize.bind(this), false);
-    this.resize();
-
-    window.requestAnimationFrame(this.animate.bind(this));
-
     this.mousePos = new Point();
     this.curItem = null;
 
     this.items = [];
-    this.total = 1;
+    this.total = 5;
     for (let i = 0; i < this.total; i++) {
       this.items[i] = new Dialog();
     }
+
+    window.addEventListener("resize", this.resize.bind(this), false);
+    this.resize();
+
+    window.requestAnimationFrame(this.animate.bind(this));
 
     document.addEventListener("pointerdown", this.onDown.bind(this), false);
     document.addEventListener("pointermove", this.onMove.bind(this), false);
@@ -54,8 +54,31 @@ class App {
     this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
 
     for (let i = 0; i < this.items.length; i++) {
-      console.log(this.items[i]);
       this.items[i].animate(this.ctx);
+    }
+
+    if (this.curItem) {
+      this.ctx.fillStyle = `#ff4338`;
+      this.ctx.strokeStyle = `#ff4338`;
+
+      this.ctx.beginPath();
+      this.ctx.arc(this.mousePos.x, this.mousePos.y, 8, 0, Math.PI * 2);
+      this.ctx.fill();
+
+      this.ctx.beginPath();
+      this.ctx.arc(
+        this.curItem.centerPos.x,
+        this.curItem.centerPos.y,
+        8,
+        0,
+        Math.PI * 2
+      );
+      this.ctx.fill();
+
+      this.ctx.beginPath();
+      this.ctx.moveTo(this.mousePos.x, this.mousePos.y);
+      this.ctx.lineTo(this.curItem.centerPos.x, this.curItem.centerPos.y);
+      this.ctx.stroke();
     }
   }
 
@@ -77,9 +100,19 @@ class App {
   onMove(e) {
     this.mousePos.x = e.clientX;
     this.mousePos.y = e.clientY;
+
+    for (let i = 0; i < this.items.length; i++) {
+      this.items[i].move(this.mousePos.clone());
+    }
   }
 
-  onUp(e) {}
+  onUp(e) {
+    this.curItem = null;
+
+    for (let i = 0; i < this.items.length; i++) {
+      this.items[i].up();
+    }
+  }
 }
 
 window.onload = () => {
