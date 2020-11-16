@@ -11,6 +11,7 @@
 - [Rotating Polygon](#Rotating Polygon)
 - [Bounce Strings](#Bounce Strings)
 - [Hanging Box](#Hanging Box)
+- [Rotating Globe](#Rotating Globe)
 
 ## Bouncing Ball
 
@@ -79,3 +80,13 @@
 * 실행화면
 
   ![hanging_box.gif](./images/hanging_box.gif)
+
+
+
+## Rotating Globe
+
+* [코드](./rotating_globe)
+
+* 실행화면
+
+  ![rotating_globe.gif](./images/rotating_globe.gif)
