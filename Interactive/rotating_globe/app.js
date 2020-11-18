@@ -2,7 +2,6 @@ import { Dot } from "./dot.js";
 
 class App {
   constructor() {
-    console.log(arguments);
     this.canvas = document.createElement("canvas");
     document.body.appendChild(this.canvas);
     this.ctx = this.canvas.getContext("2d");
@@ -44,12 +43,12 @@ class App {
     }
   }
 
-  animate() {
+  animate(time) {
     window.requestAnimationFrame(this.animate.bind(this));
 
     this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
 
-    const rotation = arguments[0] * 0.0004;
+    const rotation = time * 0.0004;
 
     const sineRotation = Math.sin(rotation);
     const cosineRotation = Math.cos(rotation);
