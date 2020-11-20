@@ -3,9 +3,10 @@
 ## 목차
 
 * [SQL](#sql)
-  * [SQL이란?](#sql이란?)
-  * [Database 생성하기](#database-생성하기)
-  * [MySQL 사용법](#mysql-사용법)
+  * [1. SQL이란?](#1.-sql이란?)
+  * [2. MySQL](#2.-mysql)
+    * [Database 생성하기](#database-생성하기)
+    * [MySQL 사용법](#mysql-사용법)
 
 ## SQL
 
