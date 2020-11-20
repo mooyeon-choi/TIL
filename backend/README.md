@@ -3,14 +3,14 @@
 ## 목차
 
 * [SQL](#sql)
-  * [1. SQL이란?](#1.-sql이란?)
-  * [2. MySQL](#2.-mysql)
+  * [SQL이란?](#sql이란?)
+  * [MySQL](#mysql)
     * [Database 생성하기](#database-생성하기)
     * [MySQL 사용법](#mysql-사용법)
 
 ## SQL
 
-### 1. SQL이란?
+### SQL이란?
 
 > **SQL(Structured Query Language)**
 
@@ -24,7 +24,7 @@
   권한을 관리하고, 테이터의 보안, 무결성 등을 정의
   GRANT, REVOKE 등이 해당
 
-### 2. MySQL
+### MySQL
 
 #### MySQL 설치
 
