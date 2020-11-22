@@ -5,12 +5,12 @@
 ## 목록
 
 * [Web](#web)
-  * [Frontend](./web/frontend)
+  * [Frontend](#front-end)
     * [Interactive developments](#interactive-developments)
     * [React](#react)
-  * [Backend](#backend)
+  * [Backend](#back-end)
 * [Language](#language)
-  * [Java](./language/java)
+  * [Java](#java)
   * [Python](#python)
   * [JavaScript](#javascript)
 * [CS](#cs)
@@ -33,7 +33,7 @@
 
 > vanilla js, canvas를 학습한 내용입니다.
 
-* [바로가기](./web/frontend/interactive)
+* [바로가기](./web/frontend/Interactive)
 
 * 예시화면
 
@@ -63,7 +63,7 @@
 
 ### JavaScript
 
-* [바로가기](./language/javascript)
+* [바로가기](./language/javaScript)
 
 ## CS
 
@@ -73,11 +73,11 @@
 
 ### DataStructure
 
-* [바로가기](./CS/datastructure)
+* [바로가기](./CS/dataStructure)
 
 ### Network
 
-* [바로가기](./CS/network)
+* [바로가기](./CS/Network)
 
 ### OS
 
@@ -85,11 +85,11 @@
 
 ## DeepLearning
 
-* [바로가기](./deeplearning)
+* [바로가기](./DeepLearning)
 
 ## OpenCV
 
-* [바로가기](./openCV)
+* [바로가기](./OpenCV)
 
 
 
