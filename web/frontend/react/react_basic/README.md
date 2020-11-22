@@ -96,7 +96,145 @@ yarn create react-app template
 
       
 
+## 간단한 프로젝트로 배우기
 
+### Template 복사하기
 
+```bash
+cp -R template habit-tracker
+```
 
+* template의 상위 디렉토리에서 입력
+
+### React Dom
+
+* 우리가 만든 컴포넌트를 `html`과 연결해 준다.
+
+* `index.html`
+
+  ```html
+  <body>
+      ...
+      ...
+      <div id="root"></div>
+  </body>
+  ```
+
+* `index.js`
+
+  ```react
+  ReactDOM.render(
+    <React.StrictMode> // js의 "use strict"와 같은
+      <App />
+    </React.StrictMode>,
+    document.getElementById("root")
+  );
+  ```
+
+* `index.html`의 `root div` 에 최상위 컴포넌트인 `App`을 연결해준다.
+
+### JSX 정리
+
+> React Component와 JavaScript code 파일을 구분하기 위해 `app.jsx` 로 만들어주었다. 그럼 JSX란 무엇일까?
+
+* 공식문서
+
+  * [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
+  * [JSX In Depth](https://reactjs.org/docs/jsx-in-depth.html)
+
+* JSX가 없었을때 React 작성법
+
+  ```react
+  function App() {
+      return React.createElement('h1', {}, 'Hello:)');
+  }
+  ```
+
+  * 코드가 복잡하고 어려웠다.
+
+* `html` 처럼 입력할 수 있도록 해주는 JSX
+
+  ```react
+  function App() {
+      return <h1>Hello:)</h1>
+  }
+  ```
+
+  * `html`처럼 작성할 수 있지만 JSX는 JavaScript code이다.
+
+* 비즈니스 로직 작성
+
+  ```react
+  function App() {
+      const name = 'moo';
+      return <h1>Hello {name} :)</h1>
+  }
+  ```
+
+  ```react
+  function App() {
+      const name = 'moo';
+      return (
+          <>
+              {name && <h1>Hello! {name}:)</h1>}
+              // name이 있다면 && 뒤의 태그를 출력
+          	
+              {[1, 2].map(item => 
+              	(<h1>{item}</h1>)}
+          <>
+      )
+  }
+  ```
+
+  
+
+* `tag` 묶어주기 
+
+  * `<div></div>`
+
+      ```react
+      function App() {
+          const name = 'moo';
+          return (
+              <div>
+                  <h1>Hello! {name} :)</h1>
+                  <h1>Hello!</h1>
+              </div>
+          )
+      }
+      ```
+      
+      * div tag가 만들어짐
+      
+  * `React.Fragment`
+
+      ```react
+      function App() {
+          const name = 'moo';
+          return (
+              <React.Fragment>
+                  <h1>Hello! {name} :)</h1>
+                  <h1>Hello!</h1>
+              </React.Fragment>
+          )
+      }
+      ```
+
+      * 따로 tag 가 만들어지지 않고 묶어준다.
+
+  * 의미 없이 단순히 그룹으로 묶어주고만 싶을때
+
+      ```react
+      function App() {
+          const name = 'moo';
+          return (
+              <>
+                  <h1>Hello! {name} :)</h1>
+                  <h1>Hello!</h1>
+              </>
+          )
+      }
+      ```
+
+      * tag안을 비워도 동작한다.
 
