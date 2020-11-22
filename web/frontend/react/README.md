@@ -37,7 +37,7 @@
 
 * [node.js 공식사이트](https://nodejs.org/en/)
 
-  ![download nodejs](./images/download_nodejs.png)
+  ![download nodejs](./images/download_nodejs.PNG)
   
 * node, npm version 확인
 
@@ -114,7 +114,7 @@
   yarn start
   ```
 
-  ![start page](./images/start.png)
+  ![start page](./images/start.PNG)
 
 * Project 중지
 

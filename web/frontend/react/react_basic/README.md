@@ -92,7 +92,7 @@ yarn create react-app template
 
     * react component 파일은 `.jsx` 로 저장하여 JavaScript 파일과 구분
 
-      ![.jsx Vs. .js](./images/jsxVsJs.png)
+      ![.jsx Vs. .js](./images/jsxVsJs.PNG)
 
       
 
