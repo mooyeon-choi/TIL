@@ -73,7 +73,7 @@
 
 ### DataStructure
 
-* [바로가기](./CS/dataStructure)
+* [바로가기](./CS/DataStructure)
 
 ### Network
 
