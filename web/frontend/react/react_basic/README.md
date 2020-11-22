@@ -54,5 +54,49 @@
       * Functional programming의 유행
       * 중복되는 코드를 줄일 수 있다.
 
+## Template 프로젝트 만들기
+
+### Project 생성
+
+```bash
+yarn create react-app template
+```
+
+### 사용하지 않는 파일 삭제
+
+* 다음 파일들은 아직 사용하지 않으므로 제거
+
+    ```
+    \template
+    ├── public
+    |  ├── logo192.png
+    |  ├── logo512.png
+    |  ├── manifest.json
+    |  └── robots.txt
+    ├── src
+    |  ├── App.test.js
+    |  ├── logo.svg
+    |  ├── reportWebVitals.js
+    |  └── setupTests.js
+    ```
+    
+* 최종 Directory Tree 형태
+
+    ```
+    
+    ```
+
+    * `components/` : 공통적으로 사용하는 component들을 보통 하나의 폴더로 묶어서 관리해준다.
+
+    * 파일이름은 보통 소문자로 시작한다.
+
+    * react component 파일은 `.jsx` 로 저장하여 JavaScript 파일과 구분
+
+      ![.jsx Vs. .js](./images/jsxVsJs.png)
+
+      
+
+
+
 
 
