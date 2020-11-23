@@ -5,10 +5,12 @@
 ## 목록
 
 * [Web](#web)
+  * [Web Basic](#web-basic)
   * [Frontend](#front-end)
     * [Interactive developments](#interactive-developments)
     * [React](#react)
   * [Backend](#back-end)
+    * [Django](#django)
 * [Language](#language)
   * [Java](#java)
   * [Python](#python)
@@ -22,6 +24,12 @@
 * [OpenCV](#opencv)
 
 ## Web
+
+### Web Basic
+
+> HTML, CSS 등 웹 기초에 대해 공부한 내용입니다.
+
+* [바로가기](./web/basic)
 
 ### Front end
 
@@ -50,6 +58,10 @@
 > Java Spring, MySQL 등을 학습하며 정리한 내용입니다.
 
 * [바로가기](./web/backend)
+
+#### Django
+
+* [바로가기](./web/backend/django)
 
 ## Language
 
