@@ -251,3 +251,25 @@ cp -R template habit-tracker
 * file name은 소문자로 class name은 대문자로 시작!
 
   `rcc` + tap을 사용할 경우 파일명과 똑같이 써주므로 고쳐줘야한다.
+
+#### Fontawesome 추가
+
+* 설치
+
+  ```bash
+  yarn add @fortawesome/fontawesome-free
+  ```
+
+* 공식문서
+
+  * https://fontawesome.com/how-to-use/on-the-web/using-with/react
+
+* Fontawesome에서 검색해서 추가하기
+
+  * 상단 검색창에서 원하는 icon 검색
+
+  * 원하는 아이콘 선택후 태그를 클릭하면 복사된다.
+
+    ![fontawesome icon](./images/fontawesome_icon.PNG)
+
+  * react에서는 `className`을 쓰므로 `class`를 `className` 으로 고쳐준다.
