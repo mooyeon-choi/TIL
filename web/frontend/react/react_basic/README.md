@@ -98,6 +98,8 @@ yarn create react-app template
 
 ## 간단한 프로젝트로 배우기
 
+> Habit tracker
+
 ### Template 복사하기
 
 ```bash
@@ -238,3 +240,14 @@ cp -R template habit-tracker
 
       * tag안을 비워도 동작한다.
 
+### Habit tracker
+
+#### habit component 만들기
+
+* `rcc` + tap 을 누르면 자동으로 기본적인 코드가 써진다
+
+  (React code snippet extension이 설치된 경우)
+
+* file name은 소문자로 class name은 대문자로 시작!
+
+  `rcc` + tap을 사용할 경우 파일명과 똑같이 써주므로 고쳐줘야한다.
