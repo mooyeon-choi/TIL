@@ -1,0 +1,30 @@
+.font-1 {
+  /* 폰트 사이즈 바꾸기 */
+  font-size: 2em;
+  /* 폰트 바꾸기 
+    첫번째 폰트가 사용자 컴퓨터에 없으면, 다음.
+  */
+  font-family: 'Times New Roman', Times, serif;
+  /* 폰트 굵기 */
+  font-weight: lighter;
+  /* 폰트 스타일 */
+  font-style: italic;
+}
+
+.font-2 {
+  font-size: 130%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.font-3 {
+  font-family: 'Dokdo', cursive;
+}
+
+.font-4 {
+  font-family: 'Nanum+Brush+Script', cursive;
+}
+
+.font-5 {
+  font-family: 'Stylish', cursive;
+} 

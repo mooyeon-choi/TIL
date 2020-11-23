@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="08_style.css">
+</head>
+<body>
+  <div></div>
+  <!-- inline 속성은 아니고 block이지만 떠있어서 같은줄에 생김, 겹쳐짐 -->
+  <div class="float-left"></div>
+  <div class="back"></div>
+  <!-- 왼쪽 부터 시작하므로 1, 2 -->
+  <div class="float-left">1</div>
+  <div class="float-left">2</div>
+  <!-- 오른쪽 부터 시작하므로 4, 3 -->
+  <div class="float-right">3</div>
+  <div class="float-right">4</div>
+  <!-- 떠있으므로 새로운 박스를 추가해주어도 겹쳐짐 -->
+  <!-- clear를 사용해주면 어디에도 종속되지 않고 따로 떨어짐 -->
+  <div class="back clear">clear</div>
+</body>
+</html>

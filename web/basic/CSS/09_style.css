@@ -1,0 +1,31 @@
+.header {
+  height: 1000px;
+  /* 이미지 경로 */
+  background-image: url('bg.jpg');
+  /* 이미지 크기
+  -> 부족한 부분은 바둑판 형식 배치
+  */
+  /* background-size: 300px 300px; */
+  /* 하나만 나오게 하고싶을때 */
+  /* background-repeat: no-repeat; */
+  /*
+  px:
+    width, height 순으로 지정.
+    값 하나만 지정하면, width 지정 + height: auto
+  cover : 
+    배경이미지 크기의 비율을 고정
+    width, height 큰 값을 배경 이미지에 맞춤.
+    보이지 않는 영역이 발생 가능함. 
+  */
+  /* background-size: cover; */
+  /* contain:
+    배경이미지 크기의 비율을 고정
+    이미지가 보이지 않는 영역이 없도록 조정
+    이미지 반복될 수 있음. 
+  */
+  /* background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-size: cover;
+  background-position-y: center;
+} 

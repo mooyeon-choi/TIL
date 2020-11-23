@@ -1,0 +1,49 @@
+* {
+  font-family: 'D2 coding', sans-serif;
+}
+
+nav,
+header,
+section,
+article,
+aside,
+footer {
+  margin: 16px;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #e9ecef;
+  text-align: center;
+}
+
+nav,
+header,
+footer {
+  width: 400px;
+}
+
+header {
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 0;
+}
+
+section {
+  display: inline-block;
+  width: 216px;
+  height: 100px;
+  margin-right: 8px;
+}
+
+aside {
+  display: inline-block;
+  width: 136px;
+  height: 100px;
+  margin-left: 0px;
+  vertical-align: top;
+}
+
+article {
+  background-color: #ced4da;
+}

@@ -1,0 +1,43 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #342494;
+  text-align: center;
+  /* 세로정렬은 없으므로 픽셀값으로 직접 지정해주어야 함 */
+  line-height: 100px;
+}
+
+.parent {
+  background-color: red;
+}
+
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.relative {
+  position: relative;
+}
+
+.relative-move {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+body {
+  height: 10000px;
+}
+
+.zindex {
+  z-index: 1;
+}

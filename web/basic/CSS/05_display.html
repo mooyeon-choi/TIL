@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>display</title>
+  <link rel="stylesheet" href="05_style.css">
+</head>
+<body>
+  <h1>display</h1>
+  <h2>block</h2>
+  <p>display : block은 기본적으로 가질 수 있는 영역의 100%를 가진다!</p>
+  <!-- 기본적으로 display block을 가지는 것들 -->
+  <p>h1~h6, p, div, form, table</p>
+  <!-- div의 기본 지정값은 block -->
+  <div>block</div>
+  <form>
+    폼을 작성해주세요.
+  </form>
+  <!-- block 가로 정렬 (마진이 들어가는 자리를 오토로 주므로 박스는 반대방향으로 감) -->
+  <div class="ml-auto">ml-auto</div>
+  <div class="mr-auto">mr-auto</div>
+  <div class="mx-auto">mx-auto</div>
+
+  <!-- inline 요소 (마진요소를 가지고 있지X 따라서 마진영역으로 정렬을 못함) -->
+  <h2>inline</h2>
+  <span class="red">inline은 content 영역</span>
+  <span>너비를 가진다.</span>
+  <input type="text">
+  <input type="date">
+  <a href="#">링크</a>
+  <img src="#" alt="이미지">
+</body>
+</html>

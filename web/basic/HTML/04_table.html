@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Table</title>
+</head>
+<body>
+  <table border="1px solid black">
+    <thead>
+      <caption>대전 유성연수원 점심메뉴표</caption> <!-- 표의 제목 -->
+      <tr> <!-- table row(행) -->
+        <th scope="row"></th> <!-- table header -->
+        <th>월</th> <!-- th : font-weight: bold 적용 -->
+        <th>화</th>
+        <th>수</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A코스</td> <!-- table data -->
+        <td rowspan="2">짬뽕</td>
+        <td colspan="2">초밥</td>
+      </tr>
+      <tr>
+        <td>B코스</td>
+        <td>김치찌개</td>
+        <td>삼계탕</td>
+      </tr>
+    </tbody>
+    <tfoot> <!-- table foot : 열(col) 요약 -->
+      <tr> 
+        <td>식수</td>
+        <td colspan="3">총 150명 식사</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

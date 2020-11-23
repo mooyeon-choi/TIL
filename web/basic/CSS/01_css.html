@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- 외부파일 링크 사용법(link:css) -->
+  <link rel="stylesheet" href="01_style.css">
+  <!-- 내부참조(embed) head 태그 내에 style 태그 -->
+  <style>
+    /* 태그 선택자 */
+    h1 {
+      color: red;
+    }
+    h3 {
+      color: pink;
+    }
+    /* 클래스 선택자 : .클래스명 */
+    .blue {
+      color: blue;
+    }
+    /* important 같은 선택자 라면 가장 아래에 있는 것이 우선
+      다른 선택자라면 그 선택자들 간의 우선순위에 따라 결정
+    */
+    .brown {
+      color: brown !important;
+    }
+    /* 아이디 선택자 : #아이디명 */
+    #green {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <!-- 선택자는 우선순위가 있다.
+        id > class > tag
+        id는 문서에서 반드시 한번만 등장!
+        class는 문서에서 여러번 등장!
+        따라서 중복으로 사용할 때에는 class를 사용한다.
+  -->
+  <h1>Hello, CSS!</h1>
+  <h2 class="blue">선택자</h2>
+  <h3 class="blue">태그 선택자</h3> <!-- 우선순위: 클래스 선택자 > 태그 선택자 -->
+  <h3 id="green">클래스 선택자</h3> <!-- id 선택자 > 태그 선택자 -->
+  <h3 id="green" class="blue">아이디 선택자</h3> <!-- 아이디 선택자 > 클래스 선택자 -->
+  <!-- style에서 선언하지 않고 < >내에서 정해준게 우선 -->
+  <p id="green" style="color: purple;">인라인 CSS 활용</p> 
+  <!-- !important가 CSS 적용이 가장 우선된다.
+      하지만, 사용에 주의하자. 남발하지 말자.
+  -->
+  <p id="green" class="blue brown" style="color: purple">무슨 색일까요?</p>
+</body>
+</html>

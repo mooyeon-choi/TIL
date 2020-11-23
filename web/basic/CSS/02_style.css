@@ -1,0 +1,33 @@
+/* 1. 그룹 선택자 */
+h1, h2, h3, h4, h5, h6, .silver {
+  color: silver;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+/* 인접 선택자 */
+.blue + .red + div {
+  background-color: purple;
+}
+
+/* 자식 선택자 (바로 밑에 있을 경우) */
+.parent > li {
+  color: red;
+}
+
+/* 후손 선택자 (속해있다면 모두) */
+.ancestor li {
+  color: blue
+}

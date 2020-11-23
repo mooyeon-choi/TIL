@@ -1,0 +1,24 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #3355aa;
+  text-align: center;
+  /* 세로정렬은 없으므로 픽셀값으로 직접 지정해주어야 함 */
+  line-height: 100px;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}

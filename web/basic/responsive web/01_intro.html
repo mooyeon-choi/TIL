@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- 
+    viewport는 웹 페이지가 보이는 영역을 지정하는 메타태그를 활용
+    width : 디바이스의 가로 크기를 지정
+          device-width : 디바이스의 크기
+   -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  /* orientation
+    가로모드 / 세로모드
+  */
+  @media (orientation: portrait) {
+    h1 {
+      color: red;
+    }
+  }
+  @media (orientation: landscape) {
+    h1 {
+      color: blue;
+    }
+  }
+  /* 화면 너비에 따라 CSS 속성 정의 */
+
+  /* 1. mobile(너비가 768px보다 작을 때) */
+  div {
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+  @media screen and (min-width: 768px) {
+    /* 1. web(너비가 768보다 클 때) */
+    div {
+      background: blue;
+    }
+  }
+
+  /* 2. web(너비가 768px보다 클때) */
+  span {
+    background: blue;
+  }
+
+  /* 2. mobile(너비가 768px보다 작을 때) */
+  @media screen and (max-width: 768px) {
+    span {
+      background: red;
+    }
+  }
+  </style>
+</head>
+<body>
+  <h1>파란색? 빨간색?</h1>
+  <div></div>
+  <span>파란색? 빨간색?</span>
+</body>
+</html>

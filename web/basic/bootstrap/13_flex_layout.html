@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .contents {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    height: 100px;
+    background: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  aside {
+    width: 300px;
+    height: 100%;
+    background: rosybrown;
+  }
+  section {
+    height: 100%;
+    background: pink;
+    flex-grow: 1;
+  }
+  .main {
+    display: flex;
+    height: 100%;
+  }
+  footer {
+    /* block에서는 margin-top: auto는 불가능 */
+    margin-top: auto;
+    background-color: wheat;
+    width: 100%;
+    height: 100px;
+  }
+  </style>
+</head>
+<body>
+  <div class="contents">
+    <nav>
+      <div class="logo">logo입니다.</div>
+      <div class="items">아이템입니다.</div>
+    </nav>
+    <div class="main">
+      <aside></aside>
+      <section></section>
+    </div>
+    <footer>
+      이 곳은 푸터입니다.
+    </footer>
+  </div>
+</body>
+</html>

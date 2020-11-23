@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="07_style.css">
+</head>
+<body>
+
+  <!-- static 원래 있어야할 위치 -->
+  <h2>1. static</h2>
+  <div>static</div>
+  <div>static</div>
+
+  <!-- ----------------------------------------------------------------------- -->
+
+  <!-- 
+    1. absolute
+    absolute는 부모 혹은 조상요소를 기준으로 위치.
+    (*가까운 조상 중에 static이 아닌 요소*)
+  -->
+  <!-- 
+    부모가 static이어서, 
+    absolute1이 body를 기준으로 위치함.
+  -->
+  <h2>2. absolute1 - 모든 부모가 static인 경우</h2>
+  <div class="parent">
+    static
+    <div class="absolute">absolute1</div>
+  </div>
+  
+  <!-- ----------------------------------------------------------------------- -->
+
+  <!-- 
+  부모가 static이 아니어서,
+    absolute가 부모를 기준으로 위치함.  
+  -->
+  <h2 style="margin-top: 100px;">3. absolute2 - 부모가 static이 아닌 경우</h2>
+  <div class="parent relative">
+      relative
+      <!-- 
+        zindex 겹쳐져있는 경우 어느것이 위로 올라오게 할지 순서 결정
+        숫자가 큰것이 위로
+      -->
+      <div class="absolute zindex">absolute2</div>
+  </div>
+
+  <!-- ----------------------------------------------------------------------- -->
+
+  <h2 style="margin-top: 100px;">4. absolute3 - 부모의 위치에 따라 바뀐다!</h2>
+  <div class="parent relative-move">
+      relative
+      <div class="absolute zindex">absolute3</div>
+  </div>
+
+  <!-- ----------------------------------------------------------------------- -->
+
+  <!-- 
+    2. relative
+    자기가 원래 있어야할 위치(static)을 기준으로 이동!
+  -->
+  <h2 style="margin-top: 100px;">5. relative - 자기가 있어야할 위치 기준으로 바뀐다.</h2>
+  <div class="relative-move">relative</div>
+
+  <!-- ----------------------------------------------------------------------- -->
+
+  <!-- 
+    3. fixed 
+    브라우저 위치에 따라 변경!
+  -->
+  <h2>6. fixed - 브라우저 위치에 따라 고정</h2>
+  <div class="fixed">fixed</div>
+  
+</body>
+</html>
