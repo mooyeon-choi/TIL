@@ -85,15 +85,15 @@ yarn create react-app template
     ```
     \template
     ├── node_modules/
-├── package.json
+    ├── package.json
     ├── public/
-|  ├── favicon.ico
+    |  ├── favicon.ico
     |  └── index.html
-├── README.md
+    ├── README.md
     ├── src/
-|  ├── app.css
+    |  ├── app.css
     |  ├── app.jsx
-|  ├── components/
+    |  ├── components/
     |  ├── index.css
     |  └── index.js
     └── yarn.lock
