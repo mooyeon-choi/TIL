@@ -1,0 +1,34 @@
+{% extends 'articles/base.html' %}
+{% load bootstrap4 %}
+{% block body %}
+<h1>{{ user_profile.username }}의 프로필</h1>
+
+{% with user_profile.followers.all as followers %}
+<a href="{% url 'accounts:follow' user_profile.pk %}">
+{% if user in followers %}
+팔로우 취소
+{% else %}
+팔로우
+{% endif %}
+</a>
+<h2>팔로우 : {{ user_profile.followings.all.count }}</h2>
+<h2>팔로워 : {{ followers|length }}</h2>
+{% endwith %}
+<h2>내가 쓴 글 ({{ user_profile.article_set.all.count }})</h2>
+{% for article in user_profile.article_set.all %}
+<a href="{% url 'articles:detail' article.pk %}">{{ article.pk }} : {{ article.title }}</a> <br>
+{% endfor %}
+<hr>
+<h2>내가 쓴 댓글({{ user_profile.comment_set.all.count }})</h2>
+{% for comment in user_profile.comment_set.all %}
+<p>
+  <a href="{% url 'articles:detail' comment.article_id %}">{{ comment.article_id }} 글의 {{ comment.content }}</a>
+</p>
+{% endfor %}
+<hr>
+<h2>내가 좋아요 한 글</h2>
+{% for article in user_profile.like_articles.all %}
+<p>
+<a href="{% url 'articles:detail' article.pk %}">{{ article.pk }} : {{ article.title }}</a></p>
+{% endfor %}
+{% endblock body %}

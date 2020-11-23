@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>우리반정보</h1>
+  <h2>Teacher</h2>
+  <li>{{ teacher }}</li>
+  <h2>Student</h2>
+  {% for std in student %}
+    <li>{{ std }}</li>
+  {% endfor %}
+</body>
+</html>

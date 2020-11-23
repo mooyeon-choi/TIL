@@ -1,0 +1,41 @@
+{% extends 'articles/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'articles/style.css'%}">
+<style>
+  tr>th:nth-of-type(2) {
+    width: 50%;
+  }
+</style>
+{% endblock css %}
+{% block body %}
+<img src="{% static 'articles/img.png'%}" alt="배경">
+<h1>게시판에 오신걸 환영합니다.</h1>
+<ol>
+  {% if user.is_authenticated %}
+  <a href="{% url 'articles:create' %}" class="btn btn-success">글 작성하기</a>
+  <hr>
+  {% endif %}
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">제목</th>
+        <th scope="col">작성일자</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for article in articles %}
+      <tr>
+        <th scope="row">{{ article.id }}</th>
+        <td>
+          <a href="{% url 'articles:detail' article.pk %}">
+            {{ article.title }}
+          </a>
+        </td>
+        <td>{{ article.created_at }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endblock %}

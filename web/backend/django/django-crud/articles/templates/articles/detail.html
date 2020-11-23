@@ -1,0 +1,53 @@
+{% extends 'articles/base.html' %}
+{% load bootstrap4 %} {% comment %} load 는 반드시 해당 템플릿 안에서 해줘야함 {% endcomment %}
+{% block body %}
+{% if article.image %}
+<img src="{{ article.image.url }}" alt="{{ article.image.name }}">
+{% endif %}
+<h1>{{ article.id }}번글</h1>
+<h2>{{ article.title }}</h2>
+<h2>{{ article.user }}</h2>
+<h3>작성일자 : {{ article.created_at }}</h3>
+<h3>수정일자 : {{ article.updated_at }}</h3>
+<hr>
+{% load hashtag %}
+<p>{{ article|make_link|safe }}</p>
+<p>{{ article.like_users.count }}명이 이 글을 좋아합니다.</p>
+<a href="{% url 'articles:like' article.pk %}">
+{% if user in article.like_users.all %}
+<i class="fas fa-heart fa-2x" style="color: red"></i>
+{% else %}
+<i class="far fa-heart"></i>
+{% endif %}
+</a>
+<!-- a tag : GET -->
+<a href="{% url 'articles:index' %}">목록으로</a>
+{% if article.user == user %}
+<a href="{% url 'articles:update' article.pk %}">수정하기</a>
+<a href="{% url 'articles:delete' article.pk %}">[X]</a>
+<form action="{% url 'articles:delete' article.pk %}" method="POST" onclick="return confirm('진짜 지울래?')">
+    {% csrf_token %}
+    <input type="submit" value="삭제">
+</form>
+{% endif %}
+<hr>
+<h3>댓글 작성</h3>
+<h4>댓글 수: {{ comments.count }}</h4>
+<form action="{% url 'articles:comment_content' article.pk %}" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form comment_form %}
+    {% buttons %}
+    <button type="submit" class="btn btn-primary">Submit</button>
+    {% endbuttons %}
+</form>
+<hr>
+<h3>댓글</h3>
+{% for comment in comments %}
+<li>{{ comment.content }}</li>
+<li>{{ comment.created_at }}</li>
+<a href="{% url 'articles:comment_delete' article.pk comment.pk %}">[X]</a>
+<hr>
+{% empty %}
+<h3>댓글이 없습니다.</h3>
+{% endfor %}
+{% endblock %}

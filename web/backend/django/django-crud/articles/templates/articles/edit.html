@@ -1,0 +1,19 @@
+{% extends 'articles/base.html' %}
+{% block body %}
+  <h1>글 수정하기</h1>
+  <form action="{% url 'articles:update' article.pk %}" method='POST'>
+  {% csrf_token %}
+    제목 : <input type="text" name="title" id="title" value="{{ article.title }}"><br>
+    내용 : <textarea name="content" id="content">{{ article.content }}</textarea>
+    <input type="submit" value="Submit">
+  </form>
+
+  <form action="" method="POST">
+  {% csrf_token %}
+  {{ article_form.as_p }}
+  {% bootstrap_form form %}
+    {% buttons %}
+  <button type="submit" class="btn btn-primary">Submit</button>
+  {% endbuttons %}
+  </form>
+{% endblock %}
