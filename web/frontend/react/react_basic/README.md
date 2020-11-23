@@ -286,3 +286,8 @@ cp -R template habit-tracker
     ![fontawesome icon](./images/fontawesome_icon.PNG)
 
   * react에서는 `className`을 쓰므로 `class`를 `className` 으로 고쳐준다.
+
+#### State 이해하기
+
+* Component 안에는 State라는 멤버변수가 있고 그 변수는 Object이다.
+
