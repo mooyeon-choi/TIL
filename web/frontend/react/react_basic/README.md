@@ -83,17 +83,30 @@ yarn create react-app template
 * 최종 Directory Tree 형태
 
     ```
-    
+    \template
+    ├── node_modules/
+├── package.json
+    ├── public/
+|  ├── favicon.ico
+    |  └── index.html
+├── README.md
+    ├── src/
+|  ├── app.css
+    |  ├── app.jsx
+|  ├── components/
+    |  ├── index.css
+    |  └── index.js
+    └── yarn.lock
     ```
-
+    
     * `components/` : 공통적으로 사용하는 component들을 보통 하나의 폴더로 묶어서 관리해준다.
-
+    
     * 파일이름은 보통 소문자로 시작한다.
-
+    
     * react component 파일은 `.jsx` 로 저장하여 JavaScript 파일과 구분
-
+    
       ![.jsx Vs. .js](./images/jsxVsJs.PNG)
-
+    
       
 
 ## 간단한 프로젝트로 배우기
