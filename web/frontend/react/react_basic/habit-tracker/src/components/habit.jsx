@@ -9,10 +9,12 @@ class Habit extends Component {
     // state 오브젝트 안에 있는 count를 증가 한 뒤 state를 업데이트 해야 함
     this.setState({count: this.state.count + 1})
   }
+
   handleDecreament = () => {
     const count = this.state.count - 1;
     this.setState({count: count < 0 ? 0 : count})
   }
+
   render() {
     return (
       <li className="habit">
