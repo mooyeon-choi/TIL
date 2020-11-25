@@ -321,3 +321,15 @@ cp -R template habit-tracker
     2. `PureComponent`에서 동작하지 않는다
        * `PureComponent` 에서는 `this.state` 와 `setState()`의 object를 비교하여 업데이트가 필요한 경우에만 `render()` method를 호출해 Rerendering 해준다.
        * State를 직접적으로 수정해 `this.state` 와 `setState()` 의 object가 같아진다면 두 레퍼런스가 동일하므로 업데이트가 필요 없다고 판단해 `render()` 함수를 호출해 주지 않는다.
+
+#### Props란?
+
+* Component 밖에서 주어지는 데이터
+
+* 부모 컴포넌트에서
+
+  ```react
+  <Child title={'Like'} onClick={this.handleClick} />
+  ```
+
+  와 같이 Props를 전달해주면 자식 컴포넌트에서 `this.props.title`, `this.props.onClick`으로 각각 전달된 `Like`와 `this.handleClick()` 함수에 접근할 수 있다.
