@@ -333,3 +333,8 @@ cp -R template habit-tracker
   ```
 
   와 같이 Props를 전달해주면 자식 컴포넌트에서 `this.props.title`, `this.props.onClick`으로 각각 전달된 `Like`와 `this.handleClick()` 함수에 접근할 수 있다.
+
+* 리스트를 넘겨줄때는 고유한 `key`를 가지고 있어야한다.
+
+  * 이때 배열의 index를 사용해주면 안된다.
+    * 순서가 바뀌게 되었을때 index가 달라질 수 있기때문
