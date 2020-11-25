@@ -290,3 +290,34 @@ cp -R template habit-tracker
 #### State 이해하기
 
 * Component 안에는 State라는 멤버변수가 있고 그 변수는 Object이다.
+
+* State가 변경되면 react가 `render()` 함수를 호출하여 UI가 업데이트 된다.
+
+  * 이때 State가 변경되었다는 것을 알게 하기 위해선 꼭 `setState()` method를 호출해야 한다.
+
+* `setState()`
+
+  * 동작 방식
+
+    ```
+    함수가 호출되면 현재 component가 가지고 있는 State(`this.state`)와 업데이트 해야하는 새로운 State(setState 함수의 인자로 전달된 새로운 Object) 두가지를 비교하여 업데이트가 필요한 경우 `render()` method를 호출한다.
+    ```
+    
+  * 비동기 API
+
+    ```
+    `setState()`도 webAPIs 중 하나인 setTimeout, setInterval과 같은 비동기 method이다.
+    따라서 setState를 호출하면 task queue에 저장되고 cycle이 돌때 하나씩 실행이된다.
+    ```
+
+* State 자체를 수정하면 안되는 이유
+
+  * react에서는 상태를 직접적으로 수정하지말자!
+    * 절대 안된다! 라고 하지 않는 이유는 State를 직접적으로 수정하는 것을 막아놓거나 수정한다고 해서 심각한 오류가 나오는 것은 아니기 때문
+  * react state는 Immuatability를 항상 유지하는 것이 좋다.
+  * State를 직접적으로 수정하는게 좋지 않은 이유
+    1. setState는 비동기적으로 동작한다.
+       * setState는 task queue에 저장되므로 setState에 의해 이전에 변경된 state가 다시 덮어 씌워진다.
+    2. `PureComponent`에서 동작하지 않는다
+       * `PureComponent` 에서는 `this.state` 와 `setState()`의 object를 비교하여 업데이트가 필요한 경우에만 `render()` method를 호출해 Rerendering 해준다.
+       * State를 직접적으로 수정해 `this.state` 와 `setState()` 의 object가 같아진다면 두 레퍼런스가 동일하므로 업데이트가 필요 없다고 판단해 `render()` 함수를 호출해 주지 않는다.
