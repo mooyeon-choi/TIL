@@ -351,7 +351,29 @@ cp -R template habit-tracker
 
   와 같이 Props를 전달해주면 자식 컴포넌트에서 `this.props.title`, `this.props.onClick`으로 각각 전달된 `Like`와 `this.handleClick()` 함수에 접근할 수 있다.
 
-* 리스트를 넘겨줄때는 고유한 `key`를 가지고 있어야한다.
+* 자식 컴포넌트에서 `Props` 한번에 변수로 저장하기
 
-  * 이때 배열의 index를 사용해주면 안된다.
-    * 순서가 바뀌게 되었을때 index가 달라질 수 있기때문
+  ```react
+  const { name, count } = this.props.habit;
+  ```
+
+  위와 같이 `{ }` 로 묶어서 한번에 변수로 저장 할 수 있다.
+
+* List Prop
+
+  * 리스트를 넘겨줄때는 고유한 `key`를 가지고 있어야한다.
+
+    * 이때 배열의 index를 사용해주면 안된다.
+
+      -> 순서가 바뀌게 되었을때 index가 달라질 수 있기때문
+
+  * 리스트의 값들을 변경해줄때도 마찬가지로 `setState()`를 사용해야 한다. 따라서 `this.state.list`를 복사하여 `setState()`에 넣어준다.
+
+    ```react
+    const habits = [...this.state.habits]; // this.state.habits를 복사
+    const index = habits.indexOf(habit);
+    habits[index].count++;
+    this.setState({ habits }); // { habits : habits } 와 같이 동일한 이름의 데이터는 한번에 써줄 수 있다.
+    ```
+
+    
