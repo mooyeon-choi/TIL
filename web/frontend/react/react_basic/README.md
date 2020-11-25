@@ -376,4 +376,33 @@ cp -R template habit-tracker
     this.setState({ habits }); // { habits : habits } 와 같이 동일한 이름의 데이터는 한번에 써줄 수 있다.
     ```
 
-    
+* event 처리
+
+  * method를 `props`로 넘겨줘서 처리
+
+  * 처리방법
+
+    * `render()`의 태그안에 직접 입력
+
+      ```react
+      <button 
+          className="habit-button habit-delete"
+          onClick={() => {
+              this.props.onDelete(this.props.habit)
+          }}
+      >
+      ```
+
+      * `render()` 함수는 Rerendering 될 때 마다 항상 다시 실행된다.
+      * `render()` 함수가 호출될 때 마다 `arrow function`이 반복적으로 생성된다. 
+      * 보통의 경우 문제가 되지 않지만 문제가 될 수 있어 멤버변수로 사용하는 것을 권장
+
+    * Member 변수로 만들어주어서 사용
+
+      ```react
+      handleIncrement = () => {
+          this.props.onIncrement(this.props.habit);
+      }
+      ```
+
+      * 만들어진 `arrow function` 이 `handleIncrement`에 할당되어져 있어 한번만 생성된다.

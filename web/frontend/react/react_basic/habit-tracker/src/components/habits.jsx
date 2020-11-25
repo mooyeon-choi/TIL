@@ -10,18 +10,23 @@ class Habits extends Component {
     ]
   }
   
-  handleIncrement = (habit) => {
+  handleIncrement = habit => {
     const habits = [...this.state.habits]; // this.state.habits를 복사
     const index = habits.indexOf(habit);
     habits[index].count++;
     this.setState({ habits }); // { habits : habits } 와 같이 동일한 이름의 데이터는 한번에 써줄 수 있다.
   }
 
-  handleDecrement = (habit) => {
+  handleDecrement = habit => {
     const habits = [...this.state.habits];
     const index = habits.indexOf(habit);
     const count = habits[index].count - 1;
     habits[index].count = count < 0 ? 0 : count;
+    this.setState({ habits });
+  }
+
+  handleDelete = habit => {
+    const habits = this.state.habits.filter(item => item.id !== habit.id)
     this.setState({ habits });
   }
 
@@ -33,6 +38,7 @@ class Habits extends Component {
           habit={habit} 
           onIncrement={this.handleIncrement} 
           onDecrement={this.handleDecrement}
+          onDelete={this.handleDelete}
         />
       )}
     </ul>;
