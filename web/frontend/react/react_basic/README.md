@@ -15,7 +15,7 @@
     * [habit component 만들기](#habit-component-만들기)
     * [Fontawesome 추가](#fontawesome-추가)
     * [State 이해하기](#state-이해하기)
-    * [Props란?](#props란?)
+    * [Props란](#props란)
 
 ## 전반적인 개념
 
@@ -339,7 +339,7 @@ cp -R template habit-tracker
        * `PureComponent` 에서는 `this.state` 와 `setState()`의 object를 비교하여 업데이트가 필요한 경우에만 `render()` method를 호출해 Rerendering 해준다.
        * State를 직접적으로 수정해 `this.state` 와 `setState()` 의 object가 같아진다면 두 레퍼런스가 동일하므로 업데이트가 필요 없다고 판단해 `render()` 함수를 호출해 주지 않는다.
 
-#### Props란?
+#### Props란
 
 * Component 밖에서 주어지는 데이터
 
