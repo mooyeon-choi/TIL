@@ -4,6 +4,7 @@
 
 ## 목록
 
+* [Git 사용법](#git-사용법)
 * [Web](#web)
   * [Web Basic](#web-basic)
   * [Frontend](#front-end)
@@ -22,6 +23,10 @@
   * [OS](#os)
 * [DeepLearning](#deeplearning)
 * [OpenCV](#opencv)
+
+## Git 사용법
+
+* [바로가기](./git)
 
 ## Web
 
