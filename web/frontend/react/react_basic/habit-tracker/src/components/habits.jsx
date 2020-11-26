@@ -32,6 +32,10 @@ class Habits extends Component {
 
   render() {
     return <ul>
+      <form>
+        <input className="add-input" type="text"/>
+        <button className="add-button">Add</button>
+      </form>
       {this.state.habits.map(habit => 
         <Habit 
           key={habit.id} 
@@ -41,6 +45,7 @@ class Habits extends Component {
           onDelete={this.handleDelete}
         />
       )}
+      <button className="habits-reset">Reset All</button>
     </ul>;
   }
 }

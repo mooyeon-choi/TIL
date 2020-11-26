@@ -18,7 +18,7 @@ class Habit extends Component {
     return (
       <li className="habit">
         <span className="habit-name">{name}</span>
-    <span className="habit-count">{count}</span>
+        <span className="habit-count">{count}</span>
         <button 
           className="habit-button habit-increase" 
           onClick={this.handleIncrement}
