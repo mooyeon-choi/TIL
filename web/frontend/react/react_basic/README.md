@@ -406,3 +406,77 @@ cp -R template habit-tracker
       ```
 
       * 만들어진 `arrow function` 이 `handleIncrement`에 할당되어져 있어 한번만 생성된다.
+
+#### Ref
+
+* [공식문서](https://reactjs.org/docs/refs-and-the-dom.html)
+
+* React에서는 Dom element를 직접적으로 다루지 않기 때문에 React에서 다른 React 요소에 접근하려면 `Ref`를 써야한다.
+
+* 사용법
+
+  ```react
+  class HabitAddForm extends Component {
+  
+    inputRef = React.createRef();
+    ...
+    ...
+    render() {
+      return (
+        <form>
+          <input ref={this.inputRef}>
+          ...
+          ...
+        </form>
+      );
+    }
+  }
+  ```
+
+  1. 멤버 변수 입력
+
+     `inputRef = React.createRef();`
+
+     `Ref`를 만들어줄땐 변수명에 항상 `000Ref`라고 만들어주자
+
+  2. 원하는 요소의 `ref={}`에 전달해준다.
+
+     `<input ref={this.inputRef}>`
+
+* 동작 원리
+
+  1. `Component` 가 브라우저에 표기되면 `<input>` element가 `inputRef`와 연결된다.
+  2. 이렇게 연결된 요소를 통해 해당하는 데이터를 읽어올 수 있다.
+
+* `Ref`에 저장된 요소 확인
+
+  ```react
+  this.inputRef.current.value;
+  ```
+
+* `form` 요소에 저장된 값 초기화해주기
+
+  ```react
+  class HabitAddForm extends Component {
+  
+    formRef = React.createRef();
+    inputRef = React.createRef();
+    ...
+    ...
+    function = () => {
+        this.formRef.current.reset();
+    }
+    render() {
+      return (
+        <form ref={this.inputRef}>
+          <input ref={this.inputRef}>
+          ...
+          ...
+        </form>
+      );
+    }
+  }
+  ```
+
+  * `form` 요소 안에 값을 리셋해 줄땐 `form.reset()`을 사용하자
+
