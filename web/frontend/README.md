@@ -1,30 +1,25 @@
 # Front End
 
-> 참고문헌
+> 같이 보면 좋은 자료들
 >
-> [한재엽님의 Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
+> [Youtube 채널 드림코딩 by 엘리](https://www.youtube.com/channel/UC_4u-bXaba7yrRz_6x6kb_w)
 >
-> [김재희님의 Web Club](https://webclub.tistory.com)
+> * 호주에서 프론트앤드 개발자로 근무하고 계시는 엘리님의 유튜브 채널
+> * 프론트앤드 개발에 필요한 전반적인 지식을 이해하기 쉽게 잘설명해준다.
+> * 드림코딩 아카데미 유료강의도 모두 듣는 것을 추천
 >
-> [Piero Borrelli 님의 블로그](https://blog.logrocket.com/angular-vs-react-vs-vue-a-performance-comparison/)
-
-
+> [Youtube 채널 Interactive Developer](https://www.youtube.com/channel/UCdeWxKJuvtUG2xyN6pOJEvA)
+>
+> * 구글에서 Interactive Developer로 근무하고 계시는 김종민님의 유튜브 채널
+> * canvas를 활용해 만든 재미있는 디자인의 Interactive 화면을 보고 따라할 수 있다.
+> * JS `class` 활용법을 공부하고 이해하는데 많은 도움이 되었고 재미있게 따라할 수 있어 심심할때 보기 좋다.
 
 ## 목차
 
-[HTML과 CSS](#HTML과 CSS)
-
-[Angular vs. React vs. Vue](#Angular vs. React vs. Vue)
-
-## HTML과 CSS
-
-HTML 은 구조적 설계(Structure Design), CSS 는 비주얼 디자인(Visual Design)
-
-### HTML이란 무엇인가?
-
-
-
-
+* [Angular vs. React vs. Vue](#Angular vs. React vs. Vue)\
+* [Web Basics](#web-basics)
+* [React](#react)
+* [Interactive Development](#interactive-development)
 
 ## Angular vs. React vs. Vue
 
@@ -117,3 +112,24 @@ MVC 구조 덕분에 Angular는 작업을 논리적 청크로 분할하여 웹 �
 
 * 소규모 커뮤니티 : 출시된지 얼마 되지않아 공식 문서가 아닌 다른 곳에서 React, Angular에 비해 정보를 얻기 힘들다.
 * 작은 직업 시장
+
+
+
+## Web Basics
+
+> HTML, CSS 등 웹 개발에 필요한 기본적인 지식
+
+* [바로가기](./basic)
+
+## React
+
+> FaceBook에서 만든 현재 가장 많은 사람들이 사용하는 Frontend Library
+
+* [바로가기](./react)
+
+## Interactive Development
+
+> JavaScript canvas를 활용하여 Interactive한 화면을 만들어보자!
+
+* [바로가기](./interactive)
+
