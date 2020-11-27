@@ -128,3 +128,26 @@ JavaScript 코드를 작성할 때 항상 가장위에 `'use strict';`를 입력
 
   a = 6;
   ```
+
+## 유용한 문법
+
+### map()
+
+* python의 `lambda`와 같다
+
+* list의 각 인덱스 요소에서 특정 값을 변경해줄 때 편하다.
+
+  ```js
+  const habits: [
+      { id: 1, name: 'Reading', count: 1},
+      { id: 2, name: 'Running', count: 2},
+      { id: 3, name: 'Coding', count: 3},
+  ]
+  
+  const newHabits = habits.map(habit => {
+      habit.count = 0;
+      return habit;
+  });
+  ```
+
+  
