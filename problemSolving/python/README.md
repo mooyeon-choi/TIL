@@ -15,7 +15,7 @@
 
 * [바로가기](./codeforces)
 
-## Beakjoon Online Judge
+## Baekjoon Online Judge
 
 [![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=memoria22)](https://solved.ac/memoria22)
 
