@@ -7,6 +7,7 @@
 * [입출력과 사칙연산](#입출력과-사칙연산)
 * [if문](#if문)
 * [for문](#for문)
+* [while문](#while문)
 
 
 
@@ -27,3 +28,9 @@
 > python for문 사용법
 
 * [바로가기](./for)
+
+## while문
+
+> python while문 사용법
+
+* [바로가기](./while)
