@@ -7,13 +7,17 @@
 * [Programmers](#programmers)
 * [SW Expert Academy](#sw-expert-academy)
 
-## Codeforces [![Codeforces Badge](https://cp-logo.vercel.app/codeforces/mooyeon)](https://codeforces.com/profile/mooyeon)
+## Codeforces
+
+[![Codeforces Badge](https://cp-logo.vercel.app/codeforces/mooyeon)](https://codeforces.com/profile/mooyeon)
 
 > Contests에 참여하며 푼 문제들을 정리하였습니다.
 
 * [바로가기](./codeforces)
 
-## Beakjoon Online Judge [![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=memoria22)](https://solved.ac/memoria22)
+## Beakjoon Online Judge
+
+[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=memoria22)](https://solved.ac/memoria22)
 
 > 코딩테스트 문제풀이 연습을 하며 푼 문제들을 정리하였습니다.
 
