@@ -8,6 +8,7 @@
 * [if문](#if문)
 * [for문](#for문)
 * [while문](#while문)
+* [일차원 배열](#일차원-배열)
 
 
 
@@ -34,3 +35,9 @@
 > python while문 사용법
 
 * [바로가기](./while)
+
+## 일차원 배열
+
+> Python List 활용법
+
+* [바로가기](./1DArray)
