@@ -7,7 +7,7 @@ for _ in range(T):
   numlist = {}
   for i in range(K):
     numlist[i] = Y * i
-
+  
   for i in range(P - 1, len(nums), K):
     for j in range(K):
       if i + j >= len(nums):
@@ -16,8 +16,8 @@ for _ in range(T):
         numlist[j] += X
   
   minNum = min(numlist.values())
-
-  for i in range(P + K - 1, len(nums), K):
+  print(numlist)
+  for i in range(P - 1, len(nums) - K, K):
     for j in range(K):
       if i + j >= len(nums):
         break
@@ -25,6 +25,7 @@ for _ in range(T):
         numlist[j] += -X + Y * K
       else:
         numlist[j] += Y * K
+      print(numlist)
       if numlist[j] < minNum:
         minNum = numlist[j]
       
