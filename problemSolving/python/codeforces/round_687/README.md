@@ -30,6 +30,8 @@
 
 ## Repainting Street
 
+> python3로는 18번 테스트케이스에서 시간초과가 났고 pypy3으로는 통과하였다. 제출이력을 보니 python3으로도 통과할 수 있는 방법이 있는 것 같지만, 앞으로 pypy3을 쓰는게 좋을 것 같다.
+
 * [문제 링크](https://codeforces.com/contest/1457/problem/B)
 
 * `K` 범위 만큼의 값을 바꿔주며 모두 하나의 숫자가 될 수 있을때까지 반복한다.
@@ -68,6 +70,4 @@
         resultDict[key] += 1
     print(min(resultDict.values()))
   ```
-
-* python3로는 18번 테스트케이스에서 시간초과가 났고 pypy3으로는 통과하였다. 제출이력을 보니 python3으로도 통과할 수 있는 방법이 있는 것 같지만, 앞으로 pypy3을 쓰는게 좋을 것 같다.
 
