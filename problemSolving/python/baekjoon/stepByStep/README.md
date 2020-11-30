@@ -9,6 +9,7 @@
 * [for문](#for문)
 * [while문](#while문)
 * [일차원 배열](#일차원-배열)
+* [함수](#함수)
 
 
 
@@ -41,3 +42,9 @@
 > Python List 활용법
 
 * [바로가기](./1DArray)
+
+## 함수
+
+> Python Function 활용법
+
+* [바로가기](./function)
