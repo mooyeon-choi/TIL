@@ -16,8 +16,7 @@
 
 ## 목차
 
-* [Angular vs. React vs. Vue](#Angular vs. React vs. Vue)\
-* [Web Basics](#web-basics)
+* [Angular vs. React vs. Vue](#Angular vs. React vs. Vue)
 * [React](#react)
 * [Interactive Development](#interactive-development)
 
@@ -112,14 +111,6 @@ MVC 구조 덕분에 Angular는 작업을 논리적 청크로 분할하여 웹 �
 
 * 소규모 커뮤니티 : 출시된지 얼마 되지않아 공식 문서가 아닌 다른 곳에서 React, Angular에 비해 정보를 얻기 힘들다.
 * 작은 직업 시장
-
-
-
-## Web Basics
-
-> HTML, CSS 등 웹 개발에 필요한 기본적인 지식
-
-* [바로가기](./basic)
 
 ## React
 
