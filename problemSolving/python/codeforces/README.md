@@ -7,6 +7,7 @@
 * [Codeforces Round #686 (Div. 3)](#codeforces-round-#686-(div.-3))
 * [Codeforces Round #687 (Div. 2)](#codeforces-round-#687-(div.-2))
 * [Educational Codeforces Round 99 (Rated for Div. 2)](#educational-codeforces-round-99-(rated-for-div.-2))
+* Codeforces Round #688 (Div. 2)
 
 
 
@@ -36,5 +37,15 @@
 >
 > 문제가 수능 영어지문 수준으로 이해하기 힘들게 써있어서 많이 해맸다. 3줄만에 끝날 문제를 냈을리가 없다고 생각하고 또, 제출 했다가 틀리면 감점이 당하니까 혼자 열심히 생각해보다가 그냥 제출했더니 통과했다...
 
-* [바로가기](edu_round_99)
+* [바로가기](./edu_round_99)
+
+## Codeforces Round #688 (Div. 2)
+
+> 2020년 12월 4일 22:05에 열린 Contest
+>
+> 어리굴젓을 먹었다가 노로 바이러스로 인한 식중독 때문에 참여하지 못할뻔 했다. 그래도 한문제만 풀어서 감점은 당하지 말자는 생각으로 스마트폰으로 참여했는데 두문제를 풀어 점수도 생각보다 많이 올랐다!
+>
+> 디버깅을 해볼 수 없고 코드를 보기도 불편해 자잘한 에러가 많이났고 감점도 많이 당했지만 만족스러운 결과였다.
+
+* [바로가기](./round_688)
 
