@@ -30,46 +30,45 @@
 
 > 12월 2주차 해야할 일
 
-* In a week
-  * [ ] 알고리즘 문제 해결 전략 - 01. 문제 해결 시작하기 완독
-    * [ ] 문제 해결과 프로그래밍 대회
-    * [ ] 문제 해결 개관
-    * [ ] 코딩과 디버깅에 관하여
-  * [ ] PS
-    * [ ] Codeforces Global Round 12 참여
-    * [ ] 백준 단계별로 풀어보기 1 ~ 7 (Cpp)
-      * [ ] 입출력과 사칙연산
-      * [ ] if문
-      * [ ] for문
-      * [ ] while문
-      * [ ] 1차원 배열
-      * [ ] 함수
-      * [ ] 문자열
-    * [ ] 백준 단계별로 풀어보기 9 ~ 11 (Python)
-      * [ ] 수학 2
-      * [ ] 재귀
-      * [ ] 브루트 포스
-  * [ ] CS
-    * [ ] OS 강의 2 ~ 3
-      * [ ] System Structure & Program Execution 1
-      * [ ] System Structure & Program Execution 2
-      * [ ] Process 1
-      * [ ] Process 2
-      * [ ] Process 3
-    * [ ] Algorithm 정리 Sort
-      * [ ] 개념 정리
-      * [ ] Bubble Sort
-      * [ ] Selection Sort
-      * [ ] Insertion Sort
-      * [ ] Merge Sort
-      * [ ] Quick Sort
-      * [ ] Counting Sort
-      * [ ] Heap Sort
-      * [ ] RadixSort
-  * [ ] To do list 프로젝트
-    * [ ] 페이지 디자인
-    * [ ] 캘린더 만들기
-    * [ ] Daily to do list 만들기
+* [ ] 알고리즘 문제 해결 전략 - 01. 문제 해결 시작하기 완독
+  * [ ] 문제 해결과 프로그래밍 대회
+  * [ ] 문제 해결 개관
+  * [ ] 코딩과 디버깅에 관하여
+* [ ] PS
+  * [ ] Codeforces Global Round 12 참여
+  * [ ] 백준 단계별로 풀어보기 1 ~ 7 (Cpp)
+    * [ ] 입출력과 사칙연산
+    * [ ] if문
+    * [ ] for문
+    * [ ] while문
+    * [ ] 1차원 배열
+    * [ ] 함수
+    * [ ] 문자열
+  * [ ] 백준 단계별로 풀어보기 9 ~ 11 (Python)
+    * [ ] 수학 2
+    * [ ] 재귀
+    * [ ] 브루트 포스
+* [ ] CS
+  * [ ] OS 강의 2 ~ 3
+    * [ ] System Structure & Program Execution 1
+    * [ ] System Structure & Program Execution 2
+    * [ ] Process 1
+    * [ ] Process 2
+    * [ ] Process 3
+  * [ ] Algorithm 정리 Sort
+    * [ ] 개념 정리
+    * [ ] Bubble Sort
+    * [ ] Selection Sort
+    * [ ] Insertion Sort
+    * [ ] Merge Sort
+    * [ ] Quick Sort
+    * [ ] Counting Sort
+    * [ ] Heap Sort
+    * [ ] RadixSort
+* [ ] To do list 프로젝트
+  * [ ] 페이지 디자인
+  * [ ] 캘린더 만들기
+  * [ ] Daily to do list 만들기
 
 ## Git 사용법
 
