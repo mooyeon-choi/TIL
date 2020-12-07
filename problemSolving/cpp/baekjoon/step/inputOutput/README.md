@@ -32,8 +32,13 @@
 
 * 풀이
 
-  ```python
-  
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  int main()
+  {
+    cout << "Hello World!";
+  }
   ```
 
 
@@ -53,8 +58,13 @@
 
 * 풀이
 
-  ```python
-  
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  int main()
+  {
+    cout << "강한친구 대한육군\n강한친구 대한육군";
+  }
   ```
 
 
@@ -79,8 +89,12 @@
 
 * 풀이
 
-  ```python
-  
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  int main() {
+  	cout << "\\    /\\\n )  ( ')\n(  /  )\n \\(__)|";
+  }
   ```
 
 
@@ -106,8 +120,12 @@
 
 * 풀이
 
-  ```python
-  
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  int main() {
+  	cout << "|\\_/|\n|q p|   /}\n( 0 )\"\"\"\\\n|\"^\"`    |\n||_/=\\\\__|";
+  }
   ```
 
 
@@ -129,8 +147,14 @@
 
 * 풀이
 
-  ```python
-  
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  int A, B;
+  int main() {
+  	cin >> A >> B;
+  	cout << A + B;
+  }
   ```
 
 
@@ -152,8 +176,14 @@
 
 * 풀이
 
-  ```python
-  
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  int A, B;
+  int main() {
+  	cin >> A >> B;
+  	cout << A - B;
+  }
   ```
 
 
@@ -175,8 +205,14 @@
 
 * 풀이
 
-  ```python
-  
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  int A, B;
+  int main() {
+  	cin >> A >> B;
+  	cout << A * B;
+  }
   ```
 
 
@@ -198,8 +234,16 @@
 
 * 풀이
 
-  ```python
-  
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  double A, B;
+  int main()
+  {
+    cin >> A >> B;
+    cout.precision(10);
+    cout << A / B;
+  }
   ```
 
 
@@ -221,8 +265,19 @@
 
 * 풀이
 
-  ```python
-  
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  int A, B;
+  int main()
+  {
+    cin >> A >> B;
+    cout << A + B << '\n'
+         << A - B << '\n'
+         << A * B << '\n'
+         << A / B << '\n'
+         << A % B;
+  }
   ```
 
 
@@ -248,8 +303,18 @@
 
 * 풀이
 
-  ```python
-  
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  int A, B, C;
+  int main()
+  {
+    cin >> A >> B >> C;
+    cout << (A + B) % C << '\n'
+         << (A % C + B % C) % C << '\n'
+         << A * B % C << '\n'
+         << (A % C * (B % C)) % C;
+  }
   ```
   
   * 사칙연산의 우선순위에 대해 알아보는 문제이다.
@@ -293,8 +358,18 @@
 
 * 풀이
 
-  ```python
-  
+  ```cpp
+  #include <iostream>
+  using namespace std;
+  int A, B;
+  int main()
+  {
+  	cin >> A >> B;
+  	cout << B % 10 * A << '\n'
+  		<< B / 10 % 10 * A << '\n'
+  		<< B / 100 * A << '\n'
+  		<< B * A;
+  }
   ```
 
 
