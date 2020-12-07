@@ -5,6 +5,7 @@
 ## 목차
 
 * [Python](#python)
+* [Cpp](#cpp)
 * [Java](#java)
 * [JavaScript](#javascript)
 * [카카오 2차 기출 문제 풀이](#카카오-2차-기출-문제-풀이)
@@ -12,6 +13,10 @@
 ## Python
 
 * [바로가기](./python)
+
+## Cpp
+
+* [바로가기](./cpp)
 
 ## Java
 
