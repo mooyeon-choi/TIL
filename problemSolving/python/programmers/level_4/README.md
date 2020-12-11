@@ -4,6 +4,7 @@
 
 ## 목차
 
+* [징검다리](#징검다리)
 * [도둑질](#도둑질)
 * [숫자 블록](#숫자-블록)
 * [올바른 괄호의 갯수](#올바른-괄호의-갯수)
@@ -13,6 +14,46 @@
 * [지형 편집](#지형-편집)
 * [무지의 먹방 라이브](#무지의-먹방-라이브)
 * [3차 자동완성](#3차-자동완성)
+
+## 징검다리
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/43236)
+
+* 풀이
+
+  ```python
+  def solution(distance, rocks, n):
+      right = distance
+      left = 0
+      while left < right:
+          dist = [0] + sorted(rocks) + [distance]
+          cnt = 0
+          mid = (right + left + 1) // 2
+          ridx, lidx = 1, 0
+          while ridx < len(dist):
+              if dist[ridx] - dist[lidx] < mid:
+                  if ridx == len(dist) - 1:
+                      before = dist[lidx]
+                      cnt += 1
+                      while dist[lidx] != before:
+                          lidx -= 1
+                  else:
+                      dist[ridx] = dist[lidx]
+                      ridx += 1
+                      cnt += 1
+              else:
+                  ridx, lidx = ridx + 1, ridx
+              if cnt > n:
+                  break
+          if cnt > n:
+              right = mid - 1
+          else:
+              left = mid
+      return left
+  ```
+
+  * 문제 카테고리가 힌트가 되어주어 쉽게 풀 수 있었던 문제였다. 이분탐색이라는 분류가 없었다면 풀이를 생각해내지 못했을 것 같다.
+  * 거리의 최솟값을 기준으로 잡으면 최솟값보다 짧은 거리의 돌을 제거하며 제거한 돌이 n보다 작다면 `right`를 줄여주고 `n`보다 크거나 같다면 `left`를 높여주며 찾을 수 있다.
 
 ## 도둑질
 
