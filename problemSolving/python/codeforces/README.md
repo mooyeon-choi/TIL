@@ -4,10 +4,11 @@
 
 ## 목차
 
-* [Codeforces Round #686 (Div. 3)](#codeforces-round-#686-(div.-3))
-* [Codeforces Round #687 (Div. 2)](#codeforces-round-#687-(div.-2))
-* [Educational Codeforces Round 99 (Rated for Div. 2)](#educational-codeforces-round-99-(rated-for-div.-2))
+* Codeforces Round #686 (Div. 3)
+* Codeforces Round #687 (Div. 2)
+* Educational Codeforces Round 99 (Rated for Div. 2)
 * Codeforces Round #688 (Div. 2)
+* Codeforces Round #689 (Div. 2, based on Zed Code Competition)
 
 
 
@@ -48,4 +49,14 @@
 > 디버깅을 해볼 수 없고 코드를 보기도 불편해 자잘한 에러가 많이났고 감점도 많이 당했지만 만족스러운 결과였다.
 
 * [바로가기](./round_688)
+
+## Codeforces Round #689 (Div. 2, based on Zed Code Competition)
+
+> 2020년 12월 11일 22:35에 열린 Contest
+>
+> 간단한 문제도 헤매다가 못풀고 3번 문제는 뭐라는건지 이해도 안되고.... 아쉬움이 많은 대회였다.
+
+* [바로가기](./round_689)
+
+
 
