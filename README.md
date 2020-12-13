@@ -36,6 +36,7 @@
   * [ ] 코딩과 디버깅에 관하여
 * [ ] PS
   * [x] Codeforces Global Round 12 참여
+  * [x] Codeforces Round #689 참여
   * [ ] 백준 단계별로 풀어보기 1 ~ 7 (Cpp)
     * [x] 입출력과 사칙연산
     * [ ] if문
