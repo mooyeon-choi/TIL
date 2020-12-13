@@ -7,6 +7,7 @@
 * [3 x n 타일링](#3-x-n-타일링)
 * [징검다리](#징검다리)
 * [도둑질](#도둑질)
+* [게임 맵 최단거리](#게임-맵-최단거리)
 * [숫자 블록](#숫자-블록)
 * [올바른 괄호의 갯수](#올바른-괄호의-갯수)
 * [쿠키 구입](#쿠키-구입)
@@ -117,6 +118,40 @@
 
   * DP로 해결할 수 있는 문제이다.
   * 인접한 두 집을 연속으로 방문하지 않아야 하므로 `i - 2`, `i - 3` 위치에서 큰 값을 메모이제이션을 통해 더해주며 저장해나가고 시작과 끝이 연결되어 있으므로 이 부분도 따로 처리해준다.
+
+## 게임 맵 최단거리
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/1844)
+
+* 풀이
+
+  ```python
+  from collections import deque
+  
+  x = [0, 0, -1, 1]
+  y = [-1, 1, 0, 0]
+  def solution(maps):
+      answer = 1
+      que = deque([(0, 0)])
+      for i in range(len(maps)):
+          for j in range(len(maps[0])):
+              if maps[i][j]: maps[i][j] = 0xfffffff
+      while que:
+          for _ in range(len(que)):
+              i, j = que.popleft()
+              maps[i][j] = 0
+              if (i, j) == (len(maps) - 1, len(maps[0]) - 1):
+                  return answer
+              for k in range(4):
+                  if 0 <= i+x[k] < len(maps) and 0 <= j+y[k] < len(maps[0]) and maps[i+x[k]][j+y[k]] > answer:
+                      maps[i+x[k]][j+y[k]] = answer
+                      que.append((i+x[k], j+y[k]))
+          answer += 1
+      return -1
+  ```
+
+  * BFS로 최단거리를 찾는 문제였다.
+  * `visit`를 만들어주고 현재 이동한 거리보다 `visit`의 값이 클 경우에만 이동할 수 있도록하여 불필요한 연산을 줄여준다.
 
 ## 숫자 블록
 
