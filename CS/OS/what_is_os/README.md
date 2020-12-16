@@ -4,7 +4,7 @@
 
 * 컴퓨터 하드웨어 바로 위에 설치되어 사용자와 다른 모든 소프트웨어들을 하드웨어와 연결해주는 소프트웨어 개층
 
-  <img src="C:/Users/moo/Desktop/TIL/CS/OS/images/what_is_os.png" alt="운영체제란?" style="zoom: 25%;" />
+  <img src="https://github.com/mooyeon-choi/TIL/blob/master/CS/OS/images/what_is_os.png?raw=true" alt="운영체제란?" style="zoom: 25%;" />
 
 * 컴퓨터 시스템을 편리하게 사용할 수 있는 환경을 제공해준다.
 
@@ -14,7 +14,7 @@
 
   * 프로세서, 기억장치, 입출력 장치 등의 효율적 관리
 
-  <img src="C:/Users/moo/Desktop/TIL/CS/OS/images/what_is_os_2.png" alt="운영 체제의 목표" style="zoom: 33%;" />
+  <img src="https://github.com/mooyeon-choi/TIL/blob/master/CS/OS/images/what_is_os_2.png?raw=true" alt="운영 체제의 목표" style="zoom: 33%;" />
 
 ## 운영 체제의 분류
 
@@ -152,7 +152,7 @@
 
 ## 운영체제의 구조
 
-<img src="C:/Users/moo/Desktop/TIL/CS/OS/images/OS_structure.png" alt="OS Structure" style="zoom:25%;" />
+<img src="https://github.com/mooyeon-choi/TIL/blob/master/CS/OS/images/OS_structure.png?raw=true" alt="OS Structure" style="zoom:25%;" />
 
 ### CPU 스케줄링
 
