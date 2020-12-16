@@ -9,6 +9,7 @@
 * Educational Codeforces Round 99 (Rated for Div. 2)
 * Codeforces Round #688 (Div. 2)
 * Codeforces Round #689 (Div. 2, based on Zed Code Competition)
+* Codeforces Round #690 (Div. 3)
 
 
 
@@ -58,5 +59,11 @@
 
 * [바로가기](./round_689)
 
+## Codeforces Round #690 (Div. 3)
 
+> 2020년 12월 15일 23:35에 열린 Contest
+>
+> 시간만 더 주어진다면 문제를 다 풀 수 있었을 것 같다. 효율성을 고려한 풀이방법이 바로 생각나지 않아 코드를 제출하며 수정한게 많았다. 처음부터 생각할 수 있도록 더 연습하자!
+
+* [바로가기](./round_690)
 
