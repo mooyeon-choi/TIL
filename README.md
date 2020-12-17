@@ -64,8 +64,8 @@
     * [ ] Heap Sort
     * [ ] RadixSort
 * [ ] To do list 프로젝트
-  * [ ] Dnd board 만들기
-  * [ ] Delete board 만들기
+  * [x] Dnd board 만들기
+  * [ ] Update, Delete button 만들기
   * [ ] Card 생성 기능 추가
   * [ ] Card 삭제 기능 추가
 
