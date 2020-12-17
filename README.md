@@ -77,7 +77,7 @@ Oracle, MySQL을 이용한 DB관리까지
 Web 개발에 필요한 지식들을 익혀보자!
 ```
 
-![Exercise](./images/interactive.gif)
+![Web Example](./images/web_example.gif)
 
 ## Problem Solving
 
