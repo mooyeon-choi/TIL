@@ -28,15 +28,15 @@
 
 ## Weekly to do list
 
-> 12월 2주차 해야할 일
+> 12월 3주차 해야할 일
 
 * [ ] 알고리즘 문제 해결 전략 - 01. 문제 해결 시작하기 완독
   * [x] 문제 해결과 프로그래밍 대회
   * [ ] 문제 해결 개관
   * [ ] 코딩과 디버깅에 관하여
 * [ ] PS
-  * [x] Codeforces Global Round 12 참여
-  * [x] Codeforces Round #689 참여
+  * [x] Codeforces Round #690 참여
+  * [ ] Educational Codeforces Round 100 참여
   * [ ] 백준 단계별로 풀어보기 1 ~ 7 (Cpp)
     * [x] 입출력과 사칙연산
     * [ ] if문
@@ -45,10 +45,7 @@
     * [ ] 1차원 배열
     * [ ] 함수
     * [ ] 문자열
-  * [ ] 백준 단계별로 풀어보기 9 ~ 11 (Python)
-    * [ ] 수학 2
-    * [x] 재귀
-    * [x] 브루트 포스
+  * [ ] 백준 Class 4 풀기 (Python)
 * [ ] CS
   * [ ] OS 강의 2 ~ 3
     * [ ] System Structure & Program Execution 1
@@ -67,9 +64,10 @@
     * [ ] Heap Sort
     * [ ] RadixSort
 * [ ] To do list 프로젝트
-  * [ ] 페이지 디자인
-  * [ ] 캘린더 만들기
-  * [ ] Daily to do list 만들기
+  * [ ] Dnd board 만들기
+  * [ ] Delete board 만들기
+  * [ ] Card 생성 기능 추가
+  * [ ] Card 삭제 기능 추가
 
 ## Git 사용법
 
