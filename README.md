@@ -7,28 +7,15 @@
 * [Weekly to do list](#weekly-to-do-list)
 * [Git 사용법](#git-사용법)
 * [Web](#web)
-  * [Web Basic](#web-basic)
-  * [Frontend](#front-end)
-    * [Interactive developments](#interactive-developments)
-    * [React](#react)
-  * [Backend](#back-end)
-    * [Django](#django)
 * [Problem Solving](#problem-solving)
 * [CS](#cs)
-  * [Algorithm](#algorithm)
-  * [DataStructure](#datastructure)
-  * [Network](#network)
-  * [OS](#os)
 * [Language](#language)
-  * [Java](#java)
-  * [Python](#python)
-  * [JavaScript](#javascript)
 * [DeepLearning](#deeplearning)
-* [OpenCV](#opencv)
+* [Others](#Others)
 
 ## Weekly to do list
 
-> 12월 3주차 해야할 일
+> :white_check_mark: 12월 3주차 해야할 일
 
 * [ ] 알고리즘 문제 해결 전략 - 01. 문제 해결 시작하기 완독
   * [x] 문제 해결과 프로그래밍 대회
@@ -73,91 +60,68 @@
 
 * [바로가기](./git)
 
+```
+기본적인 깃 사용법을 익혀보자!
+```
+
 ## Web
 
-### Web Basic
+* [바로가기](./web)
 
-> HTML, CSS 등 웹 기초에 대해 공부한 내용입니다.
+```
+HTML, CSS, JavaScript 등 웹개발 기초지식부터
+React Library, Vue.js Framework를 이용한 프론트엔드 개발,
+JavaScript canvas를 활용한 Interactive한 화면,
+Java Spring, Django로 백앤드 서버개발,
+Oracle, MySQL을 이용한 DB관리까지
+Web 개발에 필요한 지식들을 익혀보자!
+```
 
-* [바로가기](./web/basic)
-
-### Front end
-
-> 주로 Vanilla JS, React, Vue를 학습하며 정리한 내용입니다.
-
-* [바로가기](./web/frontend)
-
-#### Interactive developments
-
-> vanilla js, canvas를 학습한 내용입니다.
-
-* [바로가기](./web/frontend/Interactive)
-
-* 예시화면
-
-  ![Exercise](./images/interactive.gif)
-
-#### React
-
-> React 기본에 대해 학습하고 여러 프로젝트를 통해 배우며 정리한 내용입니다.
-
-* [바로가기](./web/frontend/react)
-
-### Back end
-
-> Java Spring, MySQL 등을 학습하며 정리한 내용입니다.
-
-* [바로가기](./web/backend)
-
-#### Django
-
-* [바로가기](./web/backend/django)
+![Exercise](./images/interactive.gif)
 
 ## Problem Solving
 
-> Codeforce, Programmers, Baekjoon 사이트의 문제를 풀어보며 학습한 내용입니다.
-
 * [바로가기](./problemSolving)
+
+```
+Codeforces 사이트를 통한 PS Contest 참여,
+Baekjoon, Programmers 문제풀이까지
+Codeforces Orange를 향해! Baekjoon Diamond를 향해!
+```
 
 ## CS
 
-### Algorithm
+* [바로가기](./CS)
 
-* [바로가기](./CS/algorithm)
-
-### DataStructure
-
-* [바로가기](./CS/DataStructure)
-
-### Network
-
-* [바로가기](./CS/Network)
-
-### OS
-
-* [바로가기](./CS/OS)
+```
+기본적인 Computer Science를 이해하기 위해
+Algorithm, DataStructure, Network, OS 등
+기본적인 동작 원리를 이해해보자!
+```
 
 ## Language
 
-### Java
+* [바로가기](./language)
 
-* [바로가기](./language/java)
-
-### Python
-
-* [바로가기](./language/python)
-
-### JavaScript
-
-* [바로가기](./language/javaScript)
+```
+JavaScript부터 Python, Java, C++까지 다양한 언어들의 사용법과 동작원리를 이해하자!
+```
 
 ## DeepLearning
 
 * [바로가기](./DeepLearning)
 
-## OpenCV
+```
+TensorFlow를 활용한 Image Captioning, Pose Estimation을 실습해보고 책을 보며 공부한 내용
+```
 
-* [바로가기](./OpenCV)
+## Others
+
+* [바로가기](./others)
+
+```
+그 외에 추가적으로 공부한 잡다한 것들 모음
+```
 
 
 
