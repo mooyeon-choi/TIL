@@ -61,7 +61,7 @@
 * [바로가기](./git)
 
 ```
-기본적인 깃 사용법을 익혀보자!
+📝기본적인 깃 사용법을 익혀보자!
 ```
 
 ## Web
@@ -69,9 +69,9 @@
 * [바로가기](./web)
 
 ```
-HTML, CSS, JavaScript 등 웹개발 기초지식부터
+HTML, CSS, JavaScript 등 웹개발 기초지식부터🎓
 React Library, Vue.js Framework를 이용한 프론트엔드 개발,
-JavaScript canvas를 활용한 Interactive한 화면,
+JavaScript canvas를 활용한 🎈Interactive한 화면,
 Java Spring, Django로 백앤드 서버개발,
 Oracle, MySQL을 이용한 DB관리까지
 Web 개발에 필요한 지식들을 익혀보자!
@@ -84,9 +84,9 @@ Web 개발에 필요한 지식들을 익혀보자!
 * [바로가기](./problemSolving)
 
 ```
-Codeforces 사이트를 통한 PS Contest 참여,
-Baekjoon, Programmers 문제풀이까지
-Codeforces Orange를 향해! Baekjoon Diamond를 향해!
+📊Codeforces 사이트를 통한 PS Contest 참여,
+Baekjoon, Programmers ✒️문제풀이까지
+Codeforces 🍊Orange를 향해! Baekjoon 💎Diamond를 향해!
 ```
 
 ## CS
@@ -94,9 +94,9 @@ Codeforces Orange를 향해! Baekjoon Diamond를 향해!
 * [바로가기](./CS)
 
 ```
-기본적인 Computer Science를 이해하기 위해
+기본적인 Computer Science💻를 이해하기 위해
 Algorithm, DataStructure, Network, OS 등
-기본적인 동작 원리를 이해해보자!
+기본적인 동작 원리를 이해해보자!🎓
 ```
 
 ## Language
@@ -120,7 +120,7 @@ TensorFlow를 활용한 Image Captioning, Pose Estimation을 실습해보고 책
 * [바로가기](./others)
 
 ```
-그 외에 추가적으로 공부한 잡다한 것들 모음
+📚 그 외에 추가적으로 공부한 잡다한 것들 모음
 ```
 
 
