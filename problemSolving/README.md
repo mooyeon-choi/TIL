@@ -12,9 +12,9 @@
 
 ## Codeforces
 
-[![Codeforces Badge](https://cp-logo.vercel.app/codeforces/mooyeon)](https://codeforces.com/profile/mooyeon)
-
 * [바로가기](./codeforces)
+
+[![Codeforces Badge](https://cp-logo.vercel.app/codeforces/mooyeon)](https://codeforces.com/profile/mooyeon)
 
 ```
 📊Codeforces Contest에 참가하며 푼 문제들을 모아두었습니다.
@@ -25,10 +25,10 @@
 
 ## Baekjoon Online Judge
 
+* [바로가기](./baekjoon)
+
 [![Solved.ac
 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=memoria22)](https://solved.ac/memoria22)
-
-* [바로가기](./baekjoon)
 
 ```
 Baekjoon Online Judge 사이트에서 여러 코딩테스트 문제들을 풀어보며 실력을 쌓고 기록해두었습니다.
@@ -39,11 +39,11 @@ Baekjoon Online Judge 사이트에서 여러 코딩테스트 문제들을 풀어
 
 ## Programmers
 
+* [바로가기](./programmers)
+
 ![Rank](./images/programmers_rank.PNG)
 
 ![Level](./images/programmers_level.PNG)
-
-* [바로가기](./programmers)
 
 ```
 카카오 기출문제와 여러 유형별 문제를 풀어보고 연습하는 사이트
