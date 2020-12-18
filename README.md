@@ -23,7 +23,7 @@
   * [ ] 코딩과 디버깅에 관하여
 * [ ] PS
   * [x] Codeforces Round #690 참여
-  * [ ] Educational Codeforces Round 100 참여
+  * [x] Educational Codeforces Round 100 참여
   * [ ] 백준 단계별로 풀어보기 1 ~ 7 (Cpp)
     * [x] 입출력과 사칙연산
     * [ ] if문
@@ -53,7 +53,7 @@
 * [ ] To do list 프로젝트
   * [x] Dnd board 만들기
   * [ ] Update, Delete button 만들기
-  * [ ] Card 생성 기능 추가
+  * [x] Card 생성 기능 추가
   * [ ] Card 삭제 기능 추가
 
 ## Git 사용법
