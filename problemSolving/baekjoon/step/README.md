@@ -22,62 +22,63 @@
 
 > 기본적인 입출력과 사칙연산 구현
 
-* [바로가기](./inputOutput)
+* [Python 바로가기](./inputOutput_python)
+* [Cpp 바로가기](./inputOutput_cpp)
 
 ## if문
 
 > python if문 사용법
 
-* [바로가기](./if)
+* [Python 바로가기](./if_python)
 
 ## for문
 
 > python for문 사용법
 
-* [바로가기](./for)
+* [Python 바로가기](./for_python)
 
 ## while문
 
 > python while문 사용법
 
-* [바로가기](./while)
+* [Python 바로가기](./while_python)
 
 ## 일차원 배열
 
 > Python List 활용법
 
-* [바로가기](./1DArray)
+* [Python 바로가기](./1DArray_python)
 
 ## 함수
 
 > Python Function 활용법
 
-* [바로가기](./function)
+* [Python 바로가기](./function_python)
 
 ## 문자열
 
 > Python 문자열 처리
 
-* [바로가기](./string)
+* [Python 바로가기](./string_python)
 
 ## 수학 1
 
 > 수식을 사용해서 풀수있는 문제들을 풀어보자
 
-* [바로가기](./math_1)
+* [Python 바로가기](./math_1_python)
 
 ## 수학 2
 
 > 수식을 찾아서 문제를 풀어보자
 
-* [바로가기](./math_2)
+* [Python 바로가기](./math_2_python)
 
 ## 재귀
 
-* [바로가기](./recursion)
+* [Python 바로가기](./recursion_python)
 
 ## 브루트 포스
 
 > 가능한 경우의 수를 모두 탐색하며 찾는 방법이다.
 
-* [바로가기](./bruteforce)
+* [Python 바로가기](./bruteforce_python)

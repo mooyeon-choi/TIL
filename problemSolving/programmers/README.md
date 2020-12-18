@@ -17,22 +17,22 @@
 
 > 기본적인 반복문, 수식 사용법을 활용한 문제 풀이
 
-* [바로가기](./level_1)
+* [Java 바로가기](./level_1_java)
 
 ## Level 2
 
 > 해시, 힙, 정렬, 그래프 탐색등 기본적인 알고리즘 활용
 
-* [바로가기](./level_2)
+* [Java 바로가기](./level_2_java)
 
 ## Level 3
 
 > 기업 코딩테스트를 통과하기 위해
 
-* [바로가기](./level_3)
+* [Python 바로가기](./level_3_python)
 
 ## Level 4
 
 > 고득점을 위하여!
 
-* [바로가기](./level_4)
+* [Python 바로가기](./level_4_python)
