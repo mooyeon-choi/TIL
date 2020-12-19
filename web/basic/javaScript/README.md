@@ -12,6 +12,7 @@
 * [Type](#type)
 * [Operator](#operator)
 * [Flow](#flow)
+* [Function](#function)
 
 ## Variable
 
@@ -78,6 +79,8 @@
 
 ## Hoisting
 
+* [코드로 보기](./hoisting.js)
+
 * `var`
 
   ```js
@@ -127,6 +130,8 @@
 > * 객체타입 (object)
 >   * object
 
+* [코드로 보기](./type.js)
+
 1. Number
 
    ```js
@@ -164,6 +169,8 @@
 
 ## Operator
 
+* [코드로 보기](./operator.js)
+
 1. 동등 연산자 (`==`)
 
    ```js
@@ -200,6 +207,8 @@
    ```
 
 ## Flow
+
+* [코드로 보기](./flow.js)
 
 1. if문
 
@@ -257,7 +266,9 @@
    }
    ```
 
-   
+## Function
+
+
 
 
 
