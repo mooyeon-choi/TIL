@@ -3,7 +3,6 @@
 ## 목차
 
 * [Java](#java)
-* [JavaScript](#javascript)
 * [Python](#python)
 
 ## Java
@@ -13,14 +12,6 @@
 > [강의 링크](https://opentutorials.org/module/4294)
 
 * [바로가기](./java)
-
-
-
-## JavaScript
-
-> JavaScript의 알고있으면 좋은내용, 공부한 내용들을 정리하였습니다.
-
-* [바로가기](./javaScript)
 
 ## Python
 
