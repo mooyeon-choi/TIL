@@ -10,6 +10,7 @@
 * [Variable](#variable)
 * [Hoisting](#hoisting)
 * [Type](#type)
+* [Operator](#operator)
 
 ## Variable
 
@@ -160,5 +161,44 @@
    null; // typeof null >> "object"
    ```
 
-   
+## Operator
+
+1. 동등 연산자 (`==`)
+
+   ```js
+   1 == '1'; // true
+   ```
+
+2. 일치 연산자 (`===`)
+
+   ```js
+   1 === '1' // false
+   ```
+
+3. 할당 
+
+   * `=`, `+=`, `-=`, `*=`, `/=`, ...
+
+4. 비교
+
+   * `>`, `<`, `>=`, `<=`, ...
+
+5. 논리
+
+   * and : `&&`
+   * or : `||`
+
+6. Not (`!`)
+
+7. 삼항연산자 표현식
+
+   `? true : false`
+
+   ```js
+   2 > 4 ? true : false
+   ```
+
+
+
+
 
