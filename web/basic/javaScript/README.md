@@ -13,6 +13,7 @@
 * [Operator](#operator)
 * [Flow](#flow)
 * [Function](#function)
+* [Array](#array)
 
 ## Variable
 
@@ -320,7 +321,74 @@
     )((a) => a + 10)(10);
   ```
 
-  
+## Array
+
+* [코드로 보기](./array.js)
+
+1. Array 선언
+
+   ```js
+   let numbers = [10, 1, 3, 5];
+   ```
+
+2. Index 요소 접근
+
+   ```js
+   numbers[0]; // 10
+   numbers[-1]; // undefined
+   numbers.length; // 4
+   ```
+
+3. 뒤집기
+
+   ```js
+   numbers.reverse(); // return + 원본 변경.
+   ```
+
+4. 마지막에 원소 추가
+
+   ```js
+   numbers.push(20); // 마지막에 원소 추가 + return (길이)
+   ```
+
+5. 마지막 원소 제거 및 `return`
+
+   ```js
+   numbers.pop(); // 20 : 마지막 원소 pop + return (해당 원소)
+   ```
+
+6. 가장 앞에 원소 추가 및 길이 `return`
+
+   ```js
+   numbers.unshift(3); // 맨앞에 원소 추가 + return (길이)
+   ```
+
+7. 맨앞 원소 제거 및 `return`
+
+   ```js
+   numbers.shift(); // 맨앞 원소 제거 + return (해당 원소)
+   ```
+
+8. 포함 여부 확인
+
+   ```js
+   numbers.includes(1); // true : 포함여부 확인
+   ```
+
+9. 포함 여부 + 가장 먼저 존재하는 위치 반환
+
+   ```js
+   numbers.indexOf(1); // 가장 먼저 존재하는 위치
+   ```
+
+10. String으로 바꾸기
+
+    ```js
+    numbers.join(); // 기본이 ,
+    numbers.join("-"); // -로 연결.
+    ```
+
+    
 
 
 
