@@ -16,6 +16,7 @@
 * [Array](#array)
 * [Object](#object)
 * [Array helper method](#array-helper-method)
+* [DOM](#dom)
 
 ## Variable
 
@@ -547,7 +548,21 @@
   });
   ```
 
-  
+## DOM
+
+* [코드로 보기](./dom.html)
+
+```html
+<body>
+  <h1 class="text">DOM 조작(Document Object Model)</h1>
+  <h2 class="text">카페</h2>
+  <img src="my.png", alt="">
+  <ul id='my-list'>
+    <li>아메리카노</li>
+    <li>자바칩프라프치노</li>
+  </ul>
+</body>
+```
 
 
 
