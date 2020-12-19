@@ -9,6 +9,7 @@
 
 * [Variable](#variable)
 * [Hoisting](#hoisting)
+* [Type](#type)
 
 ## Variable
 
@@ -111,3 +112,53 @@
     2. TDZ
     3. 초기화
     4. 할당
+
+## Type
+
+> * 원시타입 (primitive data type)
+>   * boolean
+>   * null
+>   * undefined
+>   * number
+>   * string
+>   * symbol (ES6+)
+> * 객체타입 (object)
+>   * object
+
+1. Number
+
+   ```js
+   3 - 5;
+   Infinity; // typeof Infinity >> "number"
+   NaN; // typeof NaN >> "number" 산술 연산 불가, number가 아니라는 number..
+   10 / 0; // Infinity
+   0 / 0; // NaN
+   ```
+
+2. String
+
+   ```js
+   let myName = "무연";
+   myName = '무연';
+   // ` (backtick) : ES6+, 템플릿 리터럴
+   // string interpolation, 줄바꿈(개행) - 엔터도 인식하여 출력된다.
+   myName = `무
+   연`;
+   ```
+
+3. Boolean
+
+   ```js
+   true;
+   false;
+   ```
+
+4. Empty value
+
+   ```js
+   undefined; // typeof undefined >> "undefined"
+   null; // typeof null >> "object"
+   ```
+
+   
+
