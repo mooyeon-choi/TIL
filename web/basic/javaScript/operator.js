@@ -14,3 +14,4 @@
 // Not !
 
 // 삼항연산자 - 표현식? true:false
+2 > 4 ? true : false;
