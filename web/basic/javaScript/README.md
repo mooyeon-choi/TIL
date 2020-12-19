@@ -8,6 +8,7 @@
 ## 목차
 
 * [Variable](#variable)
+* [Hoisting](#hoisting)
 
 ## Variable
 
@@ -72,4 +73,41 @@
      }
      ```
 
-     
+## Hoisting
+
+* `var`
+
+  ```js
+  console.log(mooyeon); // undefined
+  var mooyeon = "무연";
+  ```
+
+  위의 코드는 다음과 같이 이해한다.
+
+  ```js
+  var mooyeon; // hoisting
+  console.log(mooyeon);
+  mooyeon = "무연";
+  ```
+
+* `let`
+
+  ```js
+  console.log(dooly); // ReferenceError - 초기화하기 전 접근 금지
+  let dooly = "둘리";
+  ```
+
+* 이해하기
+
+  * `var`
+    1. 선언과 동시에 초기화
+    2. 할당
+
+  * `let`, `const`
+
+    TDZ(temporal Dead Zone)이 존재
+
+    1. 선언
+    2. TDZ
+    3. 초기화
+    4. 할당

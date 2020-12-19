@@ -2,9 +2,9 @@ console.log(mooyeon); // undefined
 var mooyeon = "무연";
 
 /* 위의 코드를 js는 다음과 같이 이해한다.
-var taewoo  // hoisting
-console.log(taewoo)
-taewoo = '김태우'
+var mooyeon  // hoisting
+console.log(mooyeon)
+mooyeon = '무연'
 */
 
 console.log(dooly); // ReferenceError - 초기화하기 전 접근 금지
