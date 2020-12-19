@@ -2,9 +2,9 @@
 * 원시타입 (primitivie data type)
     - boolean
     - null
-    - undefiened
+    - undefined
     - number
-    - sring
+    - string
     - symbol (ES6+)
 * 객체타입 (object)
     - object
