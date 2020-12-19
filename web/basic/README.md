@@ -37,3 +37,9 @@ HyperText Markup Language (HTML)📃의 기본 개념과 동작 원리
 ## JavaScript
 
 * [바로가기](./javaScript)
+
+```
+🙌기본적인 Type, Variable부터 Callback, Promise까지!
+JavaScript의 문법과 여러 API들의 사용법을 익혀보자!
+```
+
