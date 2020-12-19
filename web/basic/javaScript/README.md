@@ -14,6 +14,8 @@
 * [Flow](#flow)
 * [Function](#function)
 * [Array](#array)
+* [Object](#object)
+* [Array helper method](#array-helper-method)
 
 ## Variable
 
@@ -388,7 +390,164 @@
     numbers.join("-"); // -로 연결.
     ```
 
-    
+## Object
+
+* [코드로 보기](./object.js)
+
+* Object 생성
+
+  ```js
+  // 키값을 ""로 굳이 안묶어도 된다.
+  const me = {
+    // 프로퍼티
+    name: "kim",
+    "phone number": "01012345678",
+    phone: {
+      type: "iphone XS MAX",
+    },
+    // 메서드 function 키워드만 작성하자!
+    greeting: function () {
+      console.log(this); // me
+      console.log(`hi ${this.name}`); // this : '나'를 뜻한다. self.name처럼
+    },
+    greeting2: () => {
+      console.log(this); // 전역객체 window
+      console.log(`hi ${this.name}`); // 이건 this가 안먹히네!? arrow function에서의 this는 무조건 상위 object! 나중가면 유용할걸!?
+    },
+  };
+  ```
+
+* 오브젝트 리터럴 (ES6+)
+
+  ```js
+  let book = "자바스크립트 완전 정복";
+  let album = {
+    IU: ["좋은날", "밤편지"],
+    BTS: ["작은것들을 위한 시"],
+  };
+  // 위의 값들을 object에 넣으면 바로 key,value로 알아서 들어간다.
+  let bag = {
+    book,
+    album,
+  };
+  ```
+
+* JSON
+
+  ```js
+  // JSON (Javascript Object Notation - 자바스크립트 오브젝트 표기법)
+  // JSON은 기본적으로 자바스크립트 오브젝트 표기법을 가진 "문자열"이다
+  // object -> JSON
+  let jsonData = JSON.stringify(me);
+  let myObject = JSON.parse(jsonDate);
+  ```
+
+## Array helper method
+
+* [코드로 보기](./array_helper_method.js)
+
+* `Array.forEach`
+
+  ```js
+  let numbers = [1, 2, 3];
+  
+  // 1. 반복문 (for)
+  for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+  }
+  
+  // 2. 반복문 (for..of)
+  for (let num of numbers) {
+    console.log(num);
+  }
+  
+  // 3. forEach
+  numbers.forEach(function (num) {
+    console.log(num);
+  });
+  ```
+
+* `map`
+
+  콜백함수의 return 결과를 각각 원소로 하는 **배열**을 **리턴**
+
+  ```js
+  let numbers = [1, 2, 3];
+  let doubleNumbers = numbers.map(function (number) {
+    return number * 2;
+  });
+  console.log(doubleNumbers);
+  
+  let numbers = [1, 2, 3];
+  let doubleNumbers = numbers.map((number) => number * 2);
+  console.log(doubleNumbers);
+  ```
+
+* `filter`
+
+  callback 함수의 **return 결과**가 참인 것을 각각 원소로 하는 배열을 **리턴**
+
+  ```js
+  // images의 높이가 100보다 작은 object만 담은 배열
+  // 반복문으로
+  let list = [];
+  for (image of images) {
+    if (image.height < 100) {
+      list.push(image);
+    }
+  }
+  console.log(list);
+  // filter로
+  list = images.filter(function (image) {
+    return image.height < 100;
+  });
+  console.log(list);
+  ```
+
+* `reduce(callbackfn, initialvalue)`
+
+  return 결과를 누적한 결과를 return
+
+  ```js
+  let mySsafy = [100, 100, 95, 90];
+  let total = 0;
+  mySsafy.forEach(function (score) {
+    total += score;
+  });
+  
+  mySsafy.reduce(function (total, score) {
+    // total: 누적, score: 각 원소
+    return total + score;
+  }, 10000); // 10000 :초기값,  reduce의 두번째 인자. 없으면 첫 score부터 시작해서 return
+  
+  mySsafy.reduce((total, score) => total + score, 10000);
+  ```
+
+* `find`
+
+  일치하는 첫번째 원소를 return.
+
+  ```js
+  mySsafy.find(function (score) {
+    return score === 90;
+  });
+  ```
+
+* `some`, `every`
+
+  ```js
+  // some: return을 만족하는게 하나라도 있느냐
+  let myNumbers = [1, 2, 3, 4];
+  myNumbers.some(function (number) {
+    return number % 2 === 0;
+  });
+  // every: 모든 것이 return을 만족하느냐
+  myNumbers.every(function (number) {
+    return number % 2 !== 0;
+  });
+  ```
+
+  
 
 
 
