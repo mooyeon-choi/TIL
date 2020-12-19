@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      body {
+        margin:0
+      }
+      .bg {
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <img
+        id="dino"
+        width="100px"
+        heigth="100px"
+        src="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/88/e5/36/88e536d4-8a08-7c3b-ad29-c4e5dabc9f45/AppIcon-1x_U007emarketing-sRGB-85-220-0-6.png/246x0w.jpg"
+        alt="dino"
+      />
+    </div>
+
+    <script>
+        const dino = document.querySelector('#dino')
+        const bg = document.querySelector('.bg')
+        // const newDino = document.createElement('img')
+        // newDino.src = "https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/88/e5/36/88e536d4-8a08-7c3b-ad29-c4e5dabc9f45/AppIcon-1x_U007emarketing-sRGB-85-220-0-6.png/246x0w.jpg"
+        // newDino.style.width = '50px'
+        // newDino.style.height = '50px'
+        // newDino.alt = '새끼공룡'
+        // newDino.id = 'new-dino'
+        // bg.append(newDino)
+
+        dino.addEventListener('click', function(event) {
+          console.log(event)
+          console.log('아얏')
+          const text = document.createElement('span')
+          text.innerText = '아야'
+          bg.append(text)
+        })
+
+        // const miniDino = document.querySelector('#new-dino')
+        // newDino.addEventListener('click', function(event) {
+        //   console.log('hi')
+        //   newDino.src = "https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/88/e5/36/88e536d4-8a08-7c3b-ad29-c4e5dabc9f45/AppIcon-1x_U007emarketing-sRGB-85-220-0-6.png/246x0w.jpg"
+        //   newDino.style.width = '50px'
+        //   newDino.style.height = '50px'
+        //   newDino.alt = '새끼공룡'
+        //   newDino.id = 'new-dino'
+        //   bg.parentNode.appendChild(miniDino)
+        // })
+        let x = 0
+        let y = 0
+        document.addEventListener('keydown', function (event) {
+          switch (event.keyCode) {
+            case 37: {
+              x -= 50
+              break
+            }
+            case 38: {
+              y -= 50
+              break
+            }
+            case 39: {
+              x += 50
+              break
+            }
+            case 40: {
+              y += 50
+              break
+            }
+          } 
+          dino.style.marginLeft = `${x}px`
+          dino.style.marginTop = `${y}px`
+        })
+
+        const refreshButton = document.createElement('button')
+        refreshButton.innerText = '초기화'
+        refreshButton.style.position = 'fixed'
+        refreshButton.style.top = '50px'
+        refreshButton.style.left = '50px'
+        bg.append(refreshButton)
+        refreshButton.addEventListener('click', function(event) {
+          x = y = 0
+          dino.style.marginLeft = x
+          dino.style.marginTop = y
+        })
+        dino.style.position = 'abolute'
+        dino.addEventListener('mouseover', function (event) {
+          
+          dino.style.marginLeft = `${Math.random()*300}px`
+          dino.style.marginTop = `${Math.random()*300}px`
+        })
+    </script>
+  </body>
+</html>
