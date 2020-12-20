@@ -15,45 +15,23 @@
 
 ## Weekly to do list
 
-> :white_check_mark: 12월 3주차 해야할 일
+> :white_check_mark: 12월 4주차 해야할 일
 
 * [ ] 알고리즘 문제 해결 전략 - 01. 문제 해결 시작하기 완독
-  * [x] 문제 해결과 프로그래밍 대회
   * [ ] 문제 해결 개관
   * [ ] 코딩과 디버깅에 관하여
 * [ ] PS
-  * [x] Codeforces Round #690 참여
-  * [x] Educational Codeforces Round 100 참여
-  * [ ] 백준 단계별로 풀어보기 1 ~ 7 (Cpp)
-    * [x] 입출력과 사칙연산
-    * [ ] if문
-    * [ ] for문
-    * [ ] while문
-    * [ ] 1차원 배열
-    * [ ] 함수
-    * [ ] 문자열
+  * [ ] Codeforces Round #692 참여
   * [ ] 백준 Class 4 풀기 (Python)
 * [ ] CS
   * [ ] OS 강의 2 ~ 3
-    * [ ] System Structure & Program Execution 1
     * [ ] System Structure & Program Execution 2
     * [ ] Process 1
     * [ ] Process 2
     * [ ] Process 3
-  * [ ] Algorithm 정리 Sort
-    * [ ] 개념 정리
-    * [ ] Bubble Sort
-    * [ ] Selection Sort
-    * [ ] Insertion Sort
-    * [ ] Merge Sort
-    * [ ] Quick Sort
-    * [ ] Counting Sort
-    * [ ] Heap Sort
-    * [ ] RadixSort
 * [ ] To do list 프로젝트
-  * [x] Dnd board 만들기
   * [ ] Update, Delete button 만들기
-  * [x] Card 생성 기능 추가
+  * [ ] List Drag & Drop 오류 수정
   * [ ] Card 삭제 기능 추가
 
 ## Git 사용법
