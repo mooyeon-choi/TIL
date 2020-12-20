@@ -25,4 +25,8 @@
 ## System Structure & Program Execution
 
 * [바로가기](./system_structure_and_program_execution)
-* 
+* 컴퓨터 시스템 구조
+  * 간략한 구조
+  * 상세 구조
+  * 입출력(I/O)의 수행
+  * 인터럽트
