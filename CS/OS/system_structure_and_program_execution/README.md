@@ -8,7 +8,7 @@
 
 ### 상세 구조
 
-![computer_system_structure_detail](https://github.com/mooyeon-choi/TIL/blob/master/CS/OS/images/computer_system_ctructure_detail.png?raw=true)
+![computer_system_structure_detail](https://github.com/mooyeon-choi/TIL/blob/master/CS/OS/images/computer_system_structure_detail.png?raw=true)
 
 #### Divice Controller
 
