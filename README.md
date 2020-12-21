@@ -21,7 +21,7 @@
   * [ ] 문제 해결 개관
   * [ ] 코딩과 디버깅에 관하여
 * [ ] PS
-  * [ ] Codeforces Round #692 참여
+  * [x] Codeforces Round #692 참여
   * [ ] 백준 Class 4 풀기 (Python)
 * [ ] CS
   * [ ] OS 강의 2 ~ 3
@@ -29,10 +29,10 @@
     * [ ] Process 1
     * [ ] Process 2
     * [ ] Process 3
-* [ ] To do list 프로젝트
-  * [ ] Update, Delete button 만들기
-  * [ ] List Drag & Drop 오류 수정
-  * [ ] Card 삭제 기능 추가
+* [x] To do list 프로젝트
+  * [x] Update, Delete button 만들기
+  * [x] List Drag & Drop 오류 수정
+  * [x] Card 삭제 기능 추가
 
 ## Git 사용법
 
