@@ -7,6 +7,7 @@
 * [프로젝트 구조](#프로젝트-구조)
 * [숨겨진 툴](#숨겨진-툴)
 * [React Basic](#react-basic)
+* [Pure Component](#pure-component)
 
 
 
@@ -254,4 +255,8 @@ project
 
 > 간단한 템플릿 프로젝트를 만들어보며 알아보는 React 기초
 
-* [자세히 보기](./react_basic/)
+* [바로가기](./react_basic/)
+
+## Pure Component
+
+* [바로가기](./pure_component)
