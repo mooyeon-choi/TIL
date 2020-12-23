@@ -41,7 +41,7 @@ ReactDOM.render( // ReactDOM 라이브러리 활용
 
 ### src/app.jsx
 
-```react
+```js
 class App extends Component {
   state = {}
   render() { // state에 따라 어떻게 표기될건지 UI가 정의된 부분
@@ -61,7 +61,7 @@ export default App;
 
 ### src/components/habits.jsx
 
-```react
+```js
 class Habits extends Component {
   state = {}
   render() {
