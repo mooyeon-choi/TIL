@@ -6,6 +6,7 @@
 
 * [Weekly to do list](#weekly-to-do-list)
 * [Git 사용법](#git-사용법)
+* [Markdown](#markdown)
 * [Web](#web)
 * [Problem Solving](#problem-solving)
 * [CS](#cs)
@@ -40,6 +41,15 @@
 
 ```
 📝기본적인 깃 사용법을 익혀보자!
+```
+
+## Markdown
+
+* [바로가기](./markdown)
+
+```
+PR (Pull Request)📋 설명을 작성할 때도 쓰이고
+많은 디지털 노트📔를 사용할 때도 간편하게 키보드💻로 작성할 수 있게 도와주는 markdown의 사용법을 알아보자
 ```
 
 ## Web
