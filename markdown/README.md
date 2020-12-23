@@ -147,7 +147,7 @@ Numbers:
 
 [Click](https://github.com/mooyeon-choi)
 
-### 문서 내부로 이동
+### 문서 내 이동
 
 [문서 내 이동](#문서-내-이동)
 
