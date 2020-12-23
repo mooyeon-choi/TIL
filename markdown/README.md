@@ -31,7 +31,8 @@ Markdown 문법을 입력하면 바로바로 화면에 표시해주는 Markdown 
 ### [Github Markdown Emoji Markup](https://gist.github.com/rxaviers/7360908)
 
 ```
-깃헙 markdown에서 사용할 수 있는 Emoji😊를 모아놓은 rxaviers님의 gist페이지 ctrl + F 로 간단하게 사용하고 싶은 Emoji를 찾아 복사해서 쓰면 된다!
+깃헙 markdown에서 사용할 수 있는 Emoji😊를 모아놓은 rxaviers님의 gist페이지
+ctrl + F 로 간단하게 사용하고 싶은 Emoji를 찾아 복사해서 쓰면 된다!
 ```
 
 ### [Shields.io](https://shields.io/)
