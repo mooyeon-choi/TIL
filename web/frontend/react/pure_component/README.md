@@ -9,6 +9,7 @@
 * [Pure Component를 사용하는 이유](#pure-component를-사용하는-이유)
 * [React Dev Tools로 re-render 확인하기](#react-dev-tools로-re-render-확인하기)
 * [Pure Component와 memo](#pure-component와-memo)
+* [Habit에 PureComponent 적용하기](#habit에-purecomponent-적용하기)
 
 ## React의 중요한 컨셉
 
@@ -192,4 +193,99 @@ Update가 되는 것을 Highlight 해준다.
   * 반대 (Deep comparison)
     * 안의 데이터가 달라지면 다른 Object로 판단
 * prop안에있는 Object의 내용이 바뀌어도 동일한 Object라면 render 함수가 호출되지 않는다.
+
+## Habit에 PureComponent 적용하기
+
+> `src/components/habit.jsx` 파일을 PureComponent로 바꿔보자
+>
+> -> 버튼을 눌러도 아무런 반응도 없다!
+>
+> 왜 그런걸까?
+
+* habit은 `state`가 없고 props를 받아온다.
+
+  이 props 안에있는 콜백함수들은 app 클래스 Component 안에 선언된 `handleIncrement()`와 같은 멤버변수들이 전달되기 때문에 한번 app이라는 Class가 만들어지고 난 이후에는 절대 변경되지 않는다.
+
+* 따라서 Button을 누르게 되면 props의 habit이라는 Object 안에있는 Count만 변하기 때문에 결국은 동일한 Object로 판단한다.
+
+* 따라서 `shouldComponentUpdate()`에서는 `false`를 반환하게 되고 `render()`가 호출 되지 않는다.
+
+### 두가지 해결방법
+
+1. 변화하는 것을 따로 빼서 Object로 전달한다.
+
+   * `src/components/habits.jsx`
+
+       ```html
+       <Habit 
+           key={habit.id} 
+           habit={habit}
+           count={habit.count} // 추가
+       />
+       ```
+       
+   * `src/components/habit.jsx`
+
+       기존 코드
+
+       ```js
+       const { name, count } = this.props.habit;
+       ```
+
+       수정
+
+       ```js
+       const { name } = this.props.habit;
+       const { count } = this.props;
+       ```
+
+2. Object 전체를 새로 만들어주기
+
+   * `src/app.jsx`
+
+     * `handleIncrement()`
+
+         ```js
+         handleIncrement = habit => {
+             const habits = this.state.habits.map(item => {
+                 if(item.id == habit.id) {
+                     return { ...habit, count: habit.count + 1 }; 
+                     // { ...habit } : habit의 key, value 들을 그대로 가져온다.
+                 } 
+                 return item;
+             });
+             this.setState({ habits });
+         }
+         ```
+         
+     * `handleDecrement()`
+
+         ```js
+         handleDecrement = habit => {
+             const habits = this.state.habits.map(item => {
+                 if(item.id == habit.id) {
+                     const count = habit.count - 1;
+                     return { ...habit, count: count < 0 ? 0 : count }; 
+                     // { ...habit } : habit의 key, value 들을 그대로 가져온다.
+                 } 
+                 return item;
+             });
+             this.setState({ habits });
+         }
+         ```
+
+     * `handleReset()`
+
+         ```js
+         handleReset = () => {
+             const habits = this.state.habits.map(habit => {
+                 if(habit.count !== 0) {
+                     return { ...habit, count: 0 };
+                 }
+                 return habit;
+             });
+             this.setState({ habits });
+         }
+         ```
+
 
