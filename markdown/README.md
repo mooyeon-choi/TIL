@@ -157,7 +157,7 @@ Numbers:
 ![image description](https://github.com/mooyeon-choi/TIL/raw/master/images/web_example.gif)
 ```
 
-![image description](https://gist.github.com/mooyeon-choi/fdeefa15792ad5d209b573c02d40ae4c/raw/cb3aaf60b17a9f088c8734928122ba0061212246/Interactive_canvas.gif)
+![image description](https://github.com/mooyeon-choi/TIL/raw/master/images/web_example.gif)
 
 ## Table
 
