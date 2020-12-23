@@ -47,9 +47,9 @@ ctrl + F 로 간단하게 사용하고 싶은 Emoji를 찾아 복사해서 쓰�
 뿐만 아니라 아래와 같이 내 프로젝트 Repository의 URL을 입력하면 자동으로 추천 Badge들을 생성해주어 쉽게 만들어줄 수 있다
 ```
 
-![Shieldsio recommend 1](./images/shieldsio_recommend1.PNG)
+<img src="./images/shieldsio_recommend1.PNG" width="600px"/>
 
-![Shieldsio recommend 2](./images/shieldsio_recommend2.PNG)
+<img src="./images/shieldsio_recommend2.PNG" width="600px"/>
 
 ## Heading
 
@@ -155,9 +155,13 @@ Numbers:
 
 ```
 ![image description](https://github.com/mooyeon-choi/TIL/raw/master/images/web_example.gif)
+## img Tag
+<img src="https://github.com/mooyeon-choi/TIL/raw/master/images/web_example.gif" width="400px" />
 ```
 
 ![image description](https://github.com/mooyeon-choi/TIL/raw/master/images/web_example.gif)
+
+<img src="https://github.com/mooyeon-choi/TIL/raw/master/images/web_example.gif" width="400px" />
 
 ## Table
 
