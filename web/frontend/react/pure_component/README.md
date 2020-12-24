@@ -6,9 +6,9 @@
 * [Habit Tracker 다시 살펴보기](#habit-tracker-다시-살펴보기)
 * [Render 함수의 호출](#render-함수의-호출)
 * [Component 정리](#component-정리)
-* [Pure Component를 사용하는 이유](#pure-component를-사용하는-이유)
+* [PureComponent를 사용하는 이유](#pure-component를-사용하는-이유)
 * [React Dev Tools로 re-render 확인하기](#react-dev-tools로-re-render-확인하기)
-* [Pure Component와 memo](#pure-component와-memo)
+* [PureComponent와 memo](#pure-component와-memo)
 * [Habit에 PureComponent 적용하기](#habit에-purecomponent-적용하기)
 
 ## React의 중요한 컨셉
@@ -141,7 +141,7 @@ Virtual DOM이라는 memory상에 Tree를 보관하고 있다가 이전과 지�
 
 위 의 이유로 디버깅을 하면서 `html elements part` 를 보고 페이지에서 `event`가 발생하였을 때 DOM 요소 전체가 깜빡이면서 나타나거나 변화가 많이 일어나면 어딘가 잘못되었다는 뜻!
 
-## Pure Component를 사용하는 이유
+## PureComponent를 사용하는 이유
 
 > React VDOM에 의해 필요한 부분만 DOM 요소에서 업데이트 되므로 성능상에 문제가 없다는 것을 알게 되었다.
 >
@@ -176,7 +176,7 @@ Update가 되는 것을 Highlight 해준다.
 
 <img src="./images/dev_tools_setting_checkbox.PNG" width="600px"/>
 
-## Pure Component와 memo
+## PureComponent와 memo
 
 > Component의 state나 props에 변화가 없다면 render() 함수가 호출되지 않는다.
 
