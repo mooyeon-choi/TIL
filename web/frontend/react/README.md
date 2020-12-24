@@ -188,7 +188,7 @@ project
 
 * 사용자에게 배포할 때 외부적으로 보여지는 것들
 * `farvicon.ico`, `index.html`, logo image 등
-* `manifest.json
+* `manifest.json`
   * pwa(프로그래시브 웹 어플리케이션), 모바일에서 저장하는 웹어플리케이션을 만들 때 사용
 * `robots.txt`
   * 웹 크롤링을 위해 사용됨
