@@ -219,3 +219,42 @@ export default {
 
       `library.add("사용할 icon");`
 
+#### Data 이해하기
+
+* Component 안에는 Data라는 함수가 있고 그 함수는 Object를 return 한다.
+
+* Data의 각 속성들이 변경되면 Vue가 `vm.mount()` 함수를 호출하여 UI가 업데이트 된다.
+
+  * 이때 Data의 각 속성들에 대해 shallow(얕게) 비교하므로 각 속성들의 Reference만 비교해준다.
+
+    따라서, 속성에 Object가 저장되어있고 Object 내부의 값이 변경될 경우 Vue에서 변화를 감지하지 못한다.
+
+#### Props와 Emit
+
+##### Props란
+
+* Component 밖에서 주어지는 데이터
+
+* 부모 컴포넌트에서
+
+  ```html
+  <child message="안녕하세요!"></child>
+  ```
+
+  와 같이 Props를 전달해주면 자식 컴포넌트에서 
+
+  ```html
+  <template>
+  	<span>{{ message }}</span>
+  </template>
+  ```
+
+  ```js
+  props: ['message'] // 권장하지 않음 자동으로 타입 구분
+  props: {           // 권장
+      message: String
+  }
+  ```
+
+  와 같이 `props`를 받아와서 사용할 수 있다.
+
