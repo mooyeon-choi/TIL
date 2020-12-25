@@ -25,3 +25,9 @@ Vue.js 개발을 시작하기 위해 필요한 툴 설치 및 환경설정🏃
 간단한 템플릿 프로젝트를 만들어보며 알아보는 Vue 기초
 ```
 
+1. Template 프로젝트 만들기
+2. 간단한 프로젝트로 배우기
+   * Vue Mount
+   * VUE 정리
+   * Directivs
+   * Props와 Emit
