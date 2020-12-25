@@ -113,6 +113,7 @@ cd -R template habit-tracker
   ```vue
   <template>
     <div class="example">{{ msg }}</div>
+	{{ ok ? 'YES' : 'NO' }}
   </template>
   ```
 
@@ -127,7 +128,8 @@ cd -R template habit-tracker
 export default {
   data () {
     return {
-      msg: 'Hello world!'
+      msg: 'Hello world!',
+      ok: true
     }
   }
 }
@@ -228,6 +230,126 @@ export default {
   * 이때 Data의 각 속성들에 대해 shallow(얕게) 비교하므로 각 속성들의 Reference만 비교해준다.
 
     따라서, 속성에 Object가 저장되어있고 Object 내부의 값이 변경될 경우 Vue에서 변화를 감지하지 못한다.
+
+#### 디렉티브
+
+* `v-` 접두사가 있는 특수속성으로 표현식의 값이 변경될 때 바뀐 결과를 DOM에 적용한다.
+
+  ```html
+  <!-- 예시 -->
+  <p v-if="seen">Now you see me</p>
+  <!-- "seen"의 boolean 값에 따라 <p>가 생성/삭제된다. --> 
+  ```
+
+* `v-bind`
+
+  * Data의 속성값을 가져올 수 있다.
+
+  ```html
+  <img v-bind:src="url" width=200px;>
+  <!-- 약어 -->
+  <img :src="url" width=200px;>
+  ```
+
+* `v-on`
+
+  * Vue에서 DOM 이벤트를 들을 수 있게 해준다.
+
+  ```html
+  <!-- 예시 -->
+  <button v-on:click="counter += 1">Add 1</button>
+  <!-- 약어 -->
+  <button @click="counter += 1">Add 1</button>
+  ```
+
+  이벤트 핸들러의 로직은 복잡하므로 주로 메소드의 이름을 호출하고 많은 수식어를 제공한다.
+
+  자세한 내용은 이후 이벤트 수식어에서 알아보자.
+
+* `v-model`
+
+  * Data를 양방향으로 바인딩 해준다.
+
+  * `v-model` 은 `v-bind`와 `v-on`으로 구현할 수 있다.
+
+      다음 두 코드의 동작방식은 완전히 똑같다.
+
+      ```html
+      <input v-model="searchText">
+      ```
+
+      ```html
+      <input
+        v-bind:value="searchText"
+        v-on:input="searchText = $event.target.value"
+      >
+      ```
+
+* `v-for` 와 `v-if`
+
+  > `v-for`는 `template`에서 for문을 사용할 수 있게 해주고`v-if` 는 if문을 사용하게 해준다.
+  >
+  > 이 둘은 같이 쓰이는 경우도 많으므로 같이 알아보자.
+
+  * `v-for` 와 `v-if`를 같이 써줄 경우 `v-for`가 더 높은 우선순위를 가진다.
+
+    따라서 `v-if`는 루프가 반복될 때마다 실행된다.
+
+      ```html
+    <!-- 예시 (권장하지 않음) -->
+    <ul>
+      <li
+        v-for="user in users"
+        v-if="user.isActive"
+        :key="user.id"
+      >
+        {{ user.name }}
+      </li>
+    </ul>
+      ```
+
+      하지만 `v-for`가 더 높은 우선순위를 가지는 특성 때문에 이렇게 코드를 작성할 경우 `v-else` 와 이중 for문을 작성할 수 없는등 여러 문제가 발생 할 수 있어 매우 좋지 못한 습관이다.
+
+  * `v-for`와 `v-if`를 혼용할 때는 다음의 Vue Style Guide 권장 사항을 따르자
+    
+      ```html
+      <!-- 미리 필터링해준 List를 사용 -->
+      <ul>
+        <li
+          v-for="user in activeUsers"
+          :key="user.id"
+        >
+          {{ user.name }}
+        </li>
+      </ul>
+      ```
+      
+      ```html
+      <!-- v-if를 부모요소에 적용 -->
+      <ul v-if="shouldShowUsers">
+        <li
+          v-for="user in users"
+          :key="user.id"
+        >
+          {{ user.name }}
+        </li>
+      </ul>
+      ```
+
+* `v-for` 와 `key`
+
+  * 서브트리의 내부 컴포넌트 상태를 유지하기 위해 `v-for` 는 항상 `key` 와 함께 사용한다.
+
+* `v-if` 와 `v-show`
+
+  * element를 조건부로 표시하기 위한 옵션
+  * `v-if` 
+    * 조건에 따라 블록을 렌더링한다.
+    * 데이터 토글 비용이 높다.
+  * `v-show` 
+    * 항상 렌더링 되고 조건에 따라 CSS `display` 속성을 변경한다.
+    * 초기 렌더링 비용이 높다.
+  * 따라서 조건을 자주 변경해주어야 하는 경우 `v-show`, 조건이 변경되지 않을 경우 `v-if`가 선호된다.
 
 #### Props와 Emit
 
