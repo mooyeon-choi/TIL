@@ -22,3 +22,9 @@ Bouncing Ball, Moving Waves, Interactive 3D Cube 등
 
 * [바로가기](./creative-coding-tutorial)
 
+```
+PixiJS Engine을 사용하여
+여러 동적인 Typography를 만들어보며 실습을 통해 공부한 내용입니다.
+```
+
+<img src="https://github.com/mooyeon-choi/kinetic-typography-1/blob/main/images/kinetic-typography-1-example.gif?raw=true" />
