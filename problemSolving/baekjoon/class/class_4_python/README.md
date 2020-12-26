@@ -6,6 +6,7 @@
 
 * [제곱 ㄴㄴ 수](#제곱-ㄴㄴ-수)
 * [트리 순회](#트리-순회)
+* [조합](#조합)
 
 ## 제곱 ㄴㄴ 수
 
@@ -66,4 +67,24 @@
   ```
 
   * DFS의 node를 출력해주는 시점을 통해 Preorder, Inorder, Postorder Traversal로 구분된다.
+
+## 조합
+
+* [문제 링크](https://www.acmicpc.net/problem/2407)
+
+* 풀이
+
+  ```python
+  def dfs(num, cnt):
+    if cnt == m:
+      return num
+    else:
+      return num * dfs(num - 1, cnt + 1)
+  
+  n, m = map(int, input().split())
+  print(dfs(n, 1) // dfs(m, 1))
+  ```
+
+  * 최대 반복횟수가 100이므로 재귀함수를 사용하여도 recursion depth error가 발생하지 않을 것이다.
+  * 따라서 재귀함수를 사용하여 간단하게 풀 수 있다.
 
