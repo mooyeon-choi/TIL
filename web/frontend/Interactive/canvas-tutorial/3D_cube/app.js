@@ -47,14 +47,21 @@ class App {
   onDown(e) {
     this.startPos.x = e.clientX;
     this.startPos.y = e.clientY;
+    this.startTime = Date.now();
   }
 
   onUp(e) {
+    this.endTime = Date.now();
     this.endPos.x = e.clientX;
     this.endPos.y = e.clientY;
 
-    this.pointer.x = this.endPos.x - this.startPos.x;
-    this.pointer.y = this.endPos.y - this.startPos.y;
+    this.pointer.x =
+      ((this.endPos.x - this.startPos.x) / (this.endTime - this.startTime)) *
+      200;
+
+    this.pointer.y =
+      ((this.endPos.y - this.startPos.y) / (this.endTime - this.startTime)) *
+      200;
   }
 }
 
