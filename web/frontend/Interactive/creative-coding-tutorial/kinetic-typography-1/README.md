@@ -20,4 +20,24 @@
   </head>
   ```
 
-  
+* `app.js` 추가
+
+  ```js
+  WebFont.load({
+        google: {
+          families: ["Hind:700"],
+        }
+      });
+  ```
+
+### PixiJS
+
+* [Github](https://github.com/pixijs/pixi.js)
+
+* CDN install (`index.html` 추가)
+
+  ```html
+  <head>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>    
+  </head>
+  ```
