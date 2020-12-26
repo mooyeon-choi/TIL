@@ -54,19 +54,13 @@ ctrl + F 로 간단하게 사용하고 싶은 Emoji를 찾아 복사해서 쓰�
 ## Heading
 
 ```
-"#" 를 사용하면 제목을 표현할 수 있다.
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
 ```
-
-* 사용 예시
-
-  ```
-  # Heading 1
-  ## Heading 2
-  ### Heading 3
-  #### Heading 4
-  ##### Heading 5
-  ###### Heading 6
-  ```
 
 # Heading 1
 ## Heading 2
