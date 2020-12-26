@@ -7,6 +7,7 @@
 * [제곱 ㄴㄴ 수](#제곱-ㄴㄴ-수)
 * [트리 순회](#트리-순회)
 * [조합](#조합)
+* [스티커](#스티커)
 
 ## 제곱 ㄴㄴ 수
 
@@ -88,3 +89,25 @@
   * 최대 반복횟수가 100이므로 재귀함수를 사용하여도 recursion depth error가 발생하지 않을 것이다.
   * 따라서 재귀함수를 사용하여 간단하게 풀 수 있다.
 
+## 스티커
+
+* [문제 링크](https://www.acmicpc.net/problem/9465)
+
+* 풀이
+
+  ```python
+  for _ in range(int(input())):
+    n = int(input())
+    board = [list(map(int, input().split())) for __ in range(2)]
+    for i in range(1, n):
+      if i == 1:
+        board[0][i] += board[1][i - 1]
+        board[1][i] += board[0][i - 1]
+      else:
+        board[0][i] += max(board[1][i - 1], board[1][i - 2])
+        board[1][i] += max(board[0][i - 1], board[0][i - 2])
+    print(max(board[0][-1], board[1][-1]))
+  ```
+
+  * DP로 풀 수 있는 문제였다.
+  * 현재 위치를 `i` 라 할 때 반대편 위치의 `i - 1`, `i - 2`번째 값중 큰값을 더해주며 진행하면 된다.
