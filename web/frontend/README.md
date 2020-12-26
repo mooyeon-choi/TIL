@@ -34,7 +34,7 @@ JS class 활용법을 공부하고 이해하는데 많은 도움이 되었고 �
 
 ## Angular vs React vs Vue
 
-* [바로가기](./angular_react_vue)
+* [바로가기](./angular_vs_react_vs_vue)
 
 ```
 대표적인 FE Framework
