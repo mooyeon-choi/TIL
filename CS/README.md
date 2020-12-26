@@ -29,6 +29,8 @@
 
 * [jojoldu 주니어 개발자를 위한 취업 정보](https://github.com/jojoldu/junior-recruit-scheduler/blob/master/README.md)
 
+* [애아빠님의 네카라 입사하는 방법](https://okky.kr/article/842953)
+
 ## DataStructure
 
 * [바로가기](./DataStructure)
