@@ -30,7 +30,7 @@ Python 학습은 Jupyter Notebook을 활용하여 실행 결과를 바로바로 
 jupyter notebook의 사용법, 파이썬의 기본 문법들과 특징들 그리고 객체 지향 프로그래밍(OOP)가 무엇인지 알아보자
 ```
 
-1. [Jupyter Notebook 기초](./notes/00.jupyter notebook 기초.ipynb)
+1. [Jupyter Notebook 기초](./notes/00.jupyter_notebook_기초.ipynb)
 2. [Python 시작하기](./notes/01.python_intro.ipynb)
 3. [Flow Control](./notes/02.control_of_flow.ipynb)
 4. [Function](./notes/03.function.ipynb)
