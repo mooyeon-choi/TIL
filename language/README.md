@@ -8,7 +8,7 @@
 
 ## JavaScript
 
-* 바로가기
+* [바로가기](./javaScript)
 
 ```
 Web 개발에 필수적인 요소인 ✔️JavaScript
