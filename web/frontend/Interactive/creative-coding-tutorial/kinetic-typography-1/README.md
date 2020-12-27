@@ -41,3 +41,33 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>    
   </head>
   ```
+  
+* `PIXI.Renderer()`
+
+  * [공식문서](https://pixijs.download/release/docs/PIXI.Renderer.html)
+  * WebGL을 통해 canvas에 그려준다.
+
+* `PIXI.Filter()`
+
+  * [공식문서](https://pixijs.download/release/docs/PIXI.Filter.html)
+
+  ```js
+  const filter = new PIXI.Filter(vertexSrc, fragmentSrc, uniforms);
+  ```
+
+  `fragmentSrc`는 다음과 같이 `string`으로 입력한다.
+
+  ```js
+  const fragment = `
+  varying vec2 vTextureCoord;
+  uniform sampler2D uSampler;
+  void main(void)
+  {
+     gl_FragColor = texture2D(uSampler, vTextureCoord);
+  }
+  `;
+  
+  const myFilter = new PIXI.Filter(null, fragment);
+  ```
+
+  
