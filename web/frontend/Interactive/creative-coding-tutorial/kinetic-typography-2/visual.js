@@ -16,6 +16,7 @@ export class Visual {
     };
 
     document.addEventListener("pointermove", this.onMove.bind(this), false);
+    document.addEventListener("touchend", this.onTouchEnd.bind(this), false);
   }
 
   show(stageWidth, stageHeight, stage) {
@@ -70,5 +71,10 @@ export class Visual {
   onMove(e) {
     this.mouse.x = e.clientX;
     this.mouse.y = e.clientY;
+  }
+
+  onTouchEnd() {
+    this.mouse.x = 0;
+    this.mouse.y = 0;
   }
 }
