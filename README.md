@@ -18,11 +18,11 @@
 
 > :white_check_mark: 12월 4주차 해야할 일
 
-* [ ] 알고리즘 문제 해결 전략 - 01. 문제 해결 시작하기 완독
-  * [ ] 문제 해결 개관
-  * [ ] 코딩과 디버깅에 관하여
+* [ ] 알고리즘 문제 해결 전략 
+  * [ ] 문제 해결 시작하기
+  * [ ] 알고리즘 분석
 * [ ] PS
-  * [x] Codeforces Round #692 참여
+  * [ ] Educational Codeforces Round 101 (Rated for Div. 2) 참여
   * [ ] 백준 Class 4 풀기 (Python)
 * [ ] CS
   * [ ] OS 강의 2 ~ 3
@@ -30,10 +30,10 @@
     * [ ] Process 1
     * [ ] Process 2
     * [ ] Process 3
-* [x] To do list 프로젝트
-  * [x] Update, Delete button 만들기
-  * [x] List Drag & Drop 오류 수정
-  * [x] Card 삭제 기능 추가
+* [ ] Vue Props / Emit 정리
+* [ ] React
+  * [ ] Function 컴포넌트, memo 정리
+  * [ ] React Hook
 
 ## Git 사용법
 
