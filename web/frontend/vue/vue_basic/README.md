@@ -3,8 +3,16 @@
 ## 목차
 
 * [Template 프로젝트 만들기](#template-프로젝트-만들기) 
-
-
+* [간단한 프로젝트로 배우기](#간단한-프로젝트로-배우기)
+  * [Template 복사하기](#template-복사하기)
+  * [Vue Mount](#vue-mount)
+  * [Vue 정리](#vue-정리)
+  * [Habit tracker](#habit-tracker)
+    * [habit component 만들기](#habit-component-만들기)
+    * [Fontawesome 추가](#fontawesome-추가)
+    * [Data 이해하기](#data-이해하기)
+    * [Directives](#directives)
+    * [Props와 Emit](#props와-emit)
 
 ## Template 프로젝트 만들기
 
