@@ -157,20 +157,23 @@ project
 
   ```json
   {
-    "name": "test", // 어플리케이션 이름
-    "version": "0.1.0", // 어플리케이션 버전
-    "private": true, // private or public
-    "dependencies": { // 사용하는 외부 라이브러리
+    "name": "test",
+    "version": "0.1.0", 
+    "private": true,
+    "dependencies": {
       "@testing-library/jest-dom": "^5.11.4",
-      ...
     },
-    "scripts": { // yarn "scripts" 입력시 실제 scripts
+    "scripts": {
       "start": "react-scripts start",
-      ...
     },
-    ...
   }
   ```
+  
+  * `name` : 어플리케이션 이름
+  * `version` : 어플리케이션 버전
+  * `private` : private or public
+  * `dependencies` : 사용하는 외부 라이브러리
+  * `scripts` : `yarn "scripts"` 입력시 실제 scripts
 
 ### README.md
 
