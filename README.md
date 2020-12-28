@@ -31,6 +31,8 @@
     * [ ] Process 2
     * [ ] Process 3
 * [ ] Vue Props / Emit 정리
+  * [x] Props 정리
+  * [ ] Emit 정리
 * [ ] React
   * [ ] Function 컴포넌트, memo 정리
   * [ ] React Hook
