@@ -16,19 +16,11 @@
 ```
 
 * [(도서)게일 라크만 맥도웰, 코딩 인터뷰 완전 분석, 이창현 옮김, 프로그래밍 인사이트](https://www.google.com/search?q=%EC%BD%94%EB%94%A9%EC%9D%B8%ED%84%B0%EB%B7%B0+%EC%99%84%EC%A0%84%EB%B6%84%EC%84%9D&oq=%EC%BD%94%EB%94%A9%EC%9D%B8%ED%84%B0&aqs=chrome.2.69i57j0l4j0i10j0l2.4167j0j7&sourceid=chrome&ie=UTF-8)
-
 * [JaeYeopHan님의 Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
-
-  면접을 준비하면서 이 페이지를 안본 사람은 없을 것이라 생각한다. 가장 유명한 기술 면접 대비 자료이다.
-
 * [Gyoogle dev blog](https://gyoogle.dev/blog/)
-
-  면접에서 자주나오는 질문들의 기본적인 설명은 대부분 나와있다. 이 곳만 보면서 공부해도 최소한 면접때 한마디도 못할 일은 없을 것 같다.
-
+* [baeharam님의 취준생이 반드시 알아야 할 프론트엔드 지식들](https://github.com/baeharam/Must-Know-About-Frontend)
 * [WeareSoft Tech Interview](https://github.com/WeareSoft/tech-interview)
-
 * [jojoldu 주니어 개발자를 위한 취업 정보](https://github.com/jojoldu/junior-recruit-scheduler/blob/master/README.md)
-
 * [애아빠님의 네카라 입사하는 방법](https://okky.kr/article/842953)
 
 ## DataStructure
