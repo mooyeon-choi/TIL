@@ -373,10 +373,105 @@ export default {
 
   ```js
   props: ['message'] // 권장하지 않음 자동으로 타입 구분
-  props: {           // 권장
+  props: {           // 권장: 타입 명시
       message: String
   }
   ```
 
   와 같이 `props`를 받아와서 사용할 수 있다.
+
+* Dynamic Props
+
+  * 동적으로 변하는 Props를 넘겨주기 위해서는 `v-bind`를 사용하면 된다.
+
+    ```vue
+    <!-- Dynamically assign the value of a variable -->
+    <blog-post v-bind:title="post.title"></blog-post>
+    
+    <!-- Dynamically assign the value of a complex expression -->
+    <blog-post
+      v-bind:title="post.title + ' by ' + post.author.name"
+    ></blog-post>
+    ```
+
+    * 예시로 String을 사용하였지만, Number, Boolean, Array, Object 모두 사용 가능하다.
+
+* One-Way Data Flow
+
+  * 모든 Props 들은 부모에서 자식, 단방향으로 내려가는 바인딩 형태를 취한다.
+
+    -> 부모의 형태가 변하면 자식 속성에게 전달되지만, 반대로는 적용되지 않는다.
+
+  * 부모 컴포넌트가 업데이트 될 때 마다 자식 요소의 모든 Props들이 새로고침된다.
+
+    -> 따라서 자식 컴포넌트 안에서 Props를 직접 수정해서는 안된다.
+
+  * 그럼에도 불구하고, 자식 컴포넌트에서 꼭 Props를 변경해주어야 할 때는 아래와 같이 처리하자.
+
+    1. **prop은 초기값만 전달하고, 자식 컴포넌트는 그 초기값을 로컬 데이터 속성으로 활용하고 싶은 경우**
+
+       ```js
+       props: ['initialCounter'],
+       data: function () {
+         return {
+           counter: this.initialCounter
+         }
+       }
+       ```
+
+    2. **전달된 prop의 형태를 바꾸어야 하는 경우**
+
+       `computed` 속성을 사용하는 것이 좋다.
+
+       ```js
+       props: ['size'],
+       computed: {
+         normalizedSize: function () {
+           return this.size.trim().toLowerCase()
+         }
+       }
+       ```
+
+* Validation
+
+  * Props의 유효성 검사를 통해 Vue는 JavaScript console에 경고를 표시한다. 이는 다른 사람들과 같이 컴포넌트를 개발할 경우 매우 유용하다.
+
+    ```js
+    Vue.component('my-component', {
+      props: {
+        // 기본 타입 체크 (`Null`이나 `undefinded`는 모든 타입을 허용합니다.)
+        propA: Number,
+        // 여러 타입 허용
+        propB: [String, Number],
+        // 필수 문자열
+        propC: {
+          type: String,
+          required: true
+        },
+        // 기본값이 있는 숫자
+        propD: {
+          type: Number,
+          default: 100
+        },
+        // 기본값이 있는 오브젝트
+        propE: {
+          type: Object,
+          // 오브젝트나 배열은 꼭 기본값을 반환하는
+          // 팩토리 함수의 형태로 사용되어야 합니다. 
+          default: function () {
+            return { message: 'hello' }
+          }
+        },
+        // 커스텀 유효성 검사 함수
+        propF: {
+          validator: function (value) {
+            // 값이 항상 아래 세 개의 문자열 중 하나여야 합니다. 
+            return ['success', 'warning', 'danger'].indexOf(value) !== -1
+          }
+        }
+      }
+    })
+    ```
+
+    
 
