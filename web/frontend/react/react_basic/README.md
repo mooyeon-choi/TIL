@@ -30,7 +30,7 @@
 
   
 
-  ```react
+  ```jsx
   class LikeButton extends Component {
       state = {};
   	render() {}
@@ -54,7 +54,7 @@
 
   
 
-  ```react
+  ```jsx
   function App() {
       return <h1>Hello</h1>
   }
@@ -155,7 +155,7 @@ cp -R template habit-tracker
 
 * `index.js`
 
-  ```react
+  ```jsx
   ReactDOM.render(
     <React.StrictMode> // js의 "use strict"와 같은
       <App />
@@ -177,7 +177,7 @@ cp -R template habit-tracker
 
 * JSX가 없었을때 React 작성법
 
-  ```react
+  ```jsx
   function App() {
       return React.createElement('h1', {}, 'Hello:)');
   }
@@ -187,7 +187,7 @@ cp -R template habit-tracker
 
 * `html` 처럼 입력할 수 있도록 해주는 JSX
 
-  ```react
+  ```jsx
   function App() {
       return <h1>Hello:)</h1>
   }
@@ -197,14 +197,14 @@ cp -R template habit-tracker
 
 * 비즈니스 로직 작성
 
-  ```react
+  ```jsx
   function App() {
       const name = 'moo';
       return <h1>Hello {name} :)</h1>
   }
   ```
 
-  ```react
+  ```jsx
   function App() {
       const name = 'moo';
       return (
@@ -225,7 +225,7 @@ cp -R template habit-tracker
 
   * `<div></div>`
 
-      ```react
+      ```jsx
       function App() {
           const name = 'moo';
           return (
@@ -241,7 +241,7 @@ cp -R template habit-tracker
       
   * `React.Fragment`
 
-      ```react
+      ```jsx
       function App() {
           const name = 'moo';
           return (
@@ -257,7 +257,7 @@ cp -R template habit-tracker
 
   * 의미 없이 단순히 그룹으로 묶어주고만 싶을때
 
-      ```react
+      ```jsx
       function App() {
           const name = 'moo';
           return (
@@ -346,7 +346,7 @@ cp -R template habit-tracker
 
 * 부모 컴포넌트에서
 
-  ```react
+  ```jsx
   <Child title={'Like'} onClick={this.handleClick} />
   ```
 
@@ -354,7 +354,7 @@ cp -R template habit-tracker
 
 * 자식 컴포넌트에서 `Props` 한번에 변수로 저장하기
 
-  ```react
+  ```jsx
   const { name, count } = this.props.habit;
   ```
 
@@ -370,7 +370,7 @@ cp -R template habit-tracker
 
   * 리스트의 값들을 변경해줄때도 마찬가지로 `setState()`를 사용해야 한다. 따라서 `this.state.list`를 복사하여 `setState()`에 넣어준다.
 
-    ```react
+    ```jsx
     const habits = [...this.state.habits]; // this.state.habits를 복사
     const index = habits.indexOf(habit);
     habits[index].count++;
@@ -385,7 +385,7 @@ cp -R template habit-tracker
 
     * `render()`의 태그안에 직접 입력
 
-      ```react
+      ```jsx
       <button 
           className="habit-button habit-delete"
           onClick={() => {
@@ -400,7 +400,7 @@ cp -R template habit-tracker
 
     * Member 변수로 만들어주어서 사용
 
-      ```react
+      ```jsx
       handleIncrement = () => {
           this.props.onIncrement(this.props.habit);
       }
@@ -416,7 +416,7 @@ cp -R template habit-tracker
 
 * 사용법
 
-  ```react
+  ```jsx
   class HabitAddForm extends Component {
   
     inputRef = React.createRef();
@@ -451,13 +451,13 @@ cp -R template habit-tracker
 
 * `Ref`에 저장된 요소 확인
 
-  ```react
+  ```jsx
   this.inputRef.current.value;
   ```
 
 * `form` 요소에 저장된 값 초기화해주기
 
-  ```react
+  ```jsx
   class HabitAddForm extends Component {
   
     formRef = React.createRef();
