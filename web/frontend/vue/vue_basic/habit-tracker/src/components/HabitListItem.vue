@@ -15,7 +15,9 @@
 </template>
 <script>
 export default {
-  props: ['habit']
+  props: {
+    habit : Object
+  }
 }
 </script>
 <style>

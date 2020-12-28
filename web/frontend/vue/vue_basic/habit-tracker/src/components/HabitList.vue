@@ -18,7 +18,9 @@
 import HabitAddForm from './HabitAddForm.vue'
 import HabitListItem from './HabitListItem.vue'
 export default {
-  props: ['habits'],
+  props: { 
+    habits : Object
+  },
   components: { HabitListItem, HabitAddForm },
 }
 </script>

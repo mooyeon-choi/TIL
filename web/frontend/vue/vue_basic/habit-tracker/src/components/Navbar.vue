@@ -7,7 +7,9 @@
 </template>
 <script>
 export default {
-  props: ['totalCount']
+  props: {
+    totalCount : Number
+  }
 }
 </script>
 <style>
