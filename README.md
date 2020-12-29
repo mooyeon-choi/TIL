@@ -22,7 +22,7 @@
   * [ ] 문제 해결 시작하기
   * [ ] 알고리즘 분석
 * [ ] PS
-  * [ ] Educational Codeforces Round 101 (Rated for Div. 2) 참여
+  * [x] Educational Codeforces Round 101 (Rated for Div. 2) 참여
   * [ ] 백준 Class 4 풀기 (Python)
 * [ ] CS
   * [ ] OS 강의 2 ~ 3
