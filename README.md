@@ -16,7 +16,7 @@
 
 ## Weekly to do list
 
-> :white_check_mark: 12월 4주차 해야할 일
+> Good Bye!! 2020🐭 Hello!! 2021🐮
 
 * [ ] 알고리즘 문제 해결 전략 
   * [ ] 문제 해결 시작하기
