@@ -238,6 +238,25 @@ export default {
   * 이때 Data의 각 속성들에 대해 shallow(얕게) 비교하므로 각 속성들의 Reference만 비교해준다.
 
     따라서, 속성에 Object가 저장되어있고 Object 내부의 값이 변경될 경우 Vue에서 변화를 감지하지 못한다.
+  
+* Data 의 변경을 감지할 때는 JS 의 getter/setter가 사용된다.
+
+  <img src="https://vuejs.org/images/data.png" width="600px"/>
+
+* Data의 각 속성값이 변경될 때에는 Vue에서 이를 감지해 re-render 시켜준다.
+
+  하지만 각 속성값이 Object로 이루어져 Reference로 확인할 수 없을 때 변화를 감지하기 위해서는 어떻게 해줘야 할까?
+
+#### Vue.set
+
+* [공식 문서](https://vuejs.org/v2/api/#Vue-set)
+* 각 속성 Object나 Array 내부의 값이 변경될 때 이를 감지해주기 위해 `Vue.set()` API를 사용한다.
+* `Vue.set( target, propertyName/index, value )` 
+  * `target` : Object or Array
+  * `propertyName/index` : Object propertyName or Array index
+  * `value` : any
+
+> 물론 새로운 Object, Array를 생성하고 넣어주어 Reference를 바꿔주는 방식으로도 해결할 수 있다.
 
 #### Directives
 
