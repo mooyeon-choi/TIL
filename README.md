@@ -99,7 +99,7 @@ JavaScript부터 Python, Java, C++까지 다양한 언어들의 사용법과 동
 
 ## Machine Learning
 
-* [바로가기](./DeepLearning)
+* [바로가기](./machine-learning)
 
 ```
 TensorFlow를 활용한 Image Captioning, Pose Estimation을 실습해보고 책을 보며 공부한 내용
