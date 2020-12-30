@@ -9,6 +9,7 @@
 * [조합](#조합)
 * [스티커](#스티커)
 * [N과 M(8)](#n과-m8)
+* [N과 M(9)](#n과-m9)
 
 ## 제곱 ㄴㄴ 수
 
@@ -134,3 +135,31 @@
   ```
 
   * 먼저 입력받은 숫자들을 정렬해주고 재귀함수를 통해 현재 위치에서 마지막까지 반복문을 통해 풀면 되는 문제였다.
+
+## N과 M(9)
+
+* [문제 링크](https://www.acmicpc.net/problem/15663)
+
+* 풀이
+
+  ```python
+  def dfs(idx, cnt, result):
+    if cnt == m:
+      if tuple(result) not in used:
+        print(*result)
+        used.add(tuple(result))
+      return
+    else:
+      for i in range(0, n):
+        if i not in idx:
+          dfs(idx | {i}, cnt + 1, result + [nums[i]])
+  
+  n, m = map(int, input().split())
+  used = set()
+  nums = sorted(list(map(int, input().split())))
+  dfs(set(), 0, [])
+  ```
+
+  * 똑같은 결과를 출력하면 안되므로 `set()`을 활용하여 used를 체크해주었다.
+  * 마찬가지로 이미 사용한 index는 idx Set에 넣어주어 used 체크를 해주었다.
+
