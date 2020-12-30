@@ -8,6 +8,7 @@
 * [트리 순회](#트리-순회)
 * [조합](#조합)
 * [스티커](#스티커)
+* [N과 M(8)](#n과-m8)
 
 ## 제곱 ㄴㄴ 수
 
@@ -111,3 +112,25 @@
 
   * DP로 풀 수 있는 문제였다.
   * 현재 위치를 `i` 라 할 때 반대편 위치의 `i - 1`, `i - 2`번째 값중 큰값을 더해주며 진행하면 된다.
+
+## N과 M(8)
+
+* [문제 링크](https://www.acmicpc.net/problem/15657)
+
+* 풀이
+
+  ```python
+  def dfs(idx, cnt, result):
+    if cnt == m:
+      print(' '.join(result))
+      return
+    else:
+      for i in range(idx, n):
+        dfs(i, cnt + 1, result + [str(nums[i])])
+  
+  n, m = map(int, input().split())
+  nums = sorted(list(map(int, input().split())))
+  dfs(0, 0, [])
+  ```
+
+  * 먼저 입력받은 숫자들을 정렬해주고 재귀함수를 통해 현재 위치에서 마지막까지 반복문을 통해 풀면 되는 문제였다.
