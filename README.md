@@ -11,7 +11,7 @@
 * [Problem Solving](#problem-solving)
 * [CS](#cs)
 * [Language](#language)
-* [DeepLearning](#deeplearning)
+* [Machine Learning](#machine-learning)
 * [Others](#Others)
 
 ## Weekly to do list
@@ -97,7 +97,7 @@ Algorithm, DataStructure, Network, OS 등
 JavaScript부터 Python, Java, C++까지 다양한 언어들의 사용법과 동작원리를 이해하자!
 ```
 
-## DeepLearning
+## Machine Learning
 
 * [바로가기](./DeepLearning)
 
