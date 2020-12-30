@@ -10,6 +10,7 @@
 * [스티커](#스티커)
 * [N과 M(8)](#n과-m8)
 * [N과 M(9)](#n과-m9)
+* [N과 M(12)](#n과-m12)
 
 ## 제곱 ㄴㄴ 수
 
@@ -163,3 +164,28 @@
   * 똑같은 결과를 출력하면 안되므로 `set()`을 활용하여 used를 체크해주었다.
   * 마찬가지로 이미 사용한 index는 idx Set에 넣어주어 used 체크를 해주었다.
 
+## N과 M(12)
+
+* [문제 링크](https://www.acmicpc.net/problem/15666)
+
+* 풀이
+
+  ```python
+  def dfs(idx, cnt, result):
+    if cnt == m:
+      if tuple(result) not in used:
+        print(*result)
+        used.add(tuple(result))
+      return
+    else:
+      for i in range(idx, n):
+        dfs(i, cnt + 1, result + [nums[i]])
+  
+  n, m = map(int, input().split())
+  used = set()
+  nums = sorted(list(map(int, input().split())))
+  dfs(0, 0, [])
+  ```
+
+  * 기본적으로 [N과 M(8)](#n과-m8)과 풀이 방법이 같다.
+  * 이미 출력된 수열을 또 출력하면 안되므로 이 부분만 used Set을 활용하여 처리해주었다.
