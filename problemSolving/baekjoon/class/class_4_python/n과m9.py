@@ -2,6 +2,7 @@ def dfs(idx, cnt, result):
   if cnt == m:
     if tuple(result) not in used:
       print(*result)
+      used.add(tuple(result))
     return
   else:
     for i in range(0, n):
