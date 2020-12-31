@@ -1,3 +1,8 @@
+> JavaScript의 코드 작성법과 원리를 간단하게 설명한 자료
+>
+> 좀 더 깊이있는 핵심 개념과 동작원리를 이해하기 위한 자료는 
+> [language/javaScript](./../../../language/javaScript) 에서 확인!!
+
 # JavaScript
 
 ```
