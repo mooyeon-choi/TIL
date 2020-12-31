@@ -1,3 +1,9 @@
+> 여기에서는 JavaScript 언어의 기본적인 사용법이 아닌
+>
+> JavaScript 언어가 어떤 식으로 동작하는지 그 이론을 파악함으로써 전반적인 기본기를 다진다.
+>
+> 기본적인 JavaScript 언어의 사용법에 대해 공부하려면 [web/basic/javaScript](./../../web/basic/javaScript)로 가자
+
 # JavaScript
 
 ## 목차
