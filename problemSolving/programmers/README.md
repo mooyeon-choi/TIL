@@ -18,6 +18,7 @@
 > 기본적인 반복문, 수식 사용법을 활용한 문제 풀이
 
 * [Java 바로가기](./level_1_java)
+* [JavaScript 바로가기](./level_1_js)
 
 ## Level 2
 
