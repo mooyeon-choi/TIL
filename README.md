@@ -18,24 +18,8 @@
 
 > Good Bye!! 2020🐭 Hello!! 2021🐮
 
-* [ ] 알고리즘 문제 해결 전략 
-  * [ ] 문제 해결 시작하기
-  * [ ] 알고리즘 분석
-* [ ] PS
-  * [x] Educational Codeforces Round 101 (Rated for Div. 2) 참여
-  * [ ] 백준 Class 4 풀기 (Python)
-* [ ] CS
-  * [ ] OS 강의 2 ~ 3
-    * [ ] System Structure & Program Execution 2
-    * [ ] Process 1
-    * [ ] Process 2
-    * [ ] Process 3
-* [ ] Vue Props / Emit 정리
-  * [x] Props 정리
-  * [ ] Emit 정리
-* [ ] React
-  * [ ] Function 컴포넌트, memo 정리
-  * [ ] React Hook
+* [ ] Programmers Level 1 - JavaScript로 풀기
+* [ ] Vanilla JS 랜덤 고양이 사진 웹페이지 제작
 
 ## Git 사용법
 
