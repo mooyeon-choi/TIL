@@ -1,4 +1,4 @@
-# WEB
+# WEB Basic
 
 ```
 Web 개발에 필요한 기본 HTML, CSS, JS 지식을 정리해두었습니다💁
