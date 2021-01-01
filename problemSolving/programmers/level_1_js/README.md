@@ -9,6 +9,7 @@
 * [2016년](2016년)
 * [3진법 뒤집기](#3진법-뒤집기)
 * [두 정수 사이의 합](#두-정수-사이의-합)
+* [문자열 내 p와 y의 개수](#문자열-내-p와-y의-개수)
 
 ## 크레인 인형뽑기 게임
 
@@ -304,3 +305,36 @@
 
   * 다른 사람의 풀이를 보자 `String.localeCompare(비교할 문자)` 를 사용하여 한번에 비교를 해주었다.
   * [MDN String.localeCompare()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)
+
+## 문자열 내 p와 y의 개수
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12916?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(s){
+      let cntP = 0
+      let cntY = 0
+      for (let i = 0; i < s.length; i++) {
+          if (s[i] === 'p' | s[i] === 'P') cntP++
+          else if (s[i] === 'y' | s[i] === 'Y') cntY++
+      }
+      return cntP == cntY ? true : false;
+  }
+  ```
+
+  * 그냥 반복문을 돌며 count 해주었다.
+
+  ```js
+  // 다른 사람의 풀이 temp , - , - , - , - 외 23 명
+  function solution(s) {
+    return s.match(/p/gi).length == s.match(/y/gi).length;
+  }
+  ```
+
+  * `String.match()`를 사용하여 간단하게 해결할 수 있었다.
+  * `/문자/` 를 통해 찾고 싶은 문자를 찾는다 이때 첫번째 문자를 찾으면 바로 리턴해주는데 모든 문자를 찾기위해 `g` flag를 붙여준다.
+  * 이번에는 대문자와 소문자를 다른 문자로 판단해 제대로 값이 나오지 않는다 `i` flag를 붙여주면 대소문자를 구분하지 않는다.
+  * `ig`와 `gi` 모두 사용할 수 있지만 보통 gi로 사용하는 것 같다.
+  * [MDN String.match()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
