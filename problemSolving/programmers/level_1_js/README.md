@@ -237,3 +237,19 @@
 
   * 다른 사람의 풀이를 보니 `filter()`로 해결할 수 있는 문제였다. `Array.map()` 까지만 생각했었는데, 조건에 맞게 걸러줄 수 있는 `Array.filter()` 의 사용법을 알게된 좋은 문제였다.
   * 또한 `Array.filter()`는 조건이 `true`일 때 현재 값을 리턴해주므로 `return`이 아닌 조건을 넣어야 한다.
+
+## 나누어 떨어지는 숫자 배열
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12910?language=javascript)
+
+* 문제
+
+  ```js
+  function solution(arr, divisor) {
+      const result = arr.filter(num => num%divisor == 0);
+      return result.length > 0 ? result.sort((x, y) => x - y) : [-1];
+  }
+  ```
+
+  * 위의 문제 처럼 `Array.filter()`를 사용하면 풀 수 있는 문제였다.
+  * 예외 처리를 해주어야 해서 `result`에 값이 들어있는지 확인하는 삼항 조건 연산자(Conditional Ternary Operator)`조건 ? true : false` 를 사용해주었다.
