@@ -35,3 +35,56 @@
 * [MDN Web APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)
 
 ## Browser 구조 분석
+
+![Browser 구조](./images/browser-structure.png)
+
+* **Window** 
+
+  Browser에서 현재 열려있는 전체적인 창
+
+* **Document**
+
+  페이지가 표시되는 부분
+
+  Html로 작성한 요소들이 표기되어지는 부분
+
+* **Navigator**
+
+  사용자에게는 보여지지 않지만 Browser 자체에 대한 정보들이 담겨있다.
+
+![Window Tree](./images/window-tree.png)
+
+* DOM(Document Object Model)
+
+  화면에 새로운 요소를 추가, 제거 혹은 움직일 수 있다.
+
+* BOM(Browser Object Model)
+
+  Web APIs에 관련된 Object들이 들어있다.
+
+* JavaScript
+
+## Window
+
+* [MDN Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+
+* global Object이므로 console 창에서 `console.log(this)`를 입력해보면 `window`가 찍히는 것을 볼 수 있다.
+
+  따라서 우리가 `window.innerWidht`라고 입력하지 않고 `innerWidth`라고만 입력해주어도 `window.innerWidth`가 표시되는 것을 확인 할 수 있다.
+
+* 주로 사용되는 곳
+
+  1. Size
+
+     현재 윈도우의 크기가 몇인지, 윈도우의 크기가 변화하는지
+
+  2. Scroll
+
+     사용자가 스크롤할 때 어떻게 처리할지
+
+  3. load
+
+     페이지가 로드되었는지, 우리가 작성한 웹페이지가 브라우저에 올라왔는지 확인
+
+### Window 사이즈 표기
+
