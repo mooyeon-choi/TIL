@@ -354,3 +354,45 @@
   * Spread syntax(...)을 이용하여 String을 Array로 바꿔준다.
   * 이후 sort를 사용하여 `x > y` 일 경우 `-1`을 줘서 사전 역순으로 정렬한다.
   * `Array.join()`을 써서 다시 문자열로 바꿔준다.
+
+## 문자열 다루기 기본
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12918?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(s) {
+      const number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+      if (s.length !== 4 & s.length !== 6) {
+          return false;
+      }
+      for (let i = 0; i < s.length; i++) {
+          if (!(s[i] in number)) {
+              return false;
+          }
+      }
+      return true;
+  }
+  ```
+
+  * 길이 조건을 만족 하지 못할 경우 한번 걸러주고
+  * `number` Array를 만들어서 `number`에 없는 문자가 있을 경우 `false`를, 모두 통과했을 때는 `true`를 리턴하였다.
+
+  ```js
+  // 다른 사람의 풀이 다들 탈퇴해서 ID가 안보임...
+  function alpha_string46(s){
+    var regex = /^\d{6}$|^\d{4}$/;
+    return regex.test(s);
+  }
+  ```
+
+  * 정규 표현식을 활용한 풀이이다.
+  * [MDN 정규식](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/%EC%A0%95%EA%B7%9C%EC%8B%9D)
+  * `/ /` 정규식 리터럴(슬래쉬`/`로 감싸는 패턴)을 사용하면 정규식을 만들 수 있다.
+  * `^` : 입력의 시작부분 문자셋 `[^xyz]`와 혼동하지 않게 조심하자.
+  * `$` : 입력의 끝부분
+  * `\d` : 숫자에 대응 [0 - 9]
+  * `{n}` : 앞 표현식을 `n`번 나타낸다.
+  * `x|y` : or
+  * `정규식.test(String)` 정규식에 대응되는지 검사하는 메소드 
