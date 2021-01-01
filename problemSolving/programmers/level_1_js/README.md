@@ -5,6 +5,7 @@
 * [크레인 인형뽑기 게임](#크레인-인형뽑기-게임)
 * [두 개 뽑아서 더하기](#두-개-뽑아서-더하기)
 * [완주하지 못한 선수](#완주하지-못한-선수)
+* [K번째수](#k번째수)
 
 ## 크레인 인형뽑기 게임
 
@@ -113,3 +114,21 @@
 
 * 사실 문제의 풀이는 그렇게 까다롭지 않았지만 다른 사람의 풀이를 보며 많은 것을 배울 수 있는 좋은 문제였다.
 
+## K번째수
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/42748?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(array, commands) {
+    return commands.map((command) => {
+      return array.slice(command[0] - 1, command[1]).sort((x, y) => x - y)[
+        command[2] - 1
+      ];
+    });
+  }
+  ```
+
+  * `Array.map()` 을 사용해서 command를 하나씩 받아오고 각 인덱스에 `i ~ j` 까지 슬라이스 한 Array를 sort한 후 k번째 수를 `return`하였다.
+  * `sort()`를 사용할 때 그냥 해주면 사전순으로 정렬해주므로 `(x, y) => x - y`를 꼭 써야하는 것에 주의하자.
