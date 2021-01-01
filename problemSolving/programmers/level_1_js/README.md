@@ -396,3 +396,20 @@
   * `{n}` : 앞 표현식을 `n`번 나타낸다.
   * `x|y` : or
   * `정규식.test(String)` 정규식에 대응되는지 검사하는 메소드 
+
+## 서울에서 김서방 찾기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12919?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(seoul) {
+      return `김서방은 ${seoul.indexOf("Kim")}에 있다`;
+  }
+  ```
+
+  * 템플릿 리터럴(Template literals)을 사용하면 간단하게 풀 수 있다.
+  * [MDN Template literals](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals)
+  * `"Kim"`의 index는 `Array.indexOf("Kim")` 으로 찾을 수 있다.
+
