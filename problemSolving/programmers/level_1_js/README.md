@@ -8,6 +8,7 @@
 * [K번째수](#k번째수)
 * [2016년](2016년)
 * [3진법 뒤집기](#3진법-뒤집기)
+* [두 정수 사이의 합](#두-정수-사이의-합)
 
 ## 크레인 인형뽑기 게임
 
@@ -242,7 +243,7 @@
 
 * [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12910?language=javascript)
 
-* 문제
+* 풀이
 
   ```js
   function solution(arr, divisor) {
@@ -252,4 +253,27 @@
   ```
 
   * 위의 문제 처럼 `Array.filter()`를 사용하면 풀 수 있는 문제였다.
-  * 예외 처리를 해주어야 해서 `result`에 값이 들어있는지 확인하는 삼항 조건 연산자(Conditional Ternary Operator)`조건 ? true : false` 를 사용해주었다.
+  * 예외 처리를 해주어야 해서 `result`에 값이 들어있는지 확인하는 삼항 연산자(Conditional Ternary Operator)`조건 ? true : false` 를 사용해주었다.
+
+## 두 정수 사이의 합
+
+* [문제 링크]()
+
+* 풀이
+
+  ```js
+  function solution(a, b) {
+      return a > b ? (a + b) * (a - b + 1) / 2 : (a + b) * (b - a + 1) / 2;
+  }
+  ```
+
+  * 삼항 연산자를 이용해서 풀어주었다.
+
+  ```js
+  // 다른 사람의 풀이 박홍철 님의 풀이
+  function adder(a, b){
+      return (a+b)*(Math.abs(b-a)+1)/2;
+  }
+  ```
+
+  * 다른 사람의 풀이도 살펴보았는데 이 풀이법이 좀 더 깔끔한 것 같다.
