@@ -207,3 +207,33 @@
   ```
 
   * `조건 ? true : false `를 사용하여 풀어주었다.
+
+## 같은 숫자는 싫어
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12906?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(arr) {
+      const answer = [];
+      for  (let i = 0; i < arr.length; i++) {
+          if (arr[i] != arr[i - 1]) {
+              answer.push(arr[i]);
+          }
+      }
+      return answer;
+  }
+  ```
+
+  * 또 파이썬처럼 풀었다...
+
+  ```js
+  // 다른 사람의 풀이 jungting20 , - , 탈퇴한 사용자 , - , Junpil Hwang 외 116 명
+  function solution(arr){
+      return arr.filter((val,index) => val != arr[index+1]);
+  }
+  ```
+
+  * 다른 사람의 풀이를 보니 `filter()`로 해결할 수 있는 문제였다. `Array.map()` 까지만 생각했었는데, 조건에 맞게 걸러줄 수 있는 `Array.filter()` 의 사용법을 알게된 좋은 문제였다.
+  * 또한 `Array.filter()`는 조건이 `true`일 때 현재 값을 리턴해주므로 `return`이 아닌 조건을 넣어야 한다.
