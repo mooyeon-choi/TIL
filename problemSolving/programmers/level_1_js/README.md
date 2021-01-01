@@ -7,6 +7,7 @@
 * [완주하지 못한 선수](#완주하지-못한-선수)
 * [K번째수](#k번째수)
 * [2016년](2016년)
+* [3진법 뒤집기](#3진법-뒤집기)
 
 ## 크레인 인형뽑기 게임
 
@@ -150,3 +151,43 @@
 
   * python에서 `sum()` 대신 js에는 `reduce()`를 사용한다.
   * `reduce(function, current value)`로 덧셈 말고도 원하는 연산을 수행할 수 있다.
+
+## 3진법 뒤집기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/68935?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(n) {
+      let number = ''
+      let answer = 0
+      while (n > 0) {
+          number = n % 3 + number;
+          n = Math.floor(n / 3)
+      }
+      for (let i = 0; i < number.length; i++) {
+          answer += number[i] * 3**i
+      }
+      return answer;
+  }
+  ```
+
+  * 파이썬 같은 방식으로 풀었다.
+
+  ```js
+  // 다른 사람 풀이 soojeongHan , bangjaehun 님의 풀이
+  const solution = (n) => {
+      return parseInt([...n.toString(3)].reverse().join(""), 3);
+  }
+  ```
+
+  * 다른사람의 풀이를 보다가 위와 같은 JavaScript다운 깔끔한 코드를 봤다. 
+
+  * Spread syntax를 이용하여 Array에 넣어준다 이때 `numObj.toString([radix])`의 redix에 `2 ~ 36`의 숫자를 넣어주면 2진수에서 36진수까지 숫자를 변환하여 String으로 변환 해준다.
+
+    [MDN toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString)
+
+  * 이렇게 만든 Array를 `Array.reverse()`를 사용하여 뒤집어준다. 그 후 `Array.join("")`을 사용하여 다시 String으로 바꿔주고
+
+  * `parseInt(string [, radix])` 를 사용하여 redix에 마찬가지로 `2 ~ 36` 진수 설정을 해줄 수 있다.
