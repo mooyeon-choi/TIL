@@ -5,6 +5,7 @@
 * [같이 보면 좋은 자료들](#같이-보면-좋은-자료들)
 * [Angular vs React vs Vue](#angular-vs-react-vs-vue)
 * [Interactive Development](#interactive-development)
+* [Vanilla JS](#vanilla-js)
 * [React](#react)
 * [Vue](#vue)
 
@@ -51,6 +52,15 @@ canvas🎨에 JS event loop와 수학 공식을 더해주면 Interactive한 화�
 ```
 
 ![Canvas Example](./images/interactive_example.gif)
+
+## Vanilla JS
+
+* [바로가기](./vanilla-js)
+
+```
+기본적인 JavaScript 엔진의 동작원리, WEB APIs, DOM, Render Tree🌳 등에 대해 이해하고
+좀 더 완성도 높은 코드를 구현하기 위해 학습한 내용
+```
 
 ## React
 
