@@ -338,3 +338,19 @@
   * 이번에는 대문자와 소문자를 다른 문자로 판단해 제대로 값이 나오지 않는다 `i` flag를 붙여주면 대소문자를 구분하지 않는다.
   * `ig`와 `gi` 모두 사용할 수 있지만 보통 gi로 사용하는 것 같다.
   * [MDN String.match()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
+
+## 문자열 내림차순으로 배치하기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12917?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(s) {
+      return [...s].sort((x, y) => x > y ? -1 : 1).join('');
+  }
+  ```
+
+  * Spread syntax(...)을 이용하여 String을 Array로 바꿔준다.
+  * 이후 sort를 사용하여 `x > y` 일 경우 `-1`을 줘서 사전 역순으로 정렬한다.
+  * `Array.join()`을 써서 다시 문자열로 바꿔준다.
