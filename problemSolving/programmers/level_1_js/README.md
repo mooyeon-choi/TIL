@@ -191,3 +191,19 @@
   * 이렇게 만든 Array를 `Array.reverse()`를 사용하여 뒤집어준다. 그 후 `Array.join("")`을 사용하여 다시 String으로 바꿔주고
 
   * `parseInt(string [, radix])` 를 사용하여 redix에 마찬가지로 `2 ~ 36` 진수 설정을 해줄 수 있다.
+
+## 가운데 글자 가져오기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12903?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(s) {
+    return s.length & 1
+      ? s[Math.floor(s.length / 2)]
+      : s[Math.floor(s.length / 2) - 1] + s[Math.floor(s.length / 2)];
+  }
+  ```
+
+  * `조건 ? true : false `를 사용하여 풀어주었다.
