@@ -277,3 +277,30 @@
   ```
 
   * 다른 사람의 풀이도 살펴보았는데 이 풀이법이 좀 더 깔끔한 것 같다.
+
+## 문자열 내 마음대로 정렬하기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12915)
+
+* 풀이
+
+  ```js
+  function solution(strings, n) {
+      return strings.sort((x, y) => {
+          return x[n] > y[n] ? 1 : x[n] === y[n] ? x > y ? 1 : -1
+      });
+  }
+  ```
+
+  * 삼항연산자를 세번 써주어서 해결하였다.
+  * 삼항연산자를 중복으로 써주어서 가독성이 떨어져 좋은 코드는 아닌 것 같다.
+
+  ```js
+  // 다른 사람의 풀이 - , kimdongwon , 호리 , 날코딩 , 이석원 외 11 명
+  function solution(strings, n) {
+      return strings.sort((s1, s2) => s1[n] === s2[n] ? s1.localeCompare(s2) : s1[n].localeCompare(s2[n]));
+  }
+  ```
+
+  * 다른 사람의 풀이를 보자 `String.localeCompare(비교할 문자)` 를 사용하여 한번에 비교를 해주었다.
+  * [MDN String.localeCompare()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)
