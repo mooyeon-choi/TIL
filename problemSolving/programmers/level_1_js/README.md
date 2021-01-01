@@ -6,6 +6,7 @@
 * [두 개 뽑아서 더하기](#두-개-뽑아서-더하기)
 * [완주하지 못한 선수](#완주하지-못한-선수)
 * [K번째수](#k번째수)
+* [2016년](2016년)
 
 ## 크레인 인형뽑기 게임
 
@@ -132,3 +133,20 @@
 
   * `Array.map()` 을 사용해서 command를 하나씩 받아오고 각 인덱스에 `i ~ j` 까지 슬라이스 한 Array를 sort한 후 k번째 수를 `return`하였다.
   * `sort()`를 사용할 때 그냥 해주면 사전순으로 정렬해주므로 `(x, y) => x - y`를 꼭 써야하는 것에 주의하자.
+
+## 2016년
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12901?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(a, b) {
+      const days = ['THU', 'FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED']
+      const months = [0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30]
+      return days[(months.slice(0, a).reduce((x, y) => x + y, 0) + b) % 7];
+  }
+  ```
+
+  * python에서 `sum()` 대신 js에는 `reduce()`를 사용한다.
+  * `reduce(function, current value)`로 덧셈 말고도 원하는 연산을 수행할 수 있다.
