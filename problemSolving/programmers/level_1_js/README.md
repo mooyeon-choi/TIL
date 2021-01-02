@@ -11,6 +11,7 @@
 * [두 정수 사이의 합](#두-정수-사이의-합)
 * [문자열 내 p와 y의 개수](#문자열-내-p와-y의-개수)
 * [수박수박수박수박수박수?](#수박수박수박수박수박수)
+* [시저 암호](#시저-암호)
 
 ## 크레인 인형뽑기 게임
 
@@ -495,3 +496,55 @@
   * 다른 사람의 풀이를 보자
   * `arr.reduce(callback( accumulator, currentValue, [, index[, array]] )[, initialValue])`를 사용하여 인덱스도 받아 올 수 있다.
   * 이를 통해 `b`에서 같은 인덱스의 값을 곱해주어 간단하게 해결 할 수 있다.
+
+## 시저 암호
+
+* [문제 링크]()
+
+* 풀이
+
+  ```js
+  function solution(s, n) {
+      const answer = [];
+      for (let i = 0; i < s.length; i++) {
+          if (s[i] !== ' ') {
+              const word = s.charCodeAt(i);
+              if (word >= 65 & word <= 90) {
+                  answer.push(String.fromCharCode(word + n > 90 ? word + n - 26 : word + n))
+              } else {
+                  answer.push(String.fromCharCode(word + n > 122 ? word + n - 26 : word + n))
+              }
+          } else {
+              answer.push(' ')
+          }
+      }
+      return answer.join('');
+  }
+  ```
+
+  * ascii code를 활용하여 풀었다.
+
+  ```js
+  // 다른 사람의 풀이 쿠키님의 풀이
+  function solution(s, n) {
+      var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      var lower = "abcdefghijklmnopqrstuvwxyz";
+      var answer= '';
+  
+      for(var i =0; i <s.length; i++){
+          var text = s[i];
+          if(text == ' ') {
+              answer += ' '; 
+              continue;
+          }
+          var textArr = upper.includes(text) ? upper : lower;
+          var index = textArr.indexOf(text)+n;
+          if(index >= textArr.length) index -= textArr.length;
+          answer += textArr[index];
+      }
+      return answer;
+  }
+  ```
+
+  * 대소문자와 공백만 있으므로 Alphabet String을 모두 만들어 주고 `String.includes()`를 활용하여 푼 코드다.
+  * 이 방법도 깔끔하고 괜찮은 것 같다.
