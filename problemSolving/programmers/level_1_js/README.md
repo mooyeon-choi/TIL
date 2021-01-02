@@ -466,3 +466,32 @@
   * `String` 과 `Number`의 사칙연산을 수행하면 `Number`로 나오는 특성을 이용해서 푼 사람들도 많았다.
 
     하지만 그러한 풀이법은 명시적이지 못해 이렇게 명시적으로 표현해 주는 것이 더 좋은 풀이법이다.
+
+## 내적
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/70128?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(a, b) {
+      let answer = 0;
+      for (let i = 0; i < a.length; i++) {
+          answer += a[i] * b[i]
+      }
+      return answer;
+  }
+  ```
+
+  * 반복문을 돌며 같은 인덱스의 숫자를 곱해 answer에 더해주었다.
+
+  ```js
+  // 다른 사람의 풀이 고우혁님의 풀이
+  function solution(a, b) {
+      return a.reduce((acc, _, i) => acc += a[i] * b[i], 0);
+  }
+  ```
+
+  * 다른 사람의 풀이를 보자
+  * `arr.reduce(callback( accumulator, currentValue, [, index[, array]] )[, initialValue])`를 사용하여 인덱스도 받아 올 수 있다.
+  * 이를 통해 `b`에서 같은 인덱스의 값을 곱해주어 간단하게 해결 할 수 있다.
