@@ -448,3 +448,21 @@
   * `String.repeat(count)` method는 String을 글자 하나하나씩 나눠 Array로 변환해 준 후 count(소수점 뒤는 버림) 만큼 반복해서 `push`해주고 마지막으로 다시 String으로 변환시키는 방식으로 동작 한다.
   * 자세한 설명 [Implementing JDK String.repeat in Java 11](https://medium.com/@ggajos/java-11-how-string-repeat-was-implemented-and-why-d93796b7abba)
   * 따라서 메모리 공간에 Array를 저장하는 공간, `수`와 `박` String을 저장하는 공간만 필요하므로 위의 코드보다 훨씬 효율적이다.
+
+## 문자열을 정수로 바꾸기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12925?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(s) {
+      return parseInt(s);
+  }
+  ```
+
+  * parseInt를 사용하면 문자열을 숫자로 바꿔준다.
+
+  * `String` 과 `Number`의 사칙연산을 수행하면 `Number`로 나오는 특성을 이용해서 푼 사람들도 많았다.
+
+    하지만 그러한 풀이법은 명시적이지 못해 이렇게 명시적으로 표현해 주는 것이 더 좋은 풀이법이다.
