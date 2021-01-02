@@ -10,6 +10,7 @@
 * [3진법 뒤집기](#3진법-뒤집기)
 * [두 정수 사이의 합](#두-정수-사이의-합)
 * [문자열 내 p와 y의 개수](#문자열-내-p와-y의-개수)
+* [수박수박수박수박수박수?](#수박수박수박수박수박수)
 
 ## 크레인 인형뽑기 게임
 
@@ -413,3 +414,37 @@
   * [MDN Template literals](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals)
   * `"Kim"`의 index는 `Array.indexOf("Kim")` 으로 찾을 수 있다.
 
+## 수박수박수박수박수박수?
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12922?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(n) {
+      var answer = '';
+      for (let i = 0; i < n; i++) {
+          if (i & 1) {
+              answer += '박';
+          } else {
+              answer += '수';
+          }
+      }
+      return answer;
+  }
+  ```
+
+  * n번 반복문을 돌며 짝수 자리에는 `박`, 홀수 자리에는 `수`가 오도록 하였다.
+  * 하지만 메모리 공간을 `n`개 만큼 차지하여 좋은 코드는 아닌것 같다
+
+  ```js
+  // 다른 사람의 풀이 이수관 님의 풀이
+  const waterMelon = n => {
+      return '수박'.repeat(n/2) + (n%2 === 1 ? '수' : '');
+  }
+  ```
+
+  * 다른 사람의 풀이를 보자 `String.repeat()` method를 사용하여 해결한 풀이법을 보았다.
+  * `String.repeat(count)` method는 String을 글자 하나하나씩 나눠 Array로 변환해 준 후 count(소수점 뒤는 버림) 만큼 반복해서 `push`해주고 마지막으로 다시 String으로 변환시키는 방식으로 동작 한다.
+  * 자세한 설명 [Implementing JDK String.repeat in Java 11](https://medium.com/@ggajos/java-11-how-string-repeat-was-implemented-and-why-d93796b7abba)
+  * 따라서 메모리 공간에 Array를 저장하는 공간, `수`와 `박` String을 저장하는 공간만 필요하므로 위의 코드보다 훨씬 효율적이다.
