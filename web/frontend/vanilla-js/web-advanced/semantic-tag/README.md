@@ -2,7 +2,7 @@
 
 > `<div>`로만 요소들을 나눠주면 어떠한 내용이 들어있는지 알 수 없다. 따라서 HTML5에서는 웹 사이트의 내용을 구분해주기 위해 여러 Semantic tag들이 추가되었다.
 >
-> 이러한 Semantic tag 들의 의미와 어떤 때에 MDN Guide를 보며 이해하자.
+> 이러한 Semantic tag 들의 의미와 어떤 때에 사용하는지 MDN Guide를 보며 이해하자.
 >
 > [MDN Using HTML sections and outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines)
 
@@ -114,4 +114,32 @@
   </ul>
 </nav>
 ```
+
+* **Nesting Menus**
+
+  `<nav>`를 중첩되게 사용하면 안된다. 따라서 여러 메뉴를 포함하고 싶으면 Menu 안에 또 다른 Menu를 포함시키는 방법을 사용한다.
+
+  ```html
+  <nav>
+    <ul>
+      <li><a href="#">primary link</a></li>
+      <li>
+        <a href="#">primary link</a>
+        <ul>
+          <li><a href="#">secondary link</a></li>
+          <li><a href="#">secondary link</a></li>
+        </ul>
+      </li>
+      <li><a href="#">primary link</a></li>
+    </ul>
+  </nav>
+  ```
+
+* **Collection of Links**
+
+  `<nav>`는 해당 사이트의 Navigation menus를 위해서만 사용된다. 따라서 다른 링크들이나 Social media profile, 자주 찾는 블로그 등은 `<nav>`에 넣지 않는다.
+
+* **HTML Elements in** `<nav>`
+
+  위의 예시들에서 List element만 사용했다고 반드시 List element만 사용해야 하는 것은 아니다. `<p>` tag 등 다른 요소를 사용해도 된다.
 
