@@ -23,6 +23,7 @@
 * [시저 암호](#시저-암호)
 * [약수의 합](#약수의-합)
 * [이상한 문자 만들기](#이상한-문자-만들기)
+* [자릿수 더하기](#자릿수-더하기)
 
 ## 크레인 인형뽑기 게임
 
@@ -640,3 +641,17 @@
 
   * 위의 내 풀이방법을 `map()`과 `split()`, `join()`을 사용하면 훨씬 간단하게 표현할 수 있다.
   * `map()` 활용에 좀 더 신경써야겠다.
+
+## 자릿수 더하기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12931?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(n) {
+      return n.toString().split('').reduce((x, y) => x += parseInt(y), 0);
+  }
+  ```
+
+  * Number를 String으로 바꿔준 후 `split()`으로 나눠 Array로 만들어주고 `reduce()`를 활용하여 각 자리 수 를 모두 더해주었다.
