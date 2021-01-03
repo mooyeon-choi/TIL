@@ -27,6 +27,7 @@
 * [자연수 뒤집어 배열로 만들기](#자연수-뒤집어-배열로-만들기)
 * [정수 내림차순으로 배치하기](#정수-내림차순으로-배치하기)
 * [정수 제곱근 판별](#정수-제곱근-판별)
+* [제일 작은 수 제거하기](#제일-작은-수-제거하기)
 
 ## 크레인 인형뽑기 게임
 
@@ -689,7 +690,7 @@
 
 ## 정수 제곱근 판별
 
-* [문제 링크]
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12934?language=javascript)
 
 * 풀이
 
@@ -699,4 +700,30 @@
   }
   ```
 
-  
+  * n의 제곱근에 소수점 뒷자리수가 있으면 `-1` 없으면 `(제곱근 + 1)의 제곱`을 리턴하였다.
+
+## 제일 작은 수 제거하기
+
+* [문제 링크]
+
+* 풀이
+
+  ```js
+  function solution(arr) {
+    return arr.length > 1 ? arr.filter((num) => num !== Math.min(...arr)) : [-1];
+  }
+  ```
+
+  * `filter()`로 한번에 해결할 수 있지 않을까 생각했는데 실행시간이 엄청 오래걸렸다.
+  * 매번 `Math.min(...arr)`을 계산해서 그런 것 같아 `minNum` 변수를 따로 만들어주고 실행 시켜보았지만 그래도 아래의 코드보다 훨씬 오래걸렸다.
+
+  ```js
+  // 다른 사람의 풀이 lsw015 , developer-do , 노국현 , - , 정만수님 외 9 명
+  function solution(arr) {
+      arr.splice(arr.indexOf(Math.min(...arr)), 1)
+      return arr.length > 0 ? arr : [-1];
+  }
+  ```
+
+  * `Array.splice()`를 통해 Array 원하는 부분을 잘라낼 수 있다.
+  * 새로운 method를 알게 되었다.
