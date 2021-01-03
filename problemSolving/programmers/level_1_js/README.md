@@ -6,7 +6,7 @@
 * [두 개 뽑아서 더하기](#두-개-뽑아서-더하기)
 * [완주하지 못한 선수](#완주하지-못한-선수)
 * [K번째수](#k번째수)
-* [2016년](2016년)
+* [2016년](#2016년)
 * [3진법 뒤집기](#3진법-뒤집기)
 * [가운데 글자 가져오기](#가운데-글자-가져오기)
 * [같은 숫자는 싫어](#같은-숫자는-싫어)
@@ -22,6 +22,7 @@
 * [내적](#내적)
 * [시저 암호](#시저-암호)
 * [약수의 합](#약수의-합)
+* [이상한 문자 만들기](#이상한-문자-만들기)
 
 ## 크레인 인형뽑기 게임
 
@@ -583,3 +584,59 @@
 
   * 루트 n 까지의 숫자 중 n의 약수를 찾아 그 숫자와 나누었을 때 몫을 answer에 더해주었다.
   * 간단한 방법이 있을지 다른 사람의 코드를 보았지만 모두 비효율적이라 따로 배울만한 것은 없었다.
+
+## 이상한 문자 만들기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12930?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(s) {
+      var answer = [];
+      let cnt = 0
+      for (let i = 0; i < s.length; i++) {
+          if (s[i] !== ' ') {
+              if (cnt === 0) {
+                  answer.push(s[i].toUpperCase());
+                  cnt = 1
+              } else {
+                  answer.push(s[i].toLowerCase());
+                  cnt = 0
+              }
+          } else {
+              answer.push(s[i]);
+              cnt = 0
+          }
+      }
+      return answer.join('');
+  }
+  ```
+
+  * 메모리 사용량을 줄이기 위해 answer를 Array로 바꿔주고 for문을 돌며 대소문자를 바꿔주었다.
+
+  ```js
+  // 다른 사람의 풀이 탈퇴한 사람의 풀이
+  function solution(s) {
+    function change(a) {
+      return a[0].toUpperCase() + a[1].toLowerCase();
+    }
+    return s.toUpperCase().replace(/(\w)(\w)/g, change);
+  }
+  ```
+
+  * 효율성은 떨어지지만 정규표현식을 사용한 재밌는 풀이법이 있었다.
+
+  ```js
+  // 다른 사람의 풀이 ._.님의 풀이
+  function solution(s) {
+    return s.split(' ').map((a) => {
+      return a.split('').map((b, i) => {
+        return (i % 2 === 0) ? b.toUpperCase() : b.toLowerCase();
+      }).join('');
+    }).join(' ');
+  }
+  ```
+
+  * 위의 내 풀이방법을 `map()`과 `split()`, `join()`을 사용하면 훨씬 간단하게 표현할 수 있다.
+  * `map()` 활용에 좀 더 신경써야겠다.
