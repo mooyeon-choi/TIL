@@ -42,8 +42,6 @@ Http와 Https의 차이가 무엇인지, TCP/IP 4계층과 OSI 7계층이 어떤
 🙌Web개발을 할 때 중요한 네트워크의 기본지식을 익히자
 ```
 
-
-
 ## Operating System
 
 * [바로가기](./OS)
