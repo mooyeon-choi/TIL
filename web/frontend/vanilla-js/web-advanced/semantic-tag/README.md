@@ -143,3 +143,100 @@
 
   위의 예시들에서 List element만 사용했다고 반드시 List element만 사용해야 하는 것은 아니다. `<p>` tag 등 다른 요소를 사용해도 된다.
 
+### Article Element
+
+> `<article>` element는 그 하나로 완전한 개별 컨텐츠가 될 때 사용된다. 즉, `<article>` element를 삭제하더라도 전체적인 document 구조에서 이상하거나 어색해지는 부분이 없어야한다.
+
+```html
+<article>
+  <h1>How to Become an MDN Contributor</h1>
+  <p>
+    Do you want to help protect the web?....
+  </p>
+</article>
+```
+
+* **Nesting Elements Inside an Article**
+
+  `<article>` element는 headers, asides, footer 같은 다른 semantic element들을 포함할 수 있다.
+
+  ```html
+  <article>
+    <header>
+      <h1>How to Become an MDN Contributor</h1>
+    </header>
+    <p>
+      Do you want to help protect the web?....
+    </p>
+    <aside>
+      <blockquote>
+        Amazing quote from article
+      </blockquote>
+    </aside>
+    <footer>
+      <p>
+        Author info, publication date
+      </p>
+    </footer>
+  </article>
+  ```
+
+* Nesting articles and sections
+
+  `<article>`은 `<section>` 수 있고 반대로도 가능하다. 
+
+  ```html
+  <section>
+    <h1>Getting Involved</h1>
+    <article>
+      <header>
+        <h2>How to Become an MDN Contributor</h2>
+        <p>Do you want to help protect the web?....</p>
+      </header>
+      <section>
+        <h3>Steps to Editing an Article</h3>
+      </section>
+      <footer>
+        <p>Author info</p>
+        <p>publication date</p>
+      </footer>
+    </article>
+  </section>
+  ```
+
+### Section Element
+
+> `<section>` element는 컨텐츠를 주제별로 그룹화할 때 사용된다. 따라서 W3C spec에서는 `<section>` element는 항상 heading을 포함하도록 권고한다. 이 때 heading을 위해 `<header>` element를 사용해줄 필요 없이 `<h>` element를 사용하면 된다.
+
+```html
+<section>
+  <h1>Amazing MDN Contributors</h1>
+    <ul>
+      <li><img src="link" alt="descriptive text"></li>
+      <li><img src="link" alt="descriptive text"></li>
+      <li><img src="link" alt="descriptive text"></li>
+    </ul>
+</section>
+```
+
+### Aside Element
+
+> `<aside>` element는 문서의 주요 내용과 간접적으로만 연관된 부분을 나타낸다. 주로 Call-out, 인용구 및 정의에 사용된다.
+
+```html
+<section>
+  <h1>Amazing MDN Contributors</h1>
+    <ul>
+      <li><img src="link" alt="descriptive text"></li>
+      <li><img src="link" alt="descriptive text"></li>
+      <li><img src="link" alt="descriptive text"></li>
+    </ul>
+    <aside>
+     <p>To get involved contact</p>
+    </aside>
+</section>
+```
+
+* **Nesting Aside Elements**
+
+  `<aside>` element 안에는 다른 sectional HTML element를 포함할 수 있다. 하지만 `<aside>`를 중첩해서 사용하면 안된다.
