@@ -10,6 +10,7 @@
 
 * [HTML5에 추가된 Section Elements](#html5에-추가된-section-elements)
 * [그 밖의 Semantic HTML element](#그-밖의-Semantic-html-element)
+* [Sectional Elements의 사용법](#sectional-elements의-사용법)
 
 ## HTML5에 추가된 Section Elements
 
@@ -45,4 +46,72 @@
 
 * **HTML Footer Element**(`<footer>`)
 
-  
+  보통 페이지 가장 아래 저작권이나 특정 링크를 표시할 때 사용한다. 위와 마찬가지로 다른 요소 안에도 사용될 수 있다.
+
+## Sectional Elements의 사용법
+
+```html
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+            </ul>
+        </nav>
+        <h1>
+            Page Title
+        </h1>
+    </header>
+
+    <section>
+        <h2>
+            My Blog Posts
+        </h2>
+        <article>
+            <header>
+                <p>
+                    Article Title
+                </p>
+            </header>
+            <p>
+                content
+            </p>
+        </article>
+        <article>
+            <header>
+                <p>
+                    Article Title
+                </p>
+            </header>
+            <p>
+                content
+            </p>
+        </article>
+        <aside>
+            <p>
+                Author info
+            </p>
+        </aside>
+    </section>
+
+    <footer>
+        Copyright Info
+    </footer>
+</body>
+```
+
+### Nav Element
+
+> `<nav>` element 은 navigation block나 navigational menus를 표시하기 위해 사용된다.
+
+```html
+<nav>
+  <ul>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+  </ul>
+</nav>
+```
+
