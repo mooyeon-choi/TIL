@@ -25,6 +25,7 @@
 * [이상한 문자 만들기](#이상한-문자-만들기)
 * [자릿수 더하기](#자릿수-더하기)
 * [자연수 뒤집어 배열로 만들기](#자연수-뒤집어-배열로-만들기)
+* [정수 내림차순으로 배치하기](#정수-내림차순으로-배치하기)
 
 ## 크레인 인형뽑기 게임
 
@@ -670,3 +671,17 @@
   ```
 
   * `toString()`을 사용하여 String으로 바꿔준 후 한 글자씩 나눠 `reverse()` 후 Number로 다시 바꿔주었다.
+
+## 정수 내림차순으로 배치하기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12933?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(n) {
+      return parseInt(n.toString().split('').sort((x, y) => parseInt(y) - parseInt(x)).join(''));
+  }
+  ```
+
+  * n을 문자열로 바꿔준 후 `split()`으로 Array로 바꿔준 후 내림차순으로 정렬하고 `join()`을 통해 String 다시 변환 후 `parseInt()`를 써서 Number로 바꿔주었다.
