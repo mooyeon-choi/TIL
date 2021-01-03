@@ -24,6 +24,7 @@
 * [약수의 합](#약수의-합)
 * [이상한 문자 만들기](#이상한-문자-만들기)
 * [자릿수 더하기](#자릿수-더하기)
+* [자연수 뒤집어 배열로 만들기](#자연수-뒤집어-배열로-만들기)
 
 ## 크레인 인형뽑기 게임
 
@@ -655,3 +656,17 @@
   ```
 
   * Number를 String으로 바꿔준 후 `split()`으로 나눠 Array로 만들어주고 `reduce()`를 활용하여 각 자리 수 를 모두 더해주었다.
+
+## 자연수 뒤집어 배열로 만들기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12932?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(n) {
+      return n.toString().split('').reverse().map(num => parseInt(num));
+  }
+  ```
+
+  * `toString()`을 사용하여 String으로 바꿔준 후 한 글자씩 나눠 `reverse()` 후 Number로 다시 바꿔주었다.
