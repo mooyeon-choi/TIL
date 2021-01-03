@@ -1,10 +1,24 @@
 # Vanilla JS
 
-> 브라우저에 대해 이해하고 WEB APIs, DOM, Render Tree, Events, Refactoring, Event Loop에 대해서 알아본다.
+> MDN 사이트의 설명, 여러 자료들을 찾아보며 더 좋은 코드를 작성하기 위해서는 어떻게 해야하는지 Web 심화과정을 공부하고
+>
+> Dream Coding Academy [프론트엔드 필수 브라우저 101 강의](https://academy.dream-coding.com/courses/take/browser101)를 들으며 브라우저에 대해 이해하고 WEB APIs, DOM, Render Tree, Events, Refactoring, Event Loop에 대해서 알아본다.
 
 ## 목차
 
+* [Web Advanced](#web-advanced)
 * [Web APIs](#web-apis)
+
+## Web Advanced
+
+* [바로가기](./web-advanced)
+
+```
+HTML을 좀 더 직관적으로 알 수 있게 표현해주는 Semantic Tag 
+CSS Flexbox🐸 활용하기
+Vanilla JS로 구현하는 무한 스크롤, Carousel, Modal, Drag & Drop 등 
+기능 구현에서 끝나지 않고 더 좋은 코드를 짜기위해서는 어떻게 해야하는 지 알아보자.
+```
 
 ## Web APIs
 
