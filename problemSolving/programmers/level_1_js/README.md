@@ -28,6 +28,7 @@
 * [정수 내림차순으로 배치하기](#정수-내림차순으로-배치하기)
 * [정수 제곱근 판별](#정수-제곱근-판별)
 * [제일 작은 수 제거하기](#제일-작은-수-제거하기)
+* [짝수와 홀수](#짝수와-홀수)
 
 ## 크레인 인형뽑기 게임
 
@@ -727,3 +728,17 @@
 
   * `Array.splice()`를 통해 Array 원하는 부분을 잘라낼 수 있다.
   * 새로운 method를 알게 되었다.
+
+## 짝수와 홀수
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12937?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(num) {
+    return num & 1 ? "Odd" : "Even";
+  }
+  ```
+
+  * 비트연산자를 활용해 홀수인지 확인해주었다.
