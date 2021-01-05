@@ -796,3 +796,21 @@
 
   * `Number.toString()`, `String.split()`, `Array.reduce()` 를 활용하여 한줄로 풀어보았다.
   * 하지만 입력 데이터의 크기가 커지면 `Number`에서 바로 처리하는 것이 훨씬 빠르므로 for문을 사용하자
+
+## 핸드폰 번호 가리기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12948?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(phone_number) {
+      return phone_number.split('').reduce((x, y, idx) => x += idx < phone_number.length - 4 ? '*' : y, '');
+  }
+  
+  function solution(phone_number) {
+      return phone_number.split('').map((num, idx) => idx < phone_number.length - 4 ? '*' : num).join('');
+  }
+  ```
+
+  * `Array.reduce()`, `Array.map()`을 활용한 두가지 방법으로 해결해보았다. `reduce()`를 사용할 경우 데이터 메모리 공간을 더 많이 사용하므로 `map()`으로 해결하는 것이 효율성이 더 좋다.
