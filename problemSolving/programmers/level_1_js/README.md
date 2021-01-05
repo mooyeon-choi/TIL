@@ -814,3 +814,17 @@
   ```
 
   * `Array.reduce()`, `Array.map()`을 활용한 두가지 방법으로 해결해보았다. `reduce()`를 사용할 경우 데이터 메모리 공간을 더 많이 사용하므로 `map()`으로 해결하는 것이 효율성이 더 좋다.
+
+## 행렬의 덧셈
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12950?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(arr1, arr2) {
+      return arr1.map((arr, i) => arr.map((a, j) => a + arr2[i][j]));
+  }
+  ```
+
+  * `Array.map()`을 이중으로 사용하여 간단하게 해결해보았다.
