@@ -855,3 +855,22 @@
   ```
 
   * `Array(n)`을 써서 n개의 Array를 만들어주고 `Array.map()`을 사용하면 훨씬 간단한 코드가 나온다. 
+
+## 직사각형 별찍기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12969?language=javascript)
+
+* 풀이
+
+  ```js
+  process.stdin.setEncoding('utf8');
+  process.stdin.on('data', data => {
+      const n = data.split(" ");
+      const a = Number(n[0]), b = Number(n[1]);
+      for (let i = 0; i < b; i++) {
+          console.log('*'.repeat(a))
+      }
+  });
+  ```
+
+  * `String.repeat(count)`를 사용하여 문자열을 count만큼 반복해서 이어 붙일 수 있다.
