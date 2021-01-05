@@ -828,3 +828,30 @@
   ```
 
   * `Array.map()`을 이중으로 사용하여 간단하게 해결해보았다.
+
+## x만큼 간격이 있는 n개의 숫자
+
+* [문제 링크]
+
+* 풀이
+
+  ```js
+  function solution(x, n) {
+      let answer = [];
+      for (let i = 1; i <= n; i++) {
+          answer.push(x*i)
+      }
+      return answer;
+  }
+  ```
+
+  * for문과 `Array.push()`를 활용하여 풀어보았다.
+  * 하지만 다른 더욱 간단한 코드가 있을 것 같아 다른 사람의 코드를 보니 아래와 같은 코드가 있었다.
+
+  ```js
+  function solution(x, n) {
+    return [...Array(n)].map((v, idx) => (idx + 1) * x);
+  }
+  ```
+
+  * `Array(n)`을 써서 n개의 Array를 만들어주고 `Array.map()`을 사용하면 훨씬 간단한 코드가 나온다. 
