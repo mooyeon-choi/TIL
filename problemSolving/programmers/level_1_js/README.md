@@ -30,6 +30,7 @@
 * [제일 작은 수 제거하기](#제일-작은-수-제거하기)
 * [짝수와 홀수](#짝수와-홀수)
 * [콜라츠 추측](#콜라츠-추측)
+* [평균 구하기](#평균-구하기)
 
 ## 크레인 인형뽑기 게임
 
@@ -706,7 +707,7 @@
 
 ## 제일 작은 수 제거하기
 
-* [문제 링크]
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12935)
 
 * 풀이
 
@@ -766,3 +767,32 @@
   * for문을 통해 501번 반복문을 실행시켜주고
   * for문 안에 return을 사용해주기 위해 if문을 사용해주었다.
   * 홀수 짝수 구분에는 삼항연산자를 이용해주었다.
+
+## 평균 구하기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12944?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(arr) {
+      return arr.reduce((x, y) => x += y / arr.length, 0)
+  }
+  ```
+
+  * `Array.reduce()`를 활용하면 간단하게 해결할 수 있다.
+
+## 하샤드 수
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12947?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(x) {
+      return x % x.toString().split('').reduce((x, y) => x += parseInt(y), 0) == 0;
+  }
+  ```
+
+  * `Number.toString()`, `String.split()`, `Array.reduce()` 를 활용하여 한줄로 풀어보았다.
+  * 하지만 입력 데이터의 크기가 커지면 `Number`에서 바로 처리하는 것이 훨씬 빠르므로 for문을 사용하자
