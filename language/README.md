@@ -3,6 +3,7 @@
 ## 목차
 
 * [JavaScript](#javascript)
+* [TypeScript](#typescript)
 * [Java](#java)
 * [Python](#python)
 
@@ -14,6 +15,15 @@
 Web 개발에 필수적인 요소인 ✔️JavaScript
 👉this에서 시작해 클래스, 프로토타입, 스코프, 클로저, 콜백함수 등
 JS를 더 깊이있게 이해하고 효율적인, 정확한 코드를 구현할 수 있도록 하자!!
+```
+
+## TypeScript
+
+* [바로가기](./typeScript)
+
+```
+ JavaScript는 이미 String, number, object, undefined 같은 🌈원시 타입을 가지고 있지만, 전체 코드베이스에 일관되게 할당되었는지는 미리 확인해 주지 않는다. 
+ TypeScript는 이를 ✔️확인해주는 레이어로서 동작하는데 어떤식으로 동작하는지 알아보자.
 ```
 
 ## Java
