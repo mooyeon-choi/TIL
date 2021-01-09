@@ -16,7 +16,11 @@
  TypeScript는 JavaScript 위에서 동작하기 때문에 변수를 생성하면서 동시에 특정값에 할당하는 경우, TypeScript는 그 값을 해당 변수의 타입으로 사용한다.
 
 ```typescript
-let helloWorld = "Hello World"
+// 재사용 가능성이 없으면 그 자체를 타입으로 지정
+const helloWorld = "Hello World" // type: "Hello World"
+
+// 재사용 가능하면 데이터의 타입을 변수 타입으로 지정
+let hiWorld = "Hi World" // type: string
 ```
 
  VS Code로 JavaScript 작업을 할 때 편집기의 자동 완성 기능을 많이 사용해왔을 것이다. 이는 TypeScript에 쓰이는 JavaScript에 대한 이해가 JavaScript 작업을 개선하기 위해 내부적으로 사용되었기 때문이다.
