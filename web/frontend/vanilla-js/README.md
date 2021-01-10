@@ -9,6 +9,7 @@
 * [Web Advanced](#web-advanced)
 * [Web APIs](#web-apis)
 * [Vanilla JS Basic](#vanilla-js-basic)
+* [기능 구현](#기능-구현)
 
 ## Web Advanced
 
@@ -37,5 +38,14 @@ API란 무엇인지, 브라우저에서 제공하는 Web APIs는 무엇이고 �
 ```
 Template 프로젝트를 통한 기본적인 프로젝트 생성방법과
 함수형, OOP 방식의 개발 방법을 따라해보며 JS를 통한 프로젝트 개발 방법을 배우자
+```
+
+## 기능 구현
+
+* [바로가기](./implementation)
+
+```
+Modal, Carousel, Drag & Drop등 여러 기능들을 OOP와 Functional 방식으로 직접 구현해보며
+Vanilla JS의 사용법을 익혀본 자료
 ```
 
