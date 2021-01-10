@@ -18,8 +18,21 @@
 
 > Good Bye!! 2020🐭 Hello!! 2021🐮
 
-* [ ] Programmers Level 1 - JavaScript로 풀기
-* [ ] Vanilla JS 랜덤 고양이 사진 웹페이지 제작
+* [ ] Programmers Level 2 - JavaScript로 풀기
+
+* [ ] Vanilla JS
+
+  * [ ] Habit Tracker page 제작
+    * [ ] Classes Programming
+    * [ ] Functional Programming
+  * [ ] Modal 기능 만들기
+    * [ ] Classes Programming
+    * [ ] Functional Programming
+  * [ ] 무한 스크롤 기능
+    * [ ] Classes Programming
+    * [ ] Functional Programming
+
+  
 
 ## Git 사용법
 
