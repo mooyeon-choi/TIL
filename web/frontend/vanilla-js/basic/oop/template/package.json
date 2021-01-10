@@ -1,0 +1,7 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "template project",
+  "main": "index.js",
+  "license": "MIT"
+}

@@ -8,6 +8,7 @@
 
 * [Web Advanced](#web-advanced)
 * [Web APIs](#web-apis)
+* [Vanilla JS Basic](#vanilla-js-basic)
 
 ## Web Advanced
 
@@ -27,5 +28,14 @@ Vanilla JS로 구현하는 무한 스크롤, Carousel, Modal, Drag & Drop 등
 ```
 프로젝트와 플렛폼에서 제공하는 API에 대해서 정확하게 이해하고 올바르게 사용하는 것이 ✔️매우 중요하다.
 API란 무엇인지, 브라우저에서 제공하는 Web APIs는 무엇이고 어떤 것들이 있는지 공부해보자.
+```
+
+## Vanilla JS Basic
+
+* [바로가기](./basic)
+
+```
+Template 프로젝트를 통한 기본적인 프로젝트 생성방법과
+함수형, OOP 방식의 개발 방법을 따라해보며 JS를 통한 프로젝트 개발 방법을 배우자
 ```
 
