@@ -6,7 +6,7 @@ class Modal {
 
   constructor({ $target, visible }) {
     const $info = document.createElement("div");
-    $info.className = "modalInfo";
+    $info.className = "modal-info";
     this.$info = $info;
     $target.appendChild($info);
 
@@ -22,6 +22,7 @@ class Modal {
 
   closeInfo() {
     this.visible = false;
+    this.$info.style.animation = "fadeout 2s";
     this.render();
   }
 
