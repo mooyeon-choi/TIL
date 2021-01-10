@@ -20,7 +20,7 @@ class App {
   }
 
   onOpenModal() {
-    this.info.setState(true);
+    this.info.setState();
   }
 }
 

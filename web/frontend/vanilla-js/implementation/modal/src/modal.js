@@ -1,3 +1,6 @@
+"use strict";
+console.log("modal is running!");
+
 class Modal {
   $info = null;
 
@@ -12,8 +15,8 @@ class Modal {
     this.render();
   }
 
-  setState(changeVisible) {
-    this.visible = changeVisible;
+  setState() {
+    this.visible = !this.visible;
     this.render();
   }
 
@@ -30,7 +33,7 @@ class Modal {
         <article class="content-wrapper">
           <header class="title">
             <span>제목</span>
-            <button class="close" onClick="${this.closeInfo}">x</button>
+            <button class="close">x</button>
           </header>
           <img src="${src}" alt="image"/>
           <ul class="description">
@@ -38,6 +41,10 @@ class Modal {
             <li>두번째</li>
           </ul>
         </article>`;
+
+      const closeModal = this.$info.querySelector(".close");
+      closeModal.addEventListener("click", this.closeInfo.bind(this), false);
+
       this.$info.style.display = "block";
     } else {
       this.$info.style.display = "none";
