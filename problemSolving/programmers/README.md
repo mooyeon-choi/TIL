@@ -32,6 +32,7 @@
 > 기업 코딩테스트를 통과하기 위해
 
 * [Python 바로가기](./level_3_python)
+* [JavaScript 바로가기](./level_3_js)
 
 ## Level 4
 
