@@ -5,6 +5,7 @@
 * [기능개발](#기능개발)
 * [타겟 넘버](#타겟-넘버)
 * [카펫](#카펫)
+* [다음 큰 숫자](#다음-큰-숫자)
 * [n진수 게임](#n진수-게임)
 
 ## 기능개발
@@ -78,6 +79,27 @@
 
   * 수학적으로 접근하면 어렵지않게 해결할 수 있는 문제였다.
   * 한변의 길이는 반드시 3보다
+
+## 다음 큰 숫자
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12911?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(n) {
+      const cnt = n.toString(2).match(/[1]/g).length;
+      while (true) {
+          n++
+          if (n.toString(2).match(/[1]/g).length === cnt) {
+              return n
+          }
+      }
+  }
+  ```
+
+  * 정규 표현식과 `number.toString()`을 활용하면 간단하게 풀 수 있다.
+  * 하지만 숫자가 아주 클 경우 다른 공식을 찾아서 해결해야할 것 같다.
 
 ## n진수 게임
 
