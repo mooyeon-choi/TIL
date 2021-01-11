@@ -5,6 +5,7 @@
 * [기능개발](#기능개발)
 * [타겟 넘버](#타겟-넘버)
 * [카펫](#카펫)
+* [n진수 게임](#n진수-게임)
 
 ## 기능개발
 
@@ -77,3 +78,28 @@
 
   * 수학적으로 접근하면 어렵지않게 해결할 수 있는 문제였다.
   * 한변의 길이는 반드시 3보다
+
+## n진수 게임
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/17687?language=javascript#)
+
+* 풀이
+
+  ```js
+  function solution(n, t, m, p) {
+      const result = [];
+      let answer = '';
+      let num = 0;
+      while (result.length < t * m) {
+          result.push(...num.toString(n).toUpperCase().split(''));
+          num++
+      }
+      for (let i = p - 1; i < result.length; i += m) {
+          answer += result[i]
+          if (answer.length === t) break;
+      }
+      return answer;
+  }
+  ```
+
+  * `t * m` 길이의 `Array`를 만들어준 후 `p - 1` 에서 `m` 씩 증가하는 인덱스에 위치한 문자를 더해주는 방식으로 해결하였다.
