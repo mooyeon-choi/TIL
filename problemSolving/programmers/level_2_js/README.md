@@ -7,6 +7,7 @@
 * [카펫](#카펫)
 * [다음 큰 숫자](#다음-큰-숫자)
 * [폰켓몬](#폰켓몬)
+* [이진 변환 반복하기](#이진-변환-반복하기)
 * [n진수 게임](#n진수-게임)
 
 ## 기능개발
@@ -116,6 +117,27 @@
   ```
 
   * Set과 삼항 연산자로 간단하게 해결할 수 있다.
+
+## 이진 변환 반복하기
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/70129?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(s) {
+      const answer = [0, 0];
+      while (s.length > 1) {
+          answer[0]++;
+          answer[1] += s.match(/[0]/g) ? s.match(/[0]/g).length : 0;
+          s = s.split('0').join('').length.toString(2);
+      }
+      return answer;
+  }
+  ```
+
+  * 정규표현식을 통해 String에서 `0`의 갯수를 구하고
+  * `0`을 지워준 후 String의 길이를 다시 이진수로 변환하여 다음 수를 찾아주었다.
 
 ## n진수 게임
 
