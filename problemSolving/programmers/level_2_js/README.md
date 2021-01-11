@@ -6,6 +6,7 @@
 * [타겟 넘버](#타겟-넘버)
 * [카펫](#카펫)
 * [다음 큰 숫자](#다음-큰-숫자)
+* [폰켓몬](#폰켓몬)
 * [n진수 게임](#n진수-게임)
 
 ## 기능개발
@@ -100,6 +101,21 @@
 
   * 정규 표현식과 `number.toString()`을 활용하면 간단하게 풀 수 있다.
   * 하지만 숫자가 아주 클 경우 다른 공식을 찾아서 해결해야할 것 같다.
+
+## 폰켓몬
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/1845?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(nums) {
+      const answer = new Set(nums);
+      return answer.size <= nums.length / 2 ? answer.size : nums.length / 2;
+  }
+  ```
+
+  * Set과 삼항 연산자로 간단하게 해결할 수 있다.
 
 ## n진수 게임
 
