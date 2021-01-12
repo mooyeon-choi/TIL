@@ -26,7 +26,10 @@
 * [Youtube 따라하면서 배우는 IT채널 네트워크 강의](https://www.youtube.com/watch?v=Av9UFzl_wis&list=PL0d8NnikouEWcF1jJueLdjRIC4HsUlULi)
 
 ## Web 공부자료
-### 1. Frontend
+
+* [Web Developer Roadmap 2021](https://github.com/kamranahmedse/developer-roadmap)
+
+### Frontend
 * [baeharam님의 취준생이 반드시 알아야 할 프론트엔드 지식들](https://github.com/baeharam/Must-Know-About-Frontend)
 * [Youtube 채널 드림코딩 by 엘리](https://www.youtube.com/channel/UC_4u-bXaba7yrRz_6x6kb_w)
 * [Youtube 채널 Interactive Developer](https://www.youtube.com/channel/UCdeWxKJuvtUG2xyN6pOJEvA)
