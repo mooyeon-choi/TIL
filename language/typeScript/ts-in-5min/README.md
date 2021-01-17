@@ -34,7 +34,7 @@ let hiWorld = "Hi World" // type: string
 ```typescript
 const user = {
     name: "Hayes",
-    id, 0
+    id: 0
 };
 ```
 
