@@ -1,4 +1,4 @@
-# Level 1 (JavaScript)
+# Level 2 (JavaScript)
 
 ## 목차
 
