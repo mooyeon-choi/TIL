@@ -3,6 +3,7 @@
 ## 목차
 
 * [기능개발](#기능개발)
+* [H-Index](#h-index)
 * [타겟 넘버](#타겟-넘버)
 * [카펫](#카펫)
 * [다음 큰 숫자](#다음-큰-숫자)
@@ -36,6 +37,28 @@
   ```
 
   * 문제 분류는 큐/스택으로 되어있지만 반복문을 통해 해결하는 것이 더 효율성이 좋을 것 같아 반복문을 통해 풀어주었다.
+
+## H-Index
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/42747?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(citations) {
+      citations.sort((x, y) => y - x);
+      for (let i = 0; i < citations.length; i++) {
+          if (citations[i] < i + 1) {
+              return i;
+          }
+      }
+      return citations.length;
+  }
+  ```
+
+  * 정렬을 통해 간단하게 해결할 수 있다.
+  * h이상인 수가 h이상 있는 최대값이 H-Index이므로 `큰 수 -> 작은 수`로 정렬해주고 `index + 1` 보다 현재 값이 작을 때 `index`를 리턴해준다.
+  * 값이 모두 Array의 크기보다 클 경우 Array의 길이를 리턴해준다.
 
 ## 타겟 넘버
 
