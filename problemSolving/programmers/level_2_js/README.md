@@ -2,6 +2,7 @@
 
 ## 목차
 
+* [스킬트리](#스킬트리)
 * [기능개발](#기능개발)
 * [H-Index](#h-index)
 * [타겟 넘버](#타겟-넘버)
@@ -10,6 +11,58 @@
 * [폰켓몬](#폰켓몬)
 * [이진 변환 반복하기](#이진-변환-반복하기)
 * [n진수 게임](#n진수-게임)
+
+## 스킬트리
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/49993?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(skill, skill_trees) {
+      var answer = 0;
+      let before;
+      let check;
+      for (let i = 0; i < skill_trees.length; i++) {
+          before = -1;
+          check = true;
+          for (let j = 0; j < skill.length; j++) {
+              if (skill_trees[i].indexOf(skill[j]) !== -1) {
+                  if (skill_trees[i].indexOf(skill[j]) > before) {
+                      before = skill_trees[i].indexOf(skill[j]);
+                  } else {
+                      check = false;
+                      break;
+                  }
+              } else {
+                  before = 27;
+              }
+          }
+          answer += check ? 1 : 0
+      }
+      return answer;
+  }
+  
+  // 다른 사람의 풀이 iRequestUResponse , milliwonaire , 박하영님의 풀이
+  function solution(skill, skill_trees) {
+      function isCorrect(n) {
+          let test = skill.split('');
+          for (var i = 0; i < n.length; i++) {
+              if (!skill.includes(n[i])) continue;
+              if (n[i] === test.shift()) continue;
+              return false;
+          }
+          return true;
+      }    
+  
+      return skill_trees.filter(isCorrect).length;
+  }
+  ```
+
+  * 2중 for문을 사용해서 풀어주었다.
+  * `skill_tree`의 최대 크기가 `26`이므로 없는 값의 경우 `27`을 넣어주고 이전 스킬의 `index`가 항상 더 작을때만 `check`가 `true`값이 나와 `answer`에 1을 더해주도록 해주었다.
+  * 다른 사람의 풀이를 보자 중복되는 스킬이 없다는 점을 이용하여 `isCorrect` 함수로 훨씬 간단하게 구현한 것을 보았다.
+  * `skill_tree`를 하나씩 확인하며 해당 인덱스의 문자가 skill에 없다면 `continue`, `skill`에 있지만 `skill`의 가장 앞에 없는 경우 문제 조건에 걸리므로 `false`를 리턴하도록 하여 간단하게 풀 수 있다.
 
 ## 기능개발
 
