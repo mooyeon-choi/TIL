@@ -27,7 +27,7 @@
 
 ## Web 공부자료
 
-* [Web Developer Roadmap 2021](https://github.com/kamranahmedse/developer-roadmap)
+* [Web Developer Roadmap 2021](https://roadmap.sh/)
 
 ### Frontend
 * [baeharam님의 취준생이 반드시 알아야 할 프론트엔드 지식들](https://github.com/baeharam/Must-Know-About-Frontend)
