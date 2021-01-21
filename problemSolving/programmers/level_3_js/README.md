@@ -2,7 +2,35 @@
 
 ## 목차
 
+* [단속 카메라](#단속-카메라)
 * [정수 삼각형](#정수-삼각형)
+
+## 단속 카메라
+
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/42884?language=javascript)
+
+* 풀이
+
+  ```js
+  function solution(routes) {
+      let answer = 0;
+      routes.sort((x, y) => x[0] - y[0]);
+      let maxnum = routes[0][1]
+      for (let i = 0; i < routes.length; i++) {
+          if (maxnum >= routes[i][0]) {
+              if (maxnum > routes[i][1]) {
+                  maxnum = routes[i][1];
+              }
+          } else {
+              answer++;
+              maxnum = routes[i][1]
+          }
+      }
+      return answer + 1;
+  }
+  ```
+
+  * 정렬을 사용해 풀어주면 간단하게 해결 할 수 있다. 
 
 ## 정수 삼각형
 
