@@ -33,6 +33,7 @@
 * [baeharam님의 취준생이 반드시 알아야 할 프론트엔드 지식들](https://github.com/baeharam/Must-Know-About-Frontend)
 * [Youtube 채널 드림코딩 by 엘리](https://www.youtube.com/channel/UC_4u-bXaba7yrRz_6x6kb_w)
 * [Youtube 채널 Interactive Developer](https://www.youtube.com/channel/UCdeWxKJuvtUG2xyN6pOJEvA)
+* [벨로퍼트와 함께하는 모던 리엑트](https://react.vlpt.us/)
 * [Captain Pangyo님의 타입스크립트 핸드북](https://joshua1988.github.io/ts/)
 * [Captain Pangyo님의 웹팩 핸드북](https://joshua1988.github.io/webpack-guide/)
 
