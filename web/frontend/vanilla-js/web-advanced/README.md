@@ -15,13 +15,3 @@
 
 이러한 Semantic tag들의 의미와 어떤 때에 사용하는지 MDN Guide📜를 보며 이해하자.
 ```
-
-## 기능 구현
-
-* [바로가기](./implementation)
-
-```
-Modal, Carousel, Drag & Drop등 여러 기능들을 OOP와 Functional 방식으로 직접 구현해보며
-Vanilla JS의 사용법을 익혀본 자료
-```
-
