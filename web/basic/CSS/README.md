@@ -1,16 +1,20 @@
 # 02. CSS(Cascading Style Sheets)
- 
+
 * Style sheet language
 
 > HTML이 기본적인 구조를 만든다면 CSS는 꾸며주기 위한 language
 
+## 목차
 
+* [CSS 활용하기](#css-활용하기)
+* [Selector](#selector)
+* [Unit](#unit)
 
-## 1. CSS 활용하기
+## CSS 활용하기
 
-### 1. CSS 사용법
+### CSS 사용법
 
-#### 1. Inline(인라인)
+#### Inline(인라인)
 
 >  인라인으로 작성이 가능하지만 그 한줄에만 적용 가능하고 나중에 찾기 힘드므로 권장하지 않음
 
@@ -22,7 +26,7 @@
 
 
 
-#### 2. embed(내부참조)
+#### embed(내부참조)
 
 > head 태그 내에 style 태그
 
@@ -38,7 +42,7 @@
 
 
 
-#### 3. link file(외부참조)
+#### link file(외부참조)
 
 > 재사용이 가능하므로 일반적으로 사용한다.
 
@@ -50,7 +54,7 @@
 
 
 
-#### 4. CSS 단위
+#### CSS 단위
 
 [자주 사용하는 CSS 속성값들](https://developer.microsoft.com/en-us/microsoft-edge/platform/usage/)
 
@@ -86,7 +90,7 @@ h1 {color:blue;font-size:15px;}
 
 
 
-### 2. 선택자 우선순위
+### 선택자 우선순위
 
 ```html
 <body>
@@ -115,11 +119,11 @@ h1 {color:blue;font-size:15px;}
 * id 선택자의 경우 한번만 사용하야하므로 우선순위가 가장 높다.
 * inline(인라인)으로 사용해 준 경우 우선순위가 가장 높다.
 
-## 2. Selector
+## Selector
 
-### 1. 선택자 적용법
+### 선택자 적용법
 
-#### 1. 그룹 선택자
+#### 그룹 선택자
 
 ```css
 h1, h2, h3, h4, h5, h6, .silver {
@@ -129,7 +133,7 @@ h1, h2, h3, h4, h5, h6, .silver {
 
 * 요소들을 묶어서 한번에 처리해줄 수 있다.
 
-#### 2. 인접 선택자
+#### 인접 선택자
 
 ```css
 .blue + .red + div {
@@ -145,7 +149,7 @@ h1, h2, h3, h4, h5, h6, .silver {
 
 * `.blue` -> `.red` -> `div` 순으로 코드가 실행될 경우 지정해준 style로 나타나도록 정해줄 수 있다.
 
-#### 3. 자식 선택자 vs 후손 선택자
+#### 자식 선택자 vs 후손 선택자
 
 > 자식 선택자의 경우 지정해준 순서로 포함된 경우에만 실행이 되도록 하고,
 >
@@ -190,13 +194,49 @@ h1, h2, h3, h4, h5, h6, .silver {
 >
 > 후손 선택자를 사용하였을 경우 `ol` 안에 `li` 가 속한경우 모두 실행되는 것을 알 수 있다.
 
-## 3. Unit
+## Unit
 
+### rem과 em
 
+```css
+ol, ol li {
+  font-size: 2rem;
+}
 
+ul, ul li {
+  font-size: 2em;
+}
+```
 
+```html
+<!-- rem -->
+<ol>
+    <li>2rem</li>
+</ol>
+<!-- em -->
+<ul>
+    <li>2em</li>
+</ul>
+```
 
+1. rem
 
+   * root 요소의 배수
+   * html : 16px (브라우저 기본)
+   * ol : 2rem -> 32px (16px * 2)
+   * li : 2rem -> 32px (16px * 2)
+
+2. em
+
+   * 상위 요소의 배수
+
+   * html : 16px
+
+   * ul : 2em -> 32px
+
+   * li : 원래 ul 밑에 있어서 32px
+
+     ​	2em -> 32px * 2 -> 64px
 
 ## 4. Box_model
 
