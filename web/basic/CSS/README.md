@@ -80,7 +80,7 @@ h1 {color:blue;font-size:15px;}
 
       요소에 지정된 사이즈(상속된 사이즈나 디폴트 사이즈)에 상대적인 사이즈를 설정한다.
 
-      ![01_css](./image/01_css.jpg)
+      <img src="./image/01_css.jpg" width="300px" align="center">
 
    3. **em과 rem** :
 
@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6, .silver {
 >
 > em은 상위 요소의 배수!
 
-<img src="./image/remEm.PNG" width="200px">
+<img src="./image/remEm.PNG" width="200px" align="center">
 
 ```css
 ol, ol li {
@@ -250,7 +250,7 @@ ul, ul li {
 
    > 현재 실행중인 스크린 크기에 맞춰 상대적인 view port의 너비와 높이
 
-   <img src="./image/vhVw.PNG" width="300px">
+   <img src="./image/vhVw.PNG" width="300px" align="center">
 
    ```css
    .vw {
@@ -292,7 +292,7 @@ ul, ul li {
    >
    > 그럼, `vh`와 `vw`는 `%`와 어떤 차이가 있어 사용하는 것 일까?
 
-   <img src="./image/vwvh_vs_per.png" width="400px">
+   <img src="./image/vwvh_vs_per.png" width="500px" align="center">
 
    vh 와 vw 는 **화면 전체의 상대적인 크기**이기 때문에 **스크롤 바를 포함한 크기를 사용한다.**
 
@@ -304,7 +304,7 @@ ul, ul li {
 
    > Viewport의 크기 중 더 긴 것을 기준으로 삼으면 vmax, 더 짧은 것을 기준으로 삼으면 vmin을 사용한다.
 
-   <img src="./image/vmin_vmax.PNG" width="300px">
+   <img src="./image/vmin_vmax.PNG" width="300px" align="center">
 
    ```css
    .div-vmin {
