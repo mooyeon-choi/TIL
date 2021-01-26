@@ -196,7 +196,13 @@ h1, h2, h3, h4, h5, h6, .silver {
 
 ## Unit
 
-### rem과 em
+### 폰트의 크기
+
+> rem은 root 요소의 배수!
+>
+> em은 상위 요소의 배수!
+
+<img src="./image/remEm.PNG">
 
 ```css
 ol, ol li {
@@ -237,6 +243,87 @@ ul, ul li {
    * li : 원래 ul 밑에 있어서 32px
 
      ​	2em -> 32px * 2 -> 64px
+
+### Element의 상대적인 크기 설정
+
+1. vw와 vh
+
+   > 현재 실행중인 스크린 크기에 맞춰 상대적인 view port의 너비와 높이
+
+   <img src="./image/vhVw.PNG">
+
+   ```css
+   .vw {
+     font-size: 10vw;
+   }
+   
+   .vh {
+     font-size: 10vh;
+   }
+   
+   .div-vw {
+     width: 10vw;
+     height: 10vw;
+     background-color: rgba(94, 255, 0, 0.418);
+   }
+   
+   .div-vh {
+     width: 10vh;
+     height: 10vh;
+     background-color: rgba(0, 0, 255, 0.5);
+   }
+   ```
+
+   ```html
+   <span class="vw">10vw</span>
+   <span class="vh">10vh</span>
+   <div class="div-vw"></div>
+   <div class="div-vh"></div>
+   ```
+
+   * 숫자는 %를 나타낸다. (ex : 10vw -> 스크린 너비의 10%)
+   * vw : 스크린 너비에 대비
+   * vh : 스크린 높이에 대비
+   * `width: 10vh;, height: 10vw`와 같은 방식으로도 사용 가능하다.
+
+2. %와 vh, vw
+
+   > 이미 우리는 `%`를 사용하여 상대적인 크기를 적용할 수 있다.
+   >
+   > 그럼, `vh`와 `vw`는 `%`와 어떤 차이가 있어 사용하는 것 일까?
+
+   <img src="./image/vwvh_vs_per.png">
+
+   vh 와 vw 는 **화면 전체의 상대적인 크기**이기 때문에 **스크롤 바를 포함한 크기를 사용한다.**
+
+   반면에 `%` 는 창이 중심이 아닌 **부모 요소의 크기**에 맞게 반환한다. 또한 전체 화면에서 % 사용할 경우 **스크롤 바를 제외한 화면의 크기를 사용한다.**
+
+   내부 요소가 동적으로 변화할 때 스크롤 바가 발생할 경우 %를 사용하면 Element의 크기가 이에 맞춰 변하게 된다. 이를 방지하기 위해 vw / vh를 사용한다.
+
+3. vmin과 vmax
+
+   > Viewport의 크기 중 더 긴 것을 기준으로 삼으면 vmax, 더 짧은 것을 기준으로 삼으면 vmin을 사용한다.
+
+   <img src="./image/vmin_vmax.PNG">
+
+   ```css
+   .div-vmin {
+     width: 10vmin;
+     height: 10vmin;
+     background-color: #0000ff;
+   }
+   
+   .div-vmax {
+     width: 10vmax;
+     height: 10vmax;
+     background-color: #0000ff;
+   }
+   ```
+
+   ```html
+   <div class="div-vmin">10vmin</div>
+   <div class="div-vmax">10vmax</div>
+   ```
 
 ## 4. Box_model
 

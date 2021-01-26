@@ -1,8 +1,10 @@
-ol, ol li {
+ol,
+ol li {
   font-size: 2rem;
 }
 
-ul, ul li {
+ul,
+ul li {
   font-size: 2em;
 }
 
@@ -29,5 +31,11 @@ ul, ul li {
 .div-vmin {
   width: 10vmin;
   height: 10vmin;
+  background-color: #0000ff;
+}
+
+.div-vmax {
+  width: 10vmax;
+  height: 10vmax;
   background-color: #0000ff;
 }
