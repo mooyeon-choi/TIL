@@ -39,4 +39,10 @@
 
 ## 그 외
 
+### Markdown 작성
+
+* [여러 icon 사용하기: Icongram](https://icongr.am/devicon)
+
+### Dev Event
+
 * [용감한 친구들 Dev Event](https://github.com/brave-people/Dev-Event)
