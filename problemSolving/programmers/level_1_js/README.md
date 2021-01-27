@@ -279,7 +279,7 @@
 
 ## 두 정수 사이의 합
 
-* [문제 링크]()
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12912)
 
 * 풀이
 
@@ -518,7 +518,7 @@
 
 ## 시저 암호
 
-* [문제 링크]()
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12926)
 
 * 풀이
 
@@ -570,7 +570,7 @@
 
 ## 약수의 합
 
-* [문제 링크]()
+* [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12928)
 
 * 풀이
 
