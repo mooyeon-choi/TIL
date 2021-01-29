@@ -4,7 +4,6 @@
 
 ## 목록
 
-* [Weekly to do list](#weekly-to-do-list)
 * [도움되는 자료들](#도움되는-자료들)
 * [Git 사용법](#git-사용법)
 * [Markdown](#markdown)
@@ -14,26 +13,6 @@
 * [Language](#language)
 * [Machine Learning](#machine-learning)
 * [Others](#Others)
-
-## Weekly to do list
-
-> Good Bye!! 2020🐭 Hello!! 2021🐮
-
-* [ ] Programmers Level 2 - JavaScript로 풀기
-
-* [ ] Vanilla JS
-
-  * [ ] Habit Tracker page 제작
-    * [ ] Classes Programming
-    * [ ] Functional Programming
-  * [ ] Modal 기능 만들기
-    * [ ] Classes Programming
-    * [ ] Functional Programming
-  * [ ] 무한 스크롤 기능
-    * [ ] Classes Programming
-    * [ ] Functional Programming
-
-  
 
 ## 도움되는 자료들
 
