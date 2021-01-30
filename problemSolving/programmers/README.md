@@ -68,6 +68,11 @@
 * [Python 바로가기](./level_3_python)
 * [JavaScript 바로가기](./level_3_js)
 
+| 순번 |                          문제 링크                           | 문제 유형 |                             풀이                             |
+| :--: | :----------------------------------------------------------: | :-------: | :----------------------------------------------------------: |
+|  1   | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) |   Stack   | [![Python](https://icongr.am/devicon/python-original.svg?size=30&color=currentColor)](https://github.com/mooyeon-choi/TIL/tree/master/problemSolving/programmers/level_3_python#%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%95%A8%EB%B2%94) |
+|  2   | [배달](https://programmers.co.kr/learn/courses/30/lessons/12978) |   Graph   | [![Python](https://icongr.am/devicon/python-original.svg?size=30&color=currentColor)](https://github.com/mooyeon-choi/TIL/tree/master/problemSolving/programmers/level_3_python#%EB%B0%B0%EB%8B%AC) |
+
 ## Level 4
 
 > 고득점을 위하여!
