@@ -9,6 +9,7 @@
 * [CSS 활용하기](#css-활용하기)
 * [Selector](#selector)
 * [Unit](#unit)
+* [Box model](#box-model)
 
 ## CSS 활용하기
 
@@ -325,9 +326,135 @@ ul, ul li {
    <div class="div-vmax">10vmax</div>
    ```
 
-## 4. Box_model
+## Box model
 
+### Block  box and inline box
 
+CSS에는 크게 Block box와 Inline box 두 가지 유형의 Box가 있다. 이 둘의 차이점은 다음과 같다.
+
+#### Block box
+
+* 한 줄에 하나의 Box만 위치한다. (좌우의 빈공간은 margin으로 채워진다)
+* container가 커질 경우. Inline 방향으로 확장된다.
+* `width`와 `height` 속성으로 크기를 조절할 수 있다.
+* padding, border, margin을 활용하여 간격을 조절할 수 있다.
+
+#### Inline box
+
+* 상자들이 새 줄로 나누어지지 않는다.
+* `width`와 `height` 속성을 사용할 수 없다.
+* 수직 padding, border, margin을 적용할 수 있지만 같은 Inline box간에는 적용되지 않는다.
+* 수평 padding, border, margin는 같은 Inline box 간에도 적용된다.
+
+위에서 설명한 padding, border, margin이 바로 Box model의 요소이고 이를 그림으로 표현하면 다음과 같다.
+
+<img src="./image/box_model.PNG">
+
+> window 기준 chrome browser에서 `F12` 또는 `화면 우클릭 > 검사`를 누르면 Elements tab에서 확인할 수 있다.
+
+### Margin
+
+> CSS margin 크기 설정
+
+```css
+.margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.margin-shorthand-1 {
+  /* 상하좌우 */
+  margin: 10px;
+}
+
+.margin-shorthand-2 {
+  /* 상하 / 좌우
+    위아래가 10px 좌우가 20px */
+  margin: 10px 20px;
+}
+
+.margin-shorthand-3 {
+  /* 상 / 좌우 / 하 */
+  margin: 10px 20px 30px;
+}
+
+.margin-shorthand-4 {
+  /* 상 / 우 / 하 / 좌 - 시계방향 */
+  margin: 10px 20px 30px 40px;
+}
+```
+
+```html
+
+<div class="margin">margin</div>
+<div class="margin-shorthand-1">margin-shorthand-1</div>
+<div class="margin-shorthand-2">margin-shorthand-2</div>
+<div class="margin-shorthand-3">margin-shorthand-3</div>
+<div class="margin-shorthand-4">margin-shorthand-4</div>
+```
+
+### Padding
+
+> CSS Padding 크기 설정
+
+```css
+.padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.padding-shorthand-1 {
+  /* 상하좌우 */
+  padding: 10px;
+}
+
+.padding-shorthand-2 {
+  /* 상하 / 좌우
+    위아래가 10px 좌우가 20px */
+  padding: 10px 20px;
+}
+
+.padding-shorthand-3 {
+  /* 상 / 좌우 / 하 */
+  padding: 10px 20px 30px;
+}
+
+.padding-shorthand-4 {
+  /* 상 / 우 / 하 / 좌 - 시계방향 */
+  padding: 10px 20px 30px 40px;
+}
+```
+
+```html
+
+<div class="padding">padding</div>
+<div class="padding-shorthand-1">padding-shorthand-1</div>
+<div class="padding-shorthand-2">padding-shorthand-2</div>
+<div class="padding-shorthand-3">padding-shorthand-3</div>
+<div class="padding-shorthand-4">padding-shorthand-4</div>
+```
+
+### Border
+
+> CSS Border 설정
+
+```css
+.border {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: red;
+  border-top-color: blue;
+  border-radius: 10px;
+}
+```
+
+```html
+<div class="border">border</div>
+```
 
 
 
