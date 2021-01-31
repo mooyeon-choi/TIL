@@ -6,6 +6,7 @@
 * [Angular vs React vs Vue](#angular-vs-react-vs-vue)
 * [Interactive Development](#interactive-development)
 * [Vanilla JS](#vanilla-js)
+* [TypeScript](#typescript)
 * [React](#react)
 * [Vue](#vue)
 
@@ -60,6 +61,16 @@ canvas🎨에 JS event loop와 수학 공식을 더해주면 Interactive한 화�
 ```
 기본적인 JavaScript 엔진의 동작원리, WEB APIs, DOM, Render Tree🌳 등에 대해 이해하고
 좀 더 완성도 높은 코드를 구현하기 위해 학습한 내용
+```
+
+## TypeScript
+
+* [바로가기](./typeScript)
+
+```
+ JavaScript는 이미 String, number, object, undefined 같은 🌈원시 타입을 가지고 있지만, 
+ 전체 코드베이스에 일관되게 할당되었는지는 미리 확인해 주지 않는다. 
+ TypeScript는 이를 ✔️확인해주는 레이어로서 동작하는데 어떤식으로 동작하는지 알아보자.
 ```
 
 ## React
