@@ -16,7 +16,7 @@
 
 | 순번 |                      문제 링크                      |                        설명                         |                             풀이                             |
 | :--: | :-------------------------------------------------: | :-------------------------------------------------- | :----------------------------------------------------------: |
-|  1   | [입출력과 사칙연산](https://www.acmicpc.net/step/1) | 입력, 출력과 사칙연산을 연습해 봅시다. Hello World! | [바로가기](https://github.com/mooyeon-choi/TIL/tree/master/problemSolving/baekjoon/step#%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B3%BC-%EC%82%AC%EC%B9%99%EC%97%B0%EC%82%B0) |
+|  1   | [입출력과 사칙연산](https://www.acmicpc.net/step/1) | 입력, 출력과 사칙연산을 연습해 봅시다. Hello World! | [바로가기](./step/input-output/) |
 |  2   |       [if문](https://www.acmicpc.net/step/4)        | if문을 사용해 봅시다. |                         [바로가기](https://github.com/mooyeon-choi/TIL/tree/master/problemSolving/baekjoon/step#if%EB%AC%B8)                         |
 |  3   |      [for문](https://www.acmicpc.net/step/3)       | for문을 사용해 봅시다. |                         [바로가기](https://github.com/mooyeon-choi/TIL/tree/master/problemSolving/baekjoon/step#for%EB%AC%B8)                         |
 |  4   |     [while문](https://www.acmicpc.net/step/2)      | while문을 사용해 봅시다. |                         [바로가기](https://github.com/mooyeon-choi/TIL/tree/master/problemSolving/baekjoon/step#while%EB%AC%B8)                         |
