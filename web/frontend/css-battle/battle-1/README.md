@@ -80,7 +80,7 @@
   * 기본적인 방법을 통해서 구현해주었다.
   * 4개의 `<div>`를 만들고 각각의 속성에 `top, bottom, left, right` 옵션을 주었다.
 
-## [Target #3 Carrom](#target-3-push-button)
+## Target #3 Carrom
 
 * [문제](https://cssbattle.dev/play/3)
 

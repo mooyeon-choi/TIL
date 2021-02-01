@@ -14,4 +14,5 @@
 | :--: | :---------------------: | :----------------------------------------------------------: |
 |  1   | Target #1 Simply Square | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-1-simply-square) |
 |  2   |    Target #2 Carrom     | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-2-carrom) |
+|  3   |    Target #3 Carrom     | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-3-carrom) |
 
