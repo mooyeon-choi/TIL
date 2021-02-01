@@ -6,6 +6,7 @@
 
 * [Target #1 Simply Square](#target-1-simply-square)
 * [Target #2 Carrom](#target-2-carrom)
+* [Target #3 Carrom](#target-3-push-button)
 
 ## Target #1 Simply Square
 
@@ -78,3 +79,68 @@
 
   * 기본적인 방법을 통해서 구현해주었다.
   * 4개의 `<div>`를 만들고 각각의 속성에 `top, bottom, left, right` 옵션을 주었다.
+
+## [Target #3 Carrom](#target-3-push-button)
+
+* [문제](https://cssbattle.dev/play/3)
+
+  ![problem3](./images/battle3.PNG)
+
+* 풀이
+
+  ```html
+  <div id="square">
+    <div id="big">
+      <div id="middle">
+        <div id="small"></div>
+      </div>
+    </div>
+  </div>
+  <style>
+    * {
+      margin: 0;
+      background: #6592CF;
+    }
+    
+    div {
+      position: relative;
+    }
+    
+    #square {
+      top: 75px;
+      left: 50px;
+      width: 300px;
+      height: 150px;
+      background: #243D83;
+    }
+    
+    #big {
+      top: -50px;
+      left: 25px;
+      width: 250px;
+      height: 250px;
+      border-radius: 125px;
+      background: #6592CF;
+    }
+    
+    #middle {
+      top: 50px;
+      left: 50px;
+      width: 150px;
+      height: 150px;
+      border-radius: 75px;
+      background: #243D83;
+    }
+    
+    #small {
+      top: 50px;
+      left: 50px;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      background: #EEB850;
+    }
+  </style>
+  ```
+
+  * `border-radius`를 활용해 원을 만들어줄 수 있다.
