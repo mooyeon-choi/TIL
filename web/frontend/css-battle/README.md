@@ -5,29 +5,15 @@
 ## 목차
 
 * [Battle #1 Pilot Battle](#battle-1-pilot-battle)
+* [Battle #2 Pilot Battle](#battle-2-pilot-battle)
 
 ## Battle #1 Pilot Battle
 
-* [문제](https://cssbattle.dev/play/1)
+* [바로가기](./battle-1)
 
-  ![problem1](./images/battle1.PNG)
+| 순번 |        문제 링크        | 풀이 |
+| :--: | :---------------------: | :--: |
+|  1   | Target #1 Simply Square |      |
+|  2   |    Target #2 Carrom     |      |
+|      |                         |      |
 
-* 풀이
-
-  ```html
-  <div></div>
-  <style>
-    * {
-      margin: 0;
-      background: #5d3a3a;
-    }
-    div {
-      width: 200px;
-      height: 200px;
-      background: #b5e0ba;
-    }
-  </style>
-  
-  ```
-
-  * 먼저 body의 margin을 지워주고 div크기를 맞춰주었다.
