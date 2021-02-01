@@ -1,6 +1,5 @@
-> TypeScript 공식 웹 사이트 프로젝트인 [microsoft/TypeScript-WebSite](https://github.com/microsoft/TypeScript-Website)를 보며 학습한 내용을 정리하였습니다.
+> TypeScript 공식 웹 사이트 프로젝트인 [microsoft/TypeScript-WebSite](https://github.com/microsoft/TypeScript-Website)와 [Dream Coding Academy](https://academy.dream-coding.com/)의 타입스크립트 + 객체지향 프로그래밍 마스터 강의를 들으며 학습한 내용을 정리하였습니다.
 >
-> 영어로 되어있어 잘 이해가 되지않는 부분은 한국 개발자분들이 이 사이트를 번역하여 정리해주신 [TypeScript-kr](https://typescript-kr.github.io/)을 참고하여 작성하였습니다.
 
 # TypeScript
 
@@ -9,6 +8,7 @@
 ## 목차
 
 * [5분 만에 보는 TypeScript](#5분-만에-보는-typescript)
+* [What is TypeScript?](#what-is-typescript)
 
 ## 5분 만에 보는 TypeScript
 
@@ -17,3 +17,6 @@
 ```typescript
 TypeScript가 무엇인지, 어떻게 사용하는지 간단하게 알아보자
 ```
+
+## What is TypeScript?
+
