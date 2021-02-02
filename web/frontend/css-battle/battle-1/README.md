@@ -144,3 +144,40 @@
   ```
 
   * `border-radius`를 활용해 원을 만들어줄 수 있다.
+
+## Target #4 Ups n Downs
+
+* [문제](https://cssbattle.dev/play/4)
+
+  ![problem](./images/battle4.PNG)
+
+* 풀이
+
+  ```html
+  <div class="downs"></div>
+  <div class="ups"></div>
+  <div class="downs"></div>
+  <style>
+    body {
+      margin: 50px 50px;
+      display: flex;
+      background: #62306D;
+    }
+    div {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background: #F7EC7D;
+    }
+    .downs {
+      top: 100px;
+      border-radius: 0 0 50px 50px;
+    }
+    .ups {
+      border-radius: 50px 50px 0 0;
+    }
+  </style>
+  ```
+
+  * Flex Box를 활용하여 `<div>`를 한줄로 나타내준다.
+  * `ups`와 `downs`로 모양이 나눠져있어 `class`를 두가지로 나눠주었다. 이후 각각의 위치와 모양에 맞게 `top`, `border-radius` 속성을 주어 해결하였다.
