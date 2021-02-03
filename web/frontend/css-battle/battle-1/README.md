@@ -8,6 +8,7 @@
 * [Target #2 Carrom](#target-2-carrom)
 * [Target #3 Push Button](#target-3-push-button)
 * [Target #4 Ups n Downs](#target-4-ups-n-downs)
+* [Target #5 Acid Rain](#target-5-acid-rain)
 
 ## Target #1 Simply Square
 
@@ -182,3 +183,52 @@
 
   * Flex Box를 활용하여 `<div>`를 한줄로 나타내준다.
   * `ups`와 `downs`로 모양이 나눠져있어 `class`를 두가지로 나눠주었다. 이후 각각의 위치와 모양에 맞게 `top`, `border-radius` 속성을 주어 해결하였다.
+
+## Target #5 Acid Rain
+
+* [문제](https://cssbattle.dev/play/5)
+
+  ![problem5](./images/battle5.PNG)
+
+* 풀이
+
+  ```html
+  <div id="top"></div>
+  <div id="middle"></div>
+  <div id="bottom"></div>
+  <style>
+    body {
+    	margin: 0;
+      background: #0B2429;
+    }
+    
+    div {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+    }
+    
+    #top {
+      top: 30px;
+      right: 80px;
+      background: #F3AC3C;
+      border-radius: 50%;
+    }
+    
+    #middle {
+      top: 90px;
+      left: 140px;
+      background: #998235;
+      border-radius: 50% 0 50% 50%;
+    }
+    
+    #bottom {
+      bottom: 30px;
+      left: 80px;
+      background: #F3AC3C;
+      border-radius: 50% 0 50% 50%;
+    }
+  </style>
+  ```
+
+  
