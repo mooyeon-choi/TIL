@@ -14,6 +14,7 @@
 * [Target #8 Forking Crazy](#target-8-forking-crazy)
 * [Target #9 Tesseract](#target-9-tesseract)
 * [Target #10 Cloaked Spirits](#target-10-cloaked-spirits)
+* [Target #11 Eye of Sauron](#target-11-eye-of-sauron)
 
 ## Target #1 Simply Square
 
@@ -541,4 +542,75 @@
   </style>
   ```
 
+## Target #11 Eye of Sauron
+
+* [문제](https://cssbattle.dev/play/11)
+
+  ![problem11](./images/battle11.PNG)
+
+* 풀이
+
+  ```html
+  <div class="side"><div class="lower-circle"></div><div class="upper-circle"></div></div>
+  <div class="big circle"><div class="small circle"></div></div>
+  <style>
+    body {
+      margin: 0;
+      background: #191210;
+    }
+    
+    .side {
+      display: flex;
+      position: fixed;
+      top: 100px;
+      left: 50px;
+      justify-content: space-between;
+    	width: 300px;
+      height: 100px;
+    }
+    
+    .upper-circle {
+      width: 60px;
+      height: 30px;
+      border: 20px solid #ECA03D;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+      border-bottom: 0;
+    }
+    
+    .lower-circle {
+      align-self: flex-end;
+      width: 60px;
+      height: 30px;
+      border: 20px solid #ECA03D;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      border-top: 0;
+    }
+    
+    .circle {
+      border-radius: 50%;
+    }
+    
+    .big {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 20px solid #ECA03D;
+      width: 100px;
+      height: 100px;
+      top: 80px;
+      left: 130px
+    }
+    
+    .small {
+      background: #84271C;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+  ```
+
   
+
