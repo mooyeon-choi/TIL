@@ -9,6 +9,7 @@
 * [Target #3 Push Button](#target-3-push-button)
 * [Target #4 Ups n Downs](#target-4-ups-n-downs)
 * [Target #5 Acid Rain](#target-5-acid-rain)
+* [Target #6 Pilot Battle](#target-6-piot-battle)
 
 ## Target #1 Simply Square
 
@@ -231,4 +232,55 @@
   </style>
   ```
 
+## Target #6 Pilot Battle
+
+* [문제](https://cssbattle.dev/play/6)
+
+  ![problem6](./images/battle6.PNG)
+
+* 풀이
+
+  ```html
+  <div id="container">
+    <div id="green" class="contants"></div>
+    <div id="yellow" class="contants"></div>
+    <div id="white" class="contants"></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #E3516E;
+    }
+    
+    #container {
+      top: 50px;
+      left: 100px;
+      width: 200px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    
+    .contants {
+      width: 100px;
+      height: 100px;
+    }
+    
+    #green {
+      background: #51B5A9;
+    }
+    
+    #yellow {
+      background: #FADE8B;
+    }
+    
+    #white {
+      background: #F7F3D7;
+    }
+  </style>
+  ```
+
   
+
