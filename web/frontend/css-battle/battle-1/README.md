@@ -15,6 +15,7 @@
 * [Target #9 Tesseract](#target-9-tesseract)
 * [Target #10 Cloaked Spirits](#target-10-cloaked-spirits)
 * [Target #11 Eye of Sauron](#target-11-eye-of-sauron)
+* [Target #12 Wiggly Moustache](#target-12-wiggly-moustache)
 
 ## Target #1 Simply Square
 
