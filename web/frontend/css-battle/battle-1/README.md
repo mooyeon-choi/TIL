@@ -13,6 +13,7 @@
 * [Target #7 Leafy Trail](#target-7-leafy-trail)
 * [Target #8 Forking Crazy](#target-8-forking-crazy)
 * [Target #9 Tesseract](#target-9-tesseract)
+* [Target #10 Cloaked Spirits](#target-10-cloaked-spirits)
 
 ## Target #1 Simply Square
 
@@ -453,3 +454,91 @@
   </style>
   ```
 
+## Target #10 Cloaked Spirits
+
+* [문제](https://cssbattle.dev/play/10)
+
+  ![problem10](./images/battle10.PNG)
+
+* 풀이
+
+  ```html
+  <div class="container back">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+  <div class="container front">
+    <div class="big circle dark down">
+      <div class="small circle light"></div>
+    </div>
+    <div class="big circle light up">
+    	<div class="small circle dark"></div>
+    </div>
+    <div class="big circle dark down">
+    	<div class="small circle light"></div>
+    </div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #62306D;
+    }
+    
+    .container {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 300px;
+      height: 200px;
+      left: 50px;
+    }
+    
+    .back {
+      flex-wrap: wrap-reverse;
+      bottom: 0;
+    }
+    
+    .front {
+      top: 50px;
+    }
+    
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #F7EC7D;
+    }
+    
+    .circle {
+      border-radius: 50%;
+    }
+    
+    .big {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+    }
+    
+    .small {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .dark {
+      background: #AA445F;
+    }
+    
+    .light {
+      background: #E38F66;
+    }
+    
+    .down {
+      align-self: flex-end;
+    }
+  </style>
+  ```
+
+  
