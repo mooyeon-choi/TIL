@@ -9,7 +9,7 @@
 * [Target #3 Push Button](#target-3-push-button)
 * [Target #4 Ups n Downs](#target-4-ups-n-downs)
 * [Target #5 Acid Rain](#target-5-acid-rain)
-* [Target #6 Pilot Battle](#target-6-piot-battle)
+* [Target #6 Pilot Battle](#target-6-pilot-battle)
 
 ## Target #1 Simply Square
 

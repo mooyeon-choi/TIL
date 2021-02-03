@@ -17,5 +17,5 @@
 |  3   |  [Target #3 Push Button](https://cssbattle.dev/play/3)  | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-3-push-button) |
 |  4   |  [Target #4 Ups n Downs](https://cssbattle.dev/play/4)  | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-4-ups-n-downs) |
 |  5   |   [Target #5 Acid Rain](https://cssbattle.dev/play/5)   | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-5-acid-rain) |
-|  6   | [Target #6 Pilot Battle](https://cssbattle.dev/play/6)  |                                                              |
+|  6   | [Target #6 Pilot Battle](https://cssbattle.dev/play/6)  | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-6-pilot-battle) |
 
