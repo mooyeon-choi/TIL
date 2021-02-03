@@ -10,6 +10,7 @@
 * [Target #4 Ups n Downs](#target-4-ups-n-downs)
 * [Target #5 Acid Rain](#target-5-acid-rain)
 * [Target #6 Pilot Battle](#target-6-pilot-battle)
+* [Target #7 Leafy Trail](#target-7-leafy-trail)
 
 ## Target #1 Simply Square
 
@@ -282,5 +283,47 @@
   </style>
   ```
 
-  
+## Target #7 Leafy Trail
 
+* [문제](https://cssbattle.dev/play/7)
+
+  ![problem7](./images/battle7.PNG)
+
+* 풀이
+
+  ```html
+  <div id="back"></div>
+  <div id="mid"></div>
+  <div id="front"></div>
+  <style>
+    body {
+      margin: 0;
+      background: #0B2429;
+    }
+    
+    div {
+      position: absolute;
+      top: 75px;
+      height: 150px;
+      width: 150px;
+      border-radius: 100px 0 100px 0;
+    }
+    
+    #front {
+      right: 75px;
+      background: #F3AC3C;
+    }
+    
+    #mid {
+      left: 125px;
+      background: #998235;
+    }
+    
+    #back {
+      left: 75px;
+      background: #1A4341;
+    }
+  </style>
+  ```
+
+  
