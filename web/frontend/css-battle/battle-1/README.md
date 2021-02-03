@@ -12,6 +12,7 @@
 * [Target #6 Pilot Battle](#target-6-pilot-battle)
 * [Target #7 Leafy Trail](#target-7-leafy-trail)
 * [Target #8 Forking Crazy](#target-8-forking-crazy)
+* [Target #9 Tesseract](#target-9-tesseract)
 
 ## Target #1 Simply Square
 
@@ -395,4 +396,60 @@
   </style>
   ```
 
-  
+## Target #9 Tesseract
+
+* [문제](https://cssbattle.dev/play/9)
+
+  ![problem9](./images/battle9.PNG)
+
+* 풀이
+
+  ```html
+  <div id="back">
+    <div id="big">
+      <div id="small">
+        <div id="circle"></div>
+      </div>
+    </div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #222730;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #back {
+      position: relative;
+      top: 75px;
+      width: 100%;
+      height: 150px;
+      background: #4CAAB3;
+    }
+    
+    #big {
+      width: 250px;
+      height: 250px;
+      background: #222730;
+      transform: rotate(45deg);
+    }
+    
+    #small {
+      width: 150px;
+      height: 150px;
+      background: #4CAAB3;
+    }
+    
+    #circle {
+      width: 50px;
+      height: 50px;
+      background: #393E46;
+      border-radius: 50%;
+    }
+  </style>
+  ```
+
