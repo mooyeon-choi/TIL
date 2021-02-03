@@ -19,4 +19,5 @@
 |  5   |   [Target #5 Acid Rain](https://cssbattle.dev/play/5)   | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-5-acid-rain) |
 |  6   | [Target #6 Pilot Battle](https://cssbattle.dev/play/6)  | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-6-pilot-battle) |
 |  7   |  [Target #7 Leafy Trail](https://cssbattle.dev/play/7)  | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-7-leafy-trail) |
+|  8   | [Target #8 Forking Crazy](https://cssbattle.dev/play/8) | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-8-forking-crazy) |
 
