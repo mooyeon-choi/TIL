@@ -612,5 +612,65 @@
   </style>
   ```
 
+
+## Target #12 Wiggly Moustache
+
+* [문제](https://cssbattle.dev/play/12)
+
+  ![problem12](./images/battle12.PNG)
+
+* 풀이
+
+  ```html
+  <div class="dot"></div>
+  <div class="lower"></div>
+  <div class="upper"></div>
+  <div class="lower"></div>
+  <div class="dot"></div>
+  <style>
+    body {
+      display: flex;
+      position: fixed;
+      top: 110px;
+      width: 100%;
+      height: 80px;
+      justify-content: center;
+      margin: 0;
+      background: #F5D6B4;
+    }
+    
+    div {
+      margin: -10px;
+    }
+    
+    .upper {
+      width: 60px;
+      height: 30px;
+      border: 20px solid #D86F45;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+      border-bottom: 0;
+    }
+    
+    .lower {
+      width: 60px;
+      height: 30px;
+      align-self: flex-end;
+      border: 20px solid #D86F45;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      border-top: 0;
+    }
+    
+    .dot {
+      width: 20px;
+      height: 20px;
+      background: #D86F45;
+      align-self: center;
+      border-radius: 10px;
+    }
+  </style>
+  ```
+
   
 
