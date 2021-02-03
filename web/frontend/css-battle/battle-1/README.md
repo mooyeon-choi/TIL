@@ -11,6 +11,7 @@
 * [Target #5 Acid Rain](#target-5-acid-rain)
 * [Target #6 Pilot Battle](#target-6-pilot-battle)
 * [Target #7 Leafy Trail](#target-7-leafy-trail)
+* [Target #8 Forking Crazy](#target-8-forking-crazy)
 
 ## Target #1 Simply Square
 
@@ -322,6 +323,74 @@
     #back {
       left: 75px;
       background: #1A4341;
+    }
+  </style>
+  ```
+
+## Target #8 Forking Crazy
+
+* [문제](https://cssbattle.dev/play/8)
+
+  ![problem8](./images/battle8.PNG)
+
+* 풀이
+
+  ```html
+  <div id="fork-head"></div>
+  <div id="container">
+    <div class="pinch dark"></div>
+    <div class="pinch light"></div>
+    <div class="pinch dark"></div>
+    <div class="pinch light"></div>
+    <div class="pinch dark"></div>
+    <div class="pinch light"></div>
+    <div class="pinch dark"></div>
+  </div>
+  <div id="fork-body"></div>
+  <style>
+    body {
+      margin: 0;
+      background: #6592CF;
+    }
+    
+    #container {
+      display: flex;
+      position: absolute;
+      width: 140px;
+      top: 50px;
+      left: 130px;
+    }
+    .pinch {
+      width: 20px;
+      height: 110px;
+      border-radius: 10px;
+    }
+    
+    .dark {
+      background: #060F55;
+    }
+    
+    .light {
+      background: #6592CF;
+    }
+    
+    #fork-head {
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      bottom: 50px;
+      left: 130px;
+      background: #060F55;
+      border-radius: 0 0 50% 50%;
+    }
+    
+    #fork-body {
+      position: absolute;
+      width: 20px;
+      height: 60px;
+      bottom: 0;
+      left: 190px;
+      background: #060F55;
     }
   </style>
   ```
