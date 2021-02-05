@@ -4,9 +4,10 @@
 
 ## 목차
 
-* [Battle #1 Pilot Battle](#battle-1-pilot-battle)
+* [Battle #1 - Pilot Battle](#battle-1---pilot-battle)
+* [Battle #2 - Visibility](#battle-2---visibility)
 
-## Battle #1 Pilot Battle
+## Battle #1 - Pilot Battle
 
 * [바로가기](./battle-1)
 
@@ -24,3 +25,14 @@
 |10|[Target #10 Cloaked Spirits](https://cssbattle.dev/play/10)|[<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-10-cloaked-spirits)|
 |11|[Target #11 Eye of Sauron](https://cssbattle.dev/play/11)|[<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-11-eye-of-sauron)|
 |12|[Target #12 Wiggly Moustache](https://cssbattle.dev/play/12)|[<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-1#target-12-wiggly-moustache)|
+
+## Battle #2 - Visibility
+
+* [바로가기](./battle-2)
+
+| 순번 |                          문제 링크                           |                             풀이                             |
+| :--: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|  1   | [Target #13 - Totally Triangle](https://cssbattle.dev/play/13) | [<img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=30&color=currentColor">](https://github.com/mooyeon-choi/TIL/tree/master/web/frontend/css-battle/battle-2#target-13---totally-triangle) |
+|  2   |                                                              |                                                              |
+|  3   |                                                              |                                                              |
+
