@@ -81,3 +81,23 @@
   >  프로젝트 유형을 "콘솔 앱"으로 선택할 경우 명령 프롬프트에서 실행할 수 있다.
 
   * `cmd` 창에서 실행파일 경로 입력
+
+    ```
+    cd C:\Users\moo\source\repos\helloWorld\bin\Debug\net5.0
+    ```
+
+  * helloWorld.exe 프로그램 실행
+
+    > `helloWorld.exe` 혹은 확장자를 제외한 `helloWorld`를 입력하여 프로그램을 실행할 수 있다.
+
+    * 실행 파일명 + 입력 값으로 프로그램 실행
+
+      ```
+      C:\Users\moo\source\repos\helloWorld\bin\Debug\net5.0>helloWorld
+      사용법 : Hello.exe <이름>
+      
+      C:\Users\moo\source\repos\helloWorld\bin\Debug\net5.0>helloWorld World
+      Hello, World!
+      ```
+
+      
