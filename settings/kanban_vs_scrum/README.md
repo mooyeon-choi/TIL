@@ -27,7 +27,73 @@
 
 **칸반** 보드는 개개인이 하나의 워크플로우를 전담하므로 특정 팀에서 관리할 필요가 없다.
 
+## 3. Task 할당
 
+![Task](https://miro.com/blog/wp-content/uploads/2018/02/scrum-vs-kanban-boards-11-major-differences-05.png)
+
+**스크럼**에서는 전체 팀이 하나가 되어 각 작업을 처리한다.
+
+**칸반**에서는 원래 개인이 각 작업의 흐름(코딩, 테스트, 검토 등)에서 자신의 단계를 책임진다. 작업이 일찍 끝난 개발자는 다른 사람의 테스트 작업을 돕거나 To do List 에서 다른 작업을 진행한다.
+
+## 4. 업데이트
+
+![Update](https://miro.com/blog/wp-content/uploads/2018/02/scrum-vs-kanban-boards-11-major-differences-06.png)
+
+**스크럼** 팀은 스프린트가 진행되는 동안 보드에 새 항목을 추가해서는 안된다. Task 추가의 경우 계획 단계에서만 이루어진다.
+
+**칸반**의 경우 해당 진행 열에서 제한해준 작업량 이하라면 본인의 Task를 끝마친 후에 자유롭게 새 항목을 추가하여 개발한다.
+
+## 5. 긴급 작업
+
+![Urgencies](https://miro.com/blog/wp-content/uploads/2018/02/scrum-vs-kanban-boards-11-major-differences-07.png)
+
+**스크럼** 팀은 사전 분석, 계획, 조정 및 우선 순위 지정 이후에 개발이 진행되므로 예기치 못한 긴급 상황에 직면할 일이 거의 없다. 이 방법론의 주요 목표 중 하나가 모든 상황을 예측 가능하게 하는 것이다.
+
+**칸반**에서는 긴급 섹션을 따로 추가하여 백로그에서 예측할 수 없는 긴급 작업이나 병목 현상이 발생할 수 있는 작업들에 대해 다른 팀원들이 도와 더 빨리 완료하도록 한다.
+
+## 6. 백로그
+
+![scrum backlog](https://miro.com/blog/wp-content/uploads/2018/02/scrum-vs-kanban-boards-11-major-differences-08.png)
+
+**스크럼** 은 사용자 스토리를 제품 백로그(Product backrog)에서 스프린트 백로그로 큰 항목을 나눠서 관리한다. 애자일 가이드에 따르면 기능 및 작업에는 수락 테스트, UI 스케치 등과 같은 세부 정보가 포함되어야 한다.
+
+![kanban backlog](https://miro.com/blog/wp-content/uploads/2018/02/scrum-vs-kanban-boards-11-major-differences-09.png)
+
+**칸반** 은 일반적으로 사용자 스토리와 동일하게 백로그가 관리된다.(반드시 같지는 않다)
+
+## 7. 백로그 작업 할당(백로그에서 To do 섹션으로)
+
+![backlog to To do](https://miro.com/blog/wp-content/uploads/2018/02/scrum-vs-kanban-boards-11-major-differences-10.png)
+
+**스크럼** 팀은 항상 스프린트 기간내에 달성할 수 있는지를 고려하여 단계를 분할하여 할당한다.
+
+**칸반** 의 경우 작업 양에 대한 규칙은 따로 설정하지 않는다.
+
+## 8. 우선순위
+
+![스크럼 우선순위](https://miro.com/blog/wp-content/uploads/2018/02/scrum-vs-kanban-boards-11-major-differences-11.png)
+
+**스크럼**에서 우선순위는 필수다. 현재 진행중인 스프린트에 대해 제품 백로그 정렬 및 정리, 일일 스크럼 회의 중 우선 순위를 설정하며 우선 순위를 정하는 동안 다음 스프린트에서 무엇이 중요할지 예측하는 것이 중요하다.
+
+![칸반 우선순위](https://miro.com/blog/wp-content/uploads/2018/02/scrum-vs-kanban-boards-11-major-differences-12.png)
+
+**칸반**은 우선 순위 설정, 추정 방식을 사용하지 않지만 확률적 예측을 통해 프로젝트 계획을 고려한다.
+
+## 9. 보고서
+
+![보고서](https://miro.com/blog/wp-content/uploads/2018/02/scrum-vs-kanban-boards-11-major-differences-13.png)
+
+**스크럼**은 다양한 차트 및 보고서와 함께 Velocity를 기본 메트릭으로 사용한다.
+
+**칸반** 에서는 특정 차트를 규정하지 않는다.
+
+## 10. 기간 재설정
+
+![기간 재설정](https://miro.com/blog/wp-content/uploads/2018/02/scrum-vs-kanban-boards-11-major-differences-14.png)
+
+**스크럼**에서 모든 작업은 스프린트가 끝날 때 완료 섹션에 있어야 한다. 모든 작업이 완료되지 않으면 해당 스프린트는 실패한 것으로 간주된다. 보드를 재설정하며 모든 스티커를 제거하는 과정은 작업을 마무리 했다는 성취감을 준다.
+
+**칸반**은 기간을 설정하지 않으므로 재설정하고 다시 시작할 필요가 없다. 작업 흐름은 프로젝트 수명 주기로 계속되며 필요에 따라 새 항목을 추가한다.
 
 ## 참고 문헌
 
