@@ -43,3 +43,9 @@
 2. 이슈키를 사용하여 리포지토리에 연결
 
 [Reference issues in your development work](https://support.atlassian.com/jira-software-cloud/docs/reference-issues-in-your-development-work/)
+
+## 참고 문헌
+
+* [위키백과 - 지라](https://ko.wikipedia.org/wiki/%EC%A7%80%EB%9D%BC_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4))
+
+* [[Jira] Jira와 Github 연동하기 | naljin님의 블로그](https://sujinnaljin.medium.com/jira-jira%EC%99%80-github-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0-6e649180dfae)

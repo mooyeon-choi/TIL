@@ -31,3 +31,11 @@
 1. 채널 메시지에 `/github subscribe owner/repository`를 입력
 
 ![예시](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdxrFZX%2FbtrqX18hLFi%2FXW43FxF9NdsXXVQGdwCFFk%2Fimg.png)
+
+## 참고 문헌
+
+* [나무위키 - 슬랙](https://namu.wiki/w/%EC%8A%AC%EB%9E%99)
+
+* [Slack - Github 연동 환경설정 방법 | 시작해볼래 tistory 블로그](https://adjh54.tistory.com/5)
+
+* [slack과 github 연동하는 방법 | 제이나린 tistory 블로그](https://jnarin-development-story.tistory.com/153)
