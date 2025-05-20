@@ -95,4 +95,6 @@
 
 > 가능한 경우의 수를 모두 탐색하며 찾는 방법이다.
 
-* [Python 바로가기](./bruteforce_python)
+* [Python 바로가기](./bruteforce/bruteforce_python/)
+
+* [JavaScript 바로가기](./bruteforce/javascript/)
