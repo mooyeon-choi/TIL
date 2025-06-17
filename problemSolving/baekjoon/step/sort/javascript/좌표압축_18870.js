@@ -14,9 +14,13 @@ function solution(n, num) {
   const sortedNums = [...numSet]
     .sort((a, b) => a - b);
 
+  const numMap = new Map();
+  sortedNums.forEach((value, index) => {
+    numMap.set(value, index);
+  });
+
   for (let i = 0; i < n; i++) {
-    const rank = sortedNums.indexOf(num[i]);
-    answer.push(rank);
+    answer.push(numMap.get(num[i]));
   }
 
   return answer.join(" ");
