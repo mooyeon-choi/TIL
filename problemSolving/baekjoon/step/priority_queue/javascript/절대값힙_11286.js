@@ -111,7 +111,15 @@ class PriorityQueue {
 };
 
 function solution(n, nums) {
-  const pq = new PriorityQueue((a, b) => b - a);
+  const pq = new PriorityQueue((a, b) =>  {
+    const absA = Math.abs(a);
+    const absB = Math.abs(b);
+    if (absA === absB) {
+        return a - b;
+    }
+    return absA - absB;
+  });
+
   const answer = [];
 
   for (let i = 0; i < n; i++) {

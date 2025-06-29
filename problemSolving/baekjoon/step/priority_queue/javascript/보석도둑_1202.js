@@ -1,12 +1,20 @@
-const input = require("fs")
-  .readFileSync(process.platform === "linux" ? "/dev/stdin" : "./input.txt")
-  .toString()
-  .trim()
-  .split("\n")
-  .map(Number);
+// const input = require("fs")
+//   .readFileSync(process.platform === "linux" ? "/dev/stdin" : "./input.txt")
+//   .toString()
+//   .trim()
+//   .split("\n");
 
-const N = input[0];
-const NUMS = input.slice(1);
+const input = `3 2
+1 65
+5 23
+2 99
+10
+2`
+  .split("\n");
+
+const [N, K] = input[0].split(" ").map(Number);
+const jewels = input.slice(1, 1 + N).map(arr => arr.split(" ").map(Number));
+const bags = input.slice(1 + N).map(Number).sort((a, b) => a - b);
 
 class PriorityQueue {
   #compare = (a, b) => a - b;
@@ -49,10 +57,10 @@ class PriorityQueue {
 
     while (pos * 2 <= size) {
       let childIndex = pos * 2 + 1;
-      if (childIndex > size || compare(heap[pos * 2], heap[childIndex]) < 0)
+      if (childIndex > size || compare(heap[pos * 2][0], heap[childIndex][0]) < 0)
         childIndex = pos * 2;
       const child = heap[childIndex];
-      if (compare(item, child) <= 0)
+      if (compare(item[0], child[0]) <= 0)
         break;
       if (setPosition !== undefined)
         setPosition(child, pos);
@@ -72,7 +80,7 @@ class PriorityQueue {
 
     while (pos > 1) {
       const parent = heap[pos / 2 | 0];
-      if (compare(parent, item) <= 0)
+      if (compare(parent[0], item[0]) <= 0)
         break;
       heap[pos] = parent;
       if (setPosition !== undefined)
@@ -110,19 +118,35 @@ class PriorityQueue {
   }
 };
 
-function solution(n, nums) {
-  const pq = new PriorityQueue((a, b) => b - a);
-  const answer = [];
+function solution() {
+  const pq = new PriorityQueue((a, b) => a[0] - b[0]);
 
-  for (let i = 0; i < n; i++) {
-    if (nums[i] === 0) {
-      answer.push(pq.shift() || 0);
-    } else {
-      pq.insert(nums[i]);
+  let answer = 0;
+  let memo = 0;
+  for (let i = 0; i < K; i++) {
+    let j = 0;
+    while (j < N && jewels[j][0] <= bags[i]) {
+      pq.insert(jewels[j]);
+      j++;
     }
+
+    let num = 0;
+    while (pq.peek() !== undefined) {
+      if (pq.peek()[0] <= bags[i]) {
+        if (pq.peek()[1] > num) {
+            memo = Math.max(memo, num);
+            num = pq.peek()[1];
+        }
+        pq.shift();
+      } else {
+        break;
+      }
+    }
+
+    answer += Math.max(memo, num);
   }
 
-  return answer.join("\n");
+  return answer;
 }
 
-console.log(solution(N, NUMS));
+console.log(solution());

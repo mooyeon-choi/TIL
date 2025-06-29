@@ -111,7 +111,7 @@ class PriorityQueue {
 };
 
 function solution(n, nums) {
-  const pq = new PriorityQueue((a, b) => b - a);
+  const pq = new PriorityQueue();
   const answer = [];
 
   for (let i = 0; i < n; i++) {
